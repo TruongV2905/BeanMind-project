@@ -149,7 +149,7 @@ main .centralOffice-section .centralOffice-container .wrap__dess .item .content 
   margin-bottom: 1.5em;
 }
 main .contact-section {
-  padding: 155px 0 90px;
+  padding: 0 0 288px;
 }
 main .contact-section .contact-container {
   margin-left: auto;
@@ -241,6 +241,18 @@ main .contact-section .contact-container .wrap__dess .box__input .box__btn .butt
 main .contact-section .contact-container .wrap__dess .box__img {
   width: 50%;
 }
+main .location-section .location-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1200px;
+  height: auto;
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
 
 @media only screen and (max-width: 1200px) {
   main .contact-section .contact-container {
@@ -271,8 +283,43 @@ main .contact-section .contact-container .wrap__dess .box__img {
   main .contactBanner-section .banner__side {
     display: none;
   }
+  main .centralOffice-section {
+    padding-bottom: 0px;
+  }
+  main .contact-section .contact-container {
+    max-width: 960px;
+  }
+  main .contact-section .contact-container .box__content h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  main .contact-section .contact-container .wrap__dess {
+    height: 712px;
+  }
+  main .contact-section .contact-container .wrap__dess .box__input {
+    height: 100%;
+  }
+  main .contact-section .contact-container .wrap__dess .box__input .box__enter {
+    flex-direction: column;
+  }
+  main .contact-section .contact-container .wrap__dess .box__input .box__enter .item {
+    width: 100%;
+  }
+  main .contact-section .contact-container .wrap__dess .box__input .box__enter .item textarea {
+    max-width: 100% !important;
+  }
+  main .contact-section .contact-container .wrap__dess .box__img {
+    height: 100%;
+  }
+  main .contact-section .contact-container .wrap__dess .box__img img {
+    object-fit: cover;
+    height: 100%;
+  }
 }
 @media only screen and (max-width: 767px) {
+  main .centralOffice-section {
+    padding-top: 60px;
+  }
   main .centralOffice-section .centralOffice-container {
     max-width: 824px;
   }
@@ -283,8 +330,24 @@ main .contact-section .contact-container .wrap__dess .box__img {
   main .contact-section .contact-container {
     max-width: 824px;
   }
-  main .contact-section .contact-container .box__content h1 {
-    margin-bottom: 30px;
-    font-size: 25px;
+  main .contact-section .contact-container .wrap__dess {
+    height: fit-content;
+    flex-direction: column;
+  }
+  main .contact-section .contact-container .wrap__dess .box__input {
+    width: 100%;
+    padding: 30px;
+  }
+  main .contact-section .contact-container .wrap__dess .box__input .box__enter .item textarea {
+    width: 100% !important;
+  }
+  main .contact-section .contact-container .wrap__dess .box__img {
+    width: 100%;
+    height: 100%;
+  }
+  main .contact-section .contact-container .wrap__dess .box__img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
   }
 }/*# sourceMappingURL=contact.css.map */
