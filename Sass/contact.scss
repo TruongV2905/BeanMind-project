@@ -191,11 +191,13 @@ main {
               justify-content: start;
               flex-direction: column;
               margin-bottom: 20px;
+              padding: 0 10px;
               label {
                 font-size: 15px;
                 margin-bottom: 10px;
               }
               input {
+                width: 100%;
                 border: 1px solid #d0d0d0;
                 height: 45px;
                 background: #ffffff;
@@ -252,6 +254,28 @@ main {
           h1 {
             margin-bottom: 40px;
             font-size: 35px;
+          }
+        }
+        .wrap__dess {
+          height: 525px;
+          .box__input {
+            height: 100%;
+            .box__enter {
+              .item {
+                label {
+                }
+                textarea {
+                  width: 335px !important;
+                }
+              }
+            }
+          }
+          .box__img {
+            height: 100%;
+            img {
+              object-fit: cover;
+              height: 100%;
+            }
           }
         }
       }
