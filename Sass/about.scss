@@ -1,0 +1,703 @@
+$color_1: #ed1c24;
+$color_2: white;
+$color_3: #ffffff;
+$color_4: #ece9d8;
+$color_5: red;
+$color_6: rgb(35, 31, 32);
+$color_7: rgb(237, 27, 36);
+$font-family_1: "000 SignLanguage TB";
+$background-color_1: #b11116;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* reason */
+/* result */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: red;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+.banner {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  .box__img {
+    width: 100%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+  .banner__side {
+    position: relative;
+    display: flex;
+    background-color: #b11116;
+    flex: 0 0 auto;
+    width: 6%;
+    .nav {
+      flex: 1 0 auto;
+      bottom: 0;
+      left: 75%;
+      position: absolute;
+      height: fit-content;
+      display: flex;
+      background-color: transparent;
+      transform-origin: bottom left;
+      transform: rotateZ(-90deg);
+      width: 100%;
+      margin-bottom: 3px;
+      .box__content {
+        background-color: transparent;
+        height: fit-content;
+        p {
+          font-size: 15px;
+          color: #fff;
+          background-color: transparent;
+          white-space: nowrap;
+          margin-left: 13px;
+        }
+      }
+      .icon {
+        margin: 10px 0px 0;
+        width: 100%;
+        flex: 1 0 auto;
+        height: 30px;
+        transform: translateY(-50%);
+        list-style: none;
+        background: transparent;
+        display: flex;
+        gap: 20px;
+        li {
+          flex: 0 0 auto;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+.introduce {
+  .introduce__desc {
+    margin-top: 50px;
+    p {
+      width: 100%;
+      text-align: center;
+      line-height: 21px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      width: 100%;
+      height: 52px;
+      text-align: center;
+    }
+  }
+  .introduce__item {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 70px;
+    p {
+      &::before {
+        content: "01";
+        position: absolute;
+        top: -45px;
+        position: absolute;
+        background: white;
+        font-size: 80px;
+        font-family: $font-family_1;
+        color: $color_1;
+        padding: 0 15px 0 10px;
+        left: 35px;
+      }
+      height: 210.4px;
+      padding: 45px;
+      border: 1px solid #092f46;
+      border-radius: 10px;
+      font-size: 14px;
+      height: fit-content;
+      position: relative;
+      strong {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    img {
+      height: 371px;
+    }
+  }
+  .introduce__item--2 {
+    p {
+      &::before {
+        content: "02";
+        position: absolute;
+        top: -45px;
+        position: absolute;
+        background: white;
+        font-size: 80px;
+        font-family: $font-family_1;
+        color: $color_1;
+        padding: 0 15px 0 10px;
+        left: 35px;
+      }
+    }
+  }
+  .introduce__item--3 {
+    p {
+      &::before {
+        content: "03";
+        position: absolute;
+        top: -45px;
+        position: absolute;
+        background: white;
+        font-size: 80px;
+        font-family: $font-family_1;
+        color: $color_1;
+        padding: 0 15px 0 10px;
+        left: 35px;
+      }
+    }
+  }
+  .introduce__item--img1 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 60px 60px 0 0;
+      width: 118px;
+      height: 117px;
+      z-index: 1;
+      right: -50px;
+      bottom: -59px;
+      background: #ffdd00;
+      transform: rotate(-180deg);
+    }
+  }
+  .introduce__item--img2 {
+    position: relative;
+    img {
+      position: relative;
+      z-index: 20;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background: #b11116;
+      border-radius: 60px;
+      width: 118px;
+      height: 117px;
+      z-index: 1;
+      left: -60px;
+      top: -60px;
+    }
+  }
+  .introduce__item--img3 {
+    position: relative;
+    img {
+      position: relative;
+      z-index: 20;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      border-radius: 90px 90px 0 0;
+      background: #ffdd00;
+      z-index: 30;
+      bottom: -55px;
+      left: -46px;
+      width: 105px;
+      height: 125px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      border-radius: 0 140px 0 0;
+      width: 118px;
+      height: 117px;
+      right: -60px;
+      top: -60px;
+      background: #ed1c24;
+      z-index: 30;
+    }
+  }
+}
+.value {
+  display: flex;
+  margin-top: 100px;
+
+  .warp__last {
+    height: 600px;
+    background-color: #fff;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box__img {
+      height: 100%;
+      position: relative;
+      width: 50%;
+      background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18637-1.png);
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      .move__img-up {
+        animation: moveup ease-in 2s infinite alternate 1s;
+      }
+      .move__img-down {
+        animation: movedown ease-in 2s infinite alternate 1s;
+      }
+      .left__img {
+        position: absolute;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+      }
+      .right__img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        z-index: 2;
+      }
+      .main__img {
+        position: relative;
+        width: 100%;
+        // height: 50%;
+        // transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .box__content {
+      position: relative;
+      width: 50%;
+      background: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18867-1-1.png");
+      gap: 20px;
+      padding: 30px;
+      height: 100%;
+      color: white;
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+.reason {
+  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18889.png);
+  padding: 110px;
+  .reason__list {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto 60px;
+  }
+  .reason__item {
+    position: relative;
+    padding: 50px 24px 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 23px;
+    background: #b11116;
+    width: 100%;
+    height: 250px;
+    img {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 160px;
+      height: 120px;
+      z-index: 2;
+      top: -50px;
+      left: calc(50% - 42px);
+    }
+  }
+  .reason__item--1 {
+    img {
+      &:nth-of-type(2) {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        display: flex;
+        height: 29px;
+        width: 100%;
+      }
+    }
+  }
+  .reason__item--2 {
+    img {
+      &:nth-of-type(2) {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        display: flex;
+        height: 29px;
+        width: 100%;
+      }
+    }
+  }
+  .reason__item--3 {
+    img {
+      &:nth-of-type(2) {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        display: flex;
+        height: 29px;
+        width: 100%;
+      }
+    }
+  }
+  .reason__item--4 {
+    img {
+      &:nth-of-type(2) {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        display: flex;
+        height: 29px;
+        width: 100%;
+      }
+    }
+  }
+  .reason__item--5 {
+    img {
+      &:nth-of-type(2) {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        display: flex;
+        height: 29px;
+        width: 100%;
+      }
+    }
+  }
+  h3 {
+    font-size: 20px;
+    color: $color_3;
+    width: 100%;
+    height: 54px;
+  }
+  p {
+    font-size: 15px;
+    color: $color_3;
+    width: 100%;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+  .reason__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 50px 40px 40px 4px;
+    i {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      margin-left: 15px;
+      background: white;
+      color: $color_5;
+    }
+  }
+  a {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    color: $color_4;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+  }
+  .button {
+    background: #ed1b24;
+    width: 220px;
+    border-radius: 50px;
+  }
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  p {
+    line-height: 27px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .result__list {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .result__statistic {
+    width: 200px;
+    position: relative;
+    .img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    h3 {
+      position: absolute;
+      font-size: 50px;
+      color: $color_1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .result__desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 20px;
+
+    p {
+      height: 52px;
+      text-align: center;
+      line-height: 26px;
+      margin: 0px 30px;
+      margin-top: 15px;
+    }
+    strong {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+}
+.team {
+  h2 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    color: $color_6;
+    font-weight: bold;
+  }
+  p {
+    &:first-of-type {
+      font-size: 20px;
+      width: 100%;
+      line-height: 26px;
+      text-align: center;
+      padding: 0 20px;
+      margin: 0 auto;
+      overflow-wrap: break-word;
+      color: $color_6;
+      margin-bottom: 30px;
+    }
+  }
+  .team__pic {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .team__pic--desc {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      position: relative;
+    }
+  }
+  .team__pic--left {
+    height: 100%;
+    width: 60%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .team__pic--right {
+    background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18855-3.png);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .team__pic--desc {
+    i {
+      position: absolute;
+      left: 6px;
+      transform: translateY(50%);
+    }
+  }
+  .team__cta {
+    display: flex;
+    gap: 2000px;
+    align-items: center;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: $color_4;
+      margin-left: 30px;
+    }
+    i {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin-left: 15px;
+      padding: 10px 10px;
+      color: $color_5;
+      background: white;
+    }
+  }
+  .team__cta--button {
+    background: #ed1b24;
+    color: $color_4;
+    border-radius: 50px;
+    width: 258px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+}
+.wrap--team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.team--teacher {
+  width: 100%;
+  object-fit: cover;
+  height: 675px;
+}
+.result__pic {
+  img {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .slick-list.draggable {
+    height: 686px !important;
+    width: 1161px !important;
+  }
+}
+
+.question-section {
+  padding: 20px;
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .question-list {
+    padding: 20px 100px;
+    h2 {
+    }
+    .question {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+      padding: 15px 20px;
+      gap: 20px;
+      cursor: pointer;
+      margin: 10px 0;
+
+      * {
+        color: #ed1b24;
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      &__number {
+        border-right: solid 1px lightgrey;
+        padding-right: 20px;
+      }
+
+      &__content {
+        flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        p {
+          color: #000;
+          font-size: 15px;
+          font-weight: 400;
+          display: none;
+          letter-spacing: 0.5px;
+        }
+      }
+
+      &.active {
+        p {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@keyframes moveup {
+  from {
+    transform: translateY(-70px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes movedown {
+  from {
+    transform: translateY(70px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

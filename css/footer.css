@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer__last {
+  display: flex;
+  justify-content: center;
+}
+.footer__last .footer__information {
+  width: 85%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.footer__last .footer__information h3 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer__last .footer__information strong {
+  font-size: 1.1em;
+  font-weight: 1000;
+}
+.footer__last .footer__information p {
+  font-size: 12px;
+}
+.footer__last .footer__information a {
+  font-size: 15px;
+  color: #000;
+}
+.footer__last .footer__information a:hover,
+.footer__last .footer__information a:hover strong {
+  color: red;
+}
+.footer__last .footer__information li {
+  margin-bottom: 10px;
+}
+.footer__last .footer__information .contactInformation {
+  width: 30%;
+}
+.footer__last .footer__information .quickLinks {
+  width: 20%;
+}
+.footer__last .footer__information .studyProgram {
+  width: 20%;
+}
+.footer__last .footer__information .studyProgram a {
+  text-transform: uppercase;
+}
+.footer__last .footer__information .contactWith {
+  width: fit-content;
+}
+.footer__last .footer__information .contactWith .des {
+  margin-bottom: 5px;
+}
+.footer__last .footer__information .contactWith ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.footer__last .footer__information .contactWith .box {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+.footer__last .footer__information .contactWith .box ul {
+  flex-direction: column;
+}
+.footer__last .footer__information .contactWith .box ul li {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1387px) {
+  .footer__last .footer__information {
+    gap: 0px;
+  }
+  .footer__last .footer__information .contactInformation {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer__last .footer__information .quickLinks,
+  .footer__last .footer__information .studyProgram,
+  .footer__last .footer__information .contactWith {
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .footer__last .footer__information {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .footer__last .footer__information .contactInformation,
+  .footer__last .footer__information .quickLinks,
+  .footer__last .footer__information .studyProgram,
+  .footer__last .footer__information .contactWith {
+    width: 100%;
+  }
+} /*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/header.css" />
+</head>
+
+<body>
+  <div class="wrap--header">
+    <header id="header" class="header">
+      <div class="header--logo">
+        <a href="./index.html">
+          <img src="https://mathnasium.edu.vn/wp-content/uploads/2022/05/Logo_header.svg" alt="" />
+        </a>
+      </div>
+      <nav id="listNav" class="header--listNav">
+        <ul class="header--listNav--ul">
+          <li><a href="./about.html"> Về Mathnasium </a></li>
+          <li><a href="./news.html">Ưu đãi- sự kiện</a></li>
+          <li class="li--dropdown">
+            <a class="li--dropdown--hover" href=""> Chương trình học <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="li--dropdown--content">
+              <li><a href="#">Phương pháp học tập</a></li>
+              <li><a href="#">Khởi đầu</a></li>
+              <li><a href="#">Tiểu học</a></li>
+              <li><a href="#">Trung học cơ sở</a></li>
+            </ul>
+          </li>
+          <li><a href="">Hệ thống trung tâm</a></li>
+          <li><a href="">Tuyền dụng</a></li>
+          <li><a href="">Liên hệ</a></li>
+        </ul>
+        <div class="header--listNav--contact">
+          <div class="header--listNav--contact__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div id="btn-phone" class="header--listNav--contact__phone">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="listBar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i id="fa-solid" class="fa-solid fa-phone"></i>
+        <i id="btn-exit" class="fa-solid fa-xmark btn-exit" onclick="closeNav()"></i>
+        <i id="btn-bars" class="fa-solid fa-bars btn-bars" onclick="openNav()"></i>
+      </div>
+    </header>
+  </div>
+
+  <script src="./js/header.js"></script>
+</body>
+
+</html>

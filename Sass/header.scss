@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: black;
+}
+li {
+  cursor: pointer;
+}
+.scrolled {
+  background: black;
+}
+.wrap--header {
+  margin-bottom: 5rem;
+  .header {
+    .listBar {
+      display: none;
+      > * {
+        cursor: pointer;
+      }
+    }
+    .btn-exit {
+      cursor: pointer;
+      display: none;
+    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    //logo
+    &--logo a img {
+      padding-left: 40px;
+      width: 10em;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    //listNav
+    &--listNav {
+      transition: all 0.6s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 20px;
+      &--ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        text-wrap: nowrap;
+        font-size: 14px;
+        text-transform: uppercase;
+        li {
+          word-spacing: 1px;
+          letter-spacing: 1px;
+        }
+        .li--dropdown {
+          &:hover .li--dropdown--content {
+            opacity: 1;
+            visibility: visible;
+          }
+          position: relative;
+          &--content {
+            margin-top: 10px;
+            padding-top: 3px;
+            padding: 00px;
+            width: 16rem;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            background-color: #f0f0f0;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            // transition: all 0.4s;
+
+            a {
+              color: black;
+            }
+            li {
+              padding: 20px;
+              transition: all 0.4s;
+              &:hover {
+                background-color: black;
+                > * {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+      &--contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 9rem;
+        &__search {
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          background-color: #231f20;
+        }
+        &__phone {
+          i {
+            // animation: shake 0.5s infinite;
+          }
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          background-color: red;
+        }
+      }
+    }
+    @keyframes shake {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-1px) rotate(-25deg);
+      }
+      50% {
+        transform: translateY(1px) rotate(25deg);
+      }
+      75% {
+        transform: translateY(-2px) rotate(-25deg);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    // contact
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrap--header {
+    .header {
+      .listBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        font-size: 20px;
+        margin-right: 40px;
+      }
+
+      .btn-exit {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        right: 35px;
+        color: white;
+        font-size: 30px;
+      }
+
+      &--listNav {
+        gap: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #a80810;
+        overflow: hidden;
+        height: 0;
+        z-index: 10;
+        &--ul {
+          width: 80%;
+          flex-direction: column;
+          li {
+            padding: 30px;
+            color: white;
+            width: 100%;
+            border-bottom: 1px solid white;
+          }
+        }
+        &--contact {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .wrap--header {
+    .header {
+      &--listNav {
+        &--ul {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

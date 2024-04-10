@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.register {
+  position: relative;
+  &--img {
+    display: block;
+    width: 100%;
+    height: 650px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &--form {
+    h1 {
+      margin-bottom: 40px;
+      color: white;
+    }
+    position: absolute;
+    bottom: 100px;
+    inset: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: fit-content;
+    padding: 50px;
+    padding-bottom: 110px;
+    padding-right: 70px;
+    border-radius: 12px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18797.png");
+    &--listInput {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      // justify-content: center;
+      .style-custom {
+        select {
+          color: white;
+          background-color: #f04950;
+          padding: 10px;
+          border-radius: 20px;
+          outline: none;
+          border: none;
+          width: 200px;
+          border: 1px white solid;
+        }
+      }
+      input {
+        background-color: #f04950;
+        width: 200px;
+        border: 1px white solid;
+        padding: 10px;
+        border-radius: 20px;
+        outline: none;
+        color: white;
+        &::placeholder {
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+
+    .button {
+      text-decoration: none;
+      line-height: 1;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+      background-color: #fff;
+      color: #121212;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      position: absolute;
+      right: 20px;
+      bottom: 7px;
+      margin-bottom: 30px;
+    }
+
+    .button-decor {
+      position: absolute;
+      inset: 0;
+      background-color: var(--clr);
+      transform: translateX(-100%);
+      transition: transform 0.3s;
+      z-index: 0;
+    }
+
+    .button-content {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .button__icon {
+      width: 48px;
+      height: 40px;
+      background-color: var(--clr);
+      display: grid;
+      place-items: center;
+    }
+
+    .button__text {
+      display: inline-block;
+      transition: color 0.2s;
+      padding: 2px 1.5rem 2px;
+      padding-left: 0.75rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 150px;
+    }
+
+    .button:hover .button__text {
+      color: #fff;
+    }
+
+    .button:hover .button-decor {
+      transform: translate(0);
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .register {
+    &--form {
+      &--listInput {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  .register {
+    &--form {
+      padding: 20px 10px 90px;
+      h1 {
+        font-size: 1.5em;
+        text-align: center;
+        text-wrap: nowrap;
+      }
+      &--listInput {
+        flex-wrap: wrap;
+        input,
+        select {
+          width: 100%;
+        }
+        .style-custom {
+          width: 100%;
+          select {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
