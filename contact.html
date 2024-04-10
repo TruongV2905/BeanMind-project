@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header id="header-placeholder"></header>
+    <main>
+      <section class="contactBanner-section">
+        <div class="box__img">
+          <img
+            src="https://mathnasium.edu.vn/wp-content/uploads/2023/03/Math_s-Website_Lien-he_1920x625px-01-1-scaled.jpg"
+            alt=""
+          />
+        </div>
+        <div class="banner__side">
+          <div class="nav">
+            <ul class="icon">
+              <li>
+                <a href="">
+                  <img
+                    width="8"
+                    height="15"
+                    src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/Combined-Shape.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    width="13"
+                    height="13"
+                    src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/Social-icon.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    width="8"
+                    height="15"
+                    src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/Combined-Shape.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="box__content">
+              <p>MATHNASIUM VIỆT NAM - TOÁN TƯ DUY HOA KỲ</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="centralOffice-section">
+        <div class="centralOffice-container">
+          <div class="box__content">
+            <h1>Văn phòng trung tâm</h1>
+          </div>
+          <div class="wrap__dess">
+            <div class="item">
+              <div class="box__img">
+                <img src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/Vector-3.svg" alt="" />
+              </div>
+              <h3>Công ty</h3>
+              <div class="content">
+                <p>
+                  TNHH APLUS MATH
+                  <br />
+                  (MATHNASIUM VIỆT NAM)
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box__img">
+                <img src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18867.svg" alt="" />
+              </div>
+              <h3>Địa chỉ</h3>
+              <div class="content">
+                <p>SH08 Garden Court 1, Phú Mỹ Hưng, Phường Tân Phong, Quận 7, TP.HCM</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box__img">
+                <img src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18923.svg" alt="" />
+              </div>
+              <h3>Điện thoại & Email</h3>
+              <div class="content">
+                <p>
+                  (028) 7300 8039
+                  <br />
+                  marketing@mathnasium.edu.vn
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="box__content">
+            <h1>Liên hệ mathnasium</h1>
+          </div>
+          <div class="wrap__dess">
+            <div class="box__input">
+              <div class="box__enter">
+                <div class="item">
+                  <label for="contact-name">Họ và tên</label>
+                  <input type="text" id="contact-name" placeholder="Nhập tên của bạn" />
+                </div>
+                <div class="item">
+                  <label for="contact-phone">Số điện thoại</label>
+                  <input
+                    type="text"
+                    id="contact-phone"
+                    placeholder="Nhập số điện thoại"
+                    pattern="/(84|0[3|5|7|8|9])+([0-9]{8})\b/g"
+                  />
+                </div>
+                <div class="item">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" placeholder="Nhập email" />
+                </div>
+                <div class="item">
+                  <label for="contact-title">Tiêu đề</label>
+                  <input type="text" id="contact-title" placeholder="Nhập tiêu đề" />
+                </div>
+                <div class="item">
+                  <label for="contact-mess">Nội dung tin nhăn</label>
+                  <textarea id="contact-mess" style="width: 521px; height: 107px; border: 1px solid #d0d0d0"></textarea>
+                </div>
+              </div>
+              <div class="box__btn" id="contact-submit">
+                Gửi Ngay
+                <ion-icon class="button__icon" name="arrow-forward-outline"></ion-icon>
+              </div>
+            </div>
+            <div class="box__img">
+              <img
+                width="586"
+                height="519"
+                src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/1630457551-1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer-placeholder"></footer>
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- javascript -->
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>

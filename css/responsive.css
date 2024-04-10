@@ -15,7 +15,6 @@
   }
   .introduce .introduce__item img {
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
   }
   .introduce .introduce__item--2 {
@@ -88,12 +87,10 @@
   }
   .result {
     position: relative;
-    height: -moz-fit-content;
     height: fit-content;
   }
   .result .result__list {
     width: 100%;
-    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -126,7 +123,7 @@
     margin: 0 auto;
     overflow-wrap: break-word;
     color: rgb(35, 31, 32);
-    margin-bottom: 19px;
+    margin-bottom: 30px;
   }
   .question-section .question-list {
     padding: 20px 10px;
@@ -145,7 +142,6 @@
   }
   .result .result__list {
     width: 100%;
-    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -160,7 +156,6 @@
   }
   .introduce .introduce__item img {
     width: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
   }
   .introduce .introduce__item--img1 {
@@ -204,7 +199,6 @@
   .team__pic {
     height: 100%;
     flex-wrap: wrap;
-    height: -moz-fit-content;
     height: fit-content;
   }
   .team__pic .team__pic--left {
@@ -225,17 +219,6 @@
   }
 }
 @media (max-width: 500px) {
-  .banner .box__img {
-    height: 200px;
-  }
-  .banner .box__img img {
-    height: 100%;
-    -o-object-fit: contain !important;
-    object-fit: contain !important;
-  }
-  .introduce {
-    margin-top: -10px;
-  }
   .introduce .introduce__desc h1 {
     height: auto;
   }
@@ -273,4 +256,4 @@
   .banner .banner__side {
     display: none;
   }
-} /*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */
