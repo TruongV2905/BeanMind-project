@@ -1,0 +1,829 @@
+.grid__container {
+  // margin-left: auto;
+  // margin-right: auto;
+  // max-width: 1200px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+
+  .site__content {
+    .banner {
+      .banner__wrap {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .overview {
+      padding: 95px 85px 0 85px;
+      background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18890-1.png);
+      .overview__wrap {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 50px;
+        display: grid;
+        grid-template-columns: 6fr 3fr;
+        justify-content: center;
+        gap: 20px;
+        .box__img {
+          img {
+            width: 100%;
+            object-fit: scale-down;
+          }
+        }
+        .box__text {
+          padding-top: 15%;
+          h2 {
+            font-size: 3rem;
+          }
+          .content {
+            font-size: 1.5rem;
+            text-align: justify;
+          }
+        }
+      }
+    }
+
+    .advantage {
+      background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18907-1-1.png);
+      padding: 90px 0 40px;
+      .ad__container {
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 75px;
+
+        .ad__text {
+          margin-bottom: 60px;
+          text-align: center;
+          h2 {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5px;
+            font-size: 2.5rem;
+            white-space: pre-line;
+          }
+
+          .ad__content {
+            font-size: 1.15rem;
+            white-space: pre-line;
+          }
+        }
+        .ad__wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 25px;
+          .ad__item {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(
+              49.28deg,
+              #ffffff 20.28%,
+              #bbbbbb 33.45%,
+              #bbbbbb 44.87%,
+              #7c7c7c 58.92%,
+              #ffffff 80.87%,
+              #7c7c7c 93.17%,
+              #ffffff 104.58%
+            );
+
+            width: 310px;
+            height: 410px;
+            border-radius: 22px;
+            .ad__item__wrap {
+              left: 5px;
+              top: 5px;
+              position: relative;
+              width: 300px;
+              height: 400px;
+              background: #b11116;
+              border-radius: 22px;
+              padding: 50px 24px 24px;
+              h3 {
+                text-align: center;
+                color: #fff;
+                font-size: 2rem;
+                margin-bottom: 20px;
+              }
+              p {
+                text-align: center;
+                color: #fff;
+                font-size: 1.15rem;
+              }
+              img {
+                position: absolute;
+                top: -40px;
+                left: 115px;
+              }
+              .icon {
+                img {
+                  top: -34px;
+                  left: 136px;
+                  width: 45px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .method {
+      margin-bottom: -120px;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      overflow: hidden;
+      .method__container {
+        background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18906.png);
+        margin-bottom: 15%;
+        padding: 80px 30px 390px 60px;
+        // margin-bottom: 280px;
+        // background-color: red;
+        // padding-left: 10px;
+        // padding-right: 10px;
+        .method__heading {
+          margin-bottom: 40px;
+          display: flex;
+          flex-direction: row;
+          h2 {
+            padding-left: 30px;
+            font-size: 2rem;
+            color: #fff;
+          }
+          .method__content {
+            padding-left: 180px;
+            padding-right: 100px;
+            font-size: 1rem;
+            color: #fff;
+          }
+        }
+        .method__img {
+          display: flex;
+          justify-content: center;
+          img {
+            right: 5%;
+            // left: 60px;
+            position: absolute;
+            width: 90%;
+            // height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .duration {
+      background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18890-1.png);
+      padding: 55px 0 145px;
+      .dur__container {
+        h2 {
+          text-align: center;
+          margin: 20px 0 45px;
+          white-space: pre-line;
+          font-size: 2.5rem;
+        }
+
+        .dur__item__wrap {
+          padding-left: 20px;
+          padding-right: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          .dur__item {
+            display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 40rem;
+            padding: 40px 45px 40px 40px;
+            .number {
+              font-size: 110px;
+              color: rgba(255, 255, 255, 0.4);
+              //   font-family: "000 SignLanguage TB";
+              line-height: 1;
+            }
+            .text__wrap {
+              margin-left: 45px;
+              h4 {
+                color: #fff;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+              }
+              .time {
+                color: #fff;
+                font-size: 1.15rem;
+              }
+            }
+          }
+          .item-1 {
+            background-color: rgb(177 17 22);
+          }
+          .item-2 {
+            background-color: rgb(237 28 36);
+          }
+        }
+      }
+    }
+
+    .lessons {
+      //   margin-right: 10px;
+      //   margin-left: 10px;
+      background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2023/02/Cach-thuc-hoc-tap_1196x650.jpg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      padding-top: 230px;
+      .lessons__container {
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        h2 {
+          text-align: start;
+          font-size: 2rem;
+          left: 142px;
+          top: -162px;
+          padding: 0 60% 0 0;
+          position: absolute;
+        //   margin-left: -10%;
+        }
+        .lessons__wrap {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          gap: 25px;
+          .slick-prev,
+          .slick-next {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            position: absolute;
+            top: calc(50% - 25px);
+            background-color: #092f46;
+            .fa-arrow-left, 
+            .fa-arrow-right{
+                color: #fff;
+            }
+          }
+
+          .slick-prev {
+            left: 10px;
+          }
+          .slick-next {
+            right: 10px;
+          }
+          .lesson {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 18rem;
+            height: 28rem;
+            background-color: #fff;
+            border: solid 0.001px #d2d1d1 ;
+            border-radius: 20px;
+            padding: 42px 44px 38px 34px;
+            gap: 40px;
+          }
+        }
+      }
+    }
+
+    .main__system {
+        width: 100%;
+        background-color: #f1f4f4 !important;
+        padding: 50px 100px;
+        .main__system__container{
+            padding-top: 45px;
+            h1 {
+              margin-bottom: 20px;
+            }
+            // :not(h1){
+            //   display: flex;
+            //   flex-direction: row;
+            // }
+            h1 {
+              text-align: center;
+            }
+      
+            .box__system {
+              display: flex;
+              background-color: #fff;
+              border-radius: 50px;
+              overflow: hidden;
+              // h1{
+              //   text-align: center;
+              // }
+              // :not(h1){
+              //   flex-direction: row;
+              // }
+              .info__nav {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 16px;
+                background-color: #fff;
+                // border: solid 1px red;
+      
+                .box__select {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 10px;
+      
+                  select {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: solid 1px #686876;
+                    border-radius: 60px;
+                    color: #686876;
+                    padding: 13px 50px 13px 47px;
+                  }
+                }
+      
+                .result__container__all {
+                  display: flex;
+                  flex-direction: column;
+                  overflow-y: scroll;
+                  height: 495px;
+                  
+                  gap: 12px;
+      
+                  .result__container {
+                    display: flex;
+                    flex-direction: column;
+                    // font-size: 10px;
+                    border-radius: 10px;
+                    border: solid 1px #c3c3c3ab;
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                    padding: 25px 77px 25px 27px;
+                    // align-self: flex-start;
+      
+                    .result__box {
+                      gap: 25px;
+                      display: flex;
+                      flex-wrap: wrap;
+                      flex-direction: column;
+                      position: relative;
+                      // width: 100%;
+                      // height: 25%;
+                      // text-align: justify;
+      
+                      .location {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                      }
+                      .phone {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                      }
+                      .map__view {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        border: solid 1px red;
+                        border-radius: 60px;
+                        text-align: center;
+                        justify-content: center;
+                        width: 169px;
+                        height: 35px;
+                        color: red;
+                      }
+                      .arrow__btn {
+                        position: absolute;
+                        display: flex;
+                        border: solid 1px #686876;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        align-items: center;
+                        justify-content: center;
+                        right: -60px;
+                        top: 90px;
+                        color: #686876;
+                      }
+                    }
+                  }
+                  .result__container:hover {
+                    cursor: pointer;
+                    box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
+                    -webkit-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
+                    -moz-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
+                  }
+                }
+              }
+            }
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  .grid__container {
+    .site__content {
+      .overview {
+        padding: 30px;
+
+        .overview__wrap {
+          gap: 20px;
+
+          .box__img {
+            img {
+              object-fit: cover;
+            }
+          }
+
+          .box__text {
+            h2 {
+              font-size: 2rem;
+            }
+            .content {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .method {
+        .method__container {
+          padding: 80px 30px 270px 60px;
+        }
+      }
+
+      .lessons{
+        .lessons__container{
+            h2{
+                left: 12px;
+            }
+        }
+      }
+
+      .main__system {
+        .box__system {
+          flex-direction: column !important;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid__container {
+    .site__content {
+      .overview {
+        margin-bottom: 35px;
+        .overview__wrap {
+          display: flex;
+          flex-wrap: wrap;
+          padding-right: 10px;
+          padding-left: 10px;
+          gap: 0;
+
+          .box__img {
+            img {
+              object-fit: cover;
+            }
+          }
+
+          .box__text {
+            padding-top: 0;
+            h2 {
+              font-size: 1.25rem;
+            }
+            .content {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      .advantage {
+        padding: 0;
+        .ad__container {
+          max-width: 530px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+          .ad__text {
+            h2 {
+              font-size: 1.5rem;
+            }
+
+            .ad__content {
+              width: 100%;
+            }
+          }
+          .ad__wrap {
+            flex-direction: column;
+            gap: 40px;
+
+            .ad__item {
+              height: 360px;
+              .ad__item__wrap {
+                height: 350px;
+
+                h3 {
+                }
+                p {
+                }
+                img {
+                }
+                .icon {
+                  img {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .method {
+        .method__container {
+          padding: 80px 30px 232px 60px;
+          .method__heading {
+            flex-direction: column;
+            h2 {
+              padding: 0;
+              margin-bottom: 20px;
+            }
+            .method__content {
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      .duration {
+        .dur__container {
+          .dur__item__wrap {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .grid__container {
+    .site__content {
+      .overview {
+        .overview__wrap {
+          //   display: flex;
+          //   flex-wrap: wrap;
+          //   padding-right: 10px;
+          //   padding-left: 10px;
+          //   gap: 0;
+
+          .box__img {
+            img {
+              //   object-fit: cover;
+            }
+          }
+
+          .box__text {
+            // padding-top: 0;
+            h2 {
+              //   font-size: 1.25rem;
+            }
+            .content {
+              //   font-size: 0.8rem;
+            }
+          }
+        }
+      }
+
+      .advantage {
+        // padding: 0;
+        .ad__container {
+          //   max-width: 530px;
+          //   padding-left: 10px;
+          //   padding-right: 10px;
+
+          .ad__text {
+            h2 {
+              //   font-size: 1.5rem;
+            }
+
+            .ad__content {
+              //   width: 100%;
+            }
+          }
+          .ad__wrap {
+            // flex-direction: column;
+            // gap: 40px;
+
+            .ad__item {
+              //   height: 360px;
+              .ad__item__wrap {
+                // height: 350px;
+
+                h3 {
+                }
+                p {
+                }
+                img {
+                }
+                .icon {
+                  img {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .method {
+        .method__container {
+          margin-bottom: 36%;
+          padding: 12px 30px 0 32px;
+          .method__heading {
+            // flex-direction: column;
+            h2 {
+              // padding: 0;
+              // margin-bottom: 20px;
+            }
+            .method__content {
+              // padding: 0;
+            }
+          }
+          .method__img {
+            img {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+
+      .duration {
+        padding: 20% 0 145px;
+        .dur__container {
+          .dur__item__wrap {
+            .dur__item {
+              width: 25rem;
+            }
+          }
+        }
+      }
+
+      .main__system {
+        padding: 0;
+        .box__system {
+          border-radius: 0;
+          .info__nav {
+            .box__select {
+              gap: 5px;
+              .box__city,
+              .box__distr {
+                select {
+                  padding: 10px 10px 13px 10px;
+                }
+              }
+            }
+
+            .result__container__all {
+              // max-width: min-content;
+              padding: 15px;
+              .result__container {
+                padding: 0px 5px 11px 15px;
+                .result__box {
+                  .arrow__btn {
+                    right: 25px;
+                    // top: 140px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid__container {
+    .site__content {
+      .overview {
+        padding: 20px 20px 0 20px;
+        .overview__wrap {
+          display: flex;
+          flex-wrap: wrap;
+          padding-right: 10px;
+          padding-left: 10px;
+          gap: 0;
+
+          .box__img {
+            img {
+              object-fit: cover;
+            }
+          }
+
+          .box__text {
+            padding-top: 0;
+            h2 {
+              font-size: 1.25rem;
+            }
+            .content {
+              //   height: 200px;
+              overflow: scroll;
+              text-overflow: ellipsis;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      .duration {
+        padding: 27% 0 145px;
+      }
+
+      .lessons{
+        .lessons__container{
+            h2{
+                left: 12px;
+                padding: 0 40% 0 0;
+                font-size: 1.5rem;
+            }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .grid__container {
+    .site__content {
+      //   .overview {
+      //     padding: 20px 20px 0 20px;
+      //     .overview__wrap {
+      //       display: flex;
+      //       flex-wrap: wrap;
+      //       padding-right: 10px;
+      //       padding-left: 10px;
+      //       gap: 0;
+
+      //       .box__img {
+      //         img {
+      //           object-fit: cover;
+      //         }
+      //       }
+
+      //       .box__text {
+      //         padding-top: 0;
+      //         h2 {
+      //           font-size: 1.25rem;
+      //         }
+      //         .content {
+      //           height: 200px;
+      //           overflow: scroll;
+      //           text-overflow: ellipsis;
+      //           font-size: 0.8rem;
+      //         }
+      //       }
+      //     }
+      //   }
+      .duration {
+        padding: 27% 0 145px;
+        .dur__container {
+          h2 {
+            font-size: 1.5rem;
+            margin: 13% 0 30px 0;
+          }
+          .dur__item__wrap {
+            .dur__item {
+              width: 19rem;
+              .text__wrap {
+                h4 {
+                  font-size: 1rem;
+                }
+                .time {
+                  font-size: 0.75rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
