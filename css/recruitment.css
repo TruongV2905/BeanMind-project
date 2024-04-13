@@ -96,6 +96,27 @@
   letter-spacing: 0.5px;
 }
 
+.benefit {
+  width: 100%;
+  height: auto;
+  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18857-1.png);
+}
+.benefit .benefit__container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  display: flex;
+}
+.benefit .benefit__container .benefit__content {
+  width: 50%;
+  height: 100%;
+}
+.benefit .benefit__container .benefit__carousel {
+  width: 50%;
+  height: 100%;
+}
+
 .job {
   display: flex;
   flex-direction: column;
