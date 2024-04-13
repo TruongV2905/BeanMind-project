@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 img {
@@ -181,6 +182,7 @@ img {
 .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .number {
   font-size: 110px;
   color: rgba(255, 255, 255, 0.4);
+  font-family: "000 SignLanguage TB";
   line-height: 1;
 }
 .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap {
@@ -227,6 +229,38 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-2,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-4,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-6,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-8 {
+  box-shadow: 0px 10px 5px -1px rgb(237, 28, 36);
+  -webkit-box-shadow: 0px 10px 5px -1px rgb(237, 28, 36);
+  -moz-box-shadow: 0px 10px 5px -1px rgb(237, 28, 36);
+}
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-1,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-3,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-5,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-7 {
+  box-shadow: 0px 10px 5px -1px rgb(177, 17, 22);
+  -webkit-box-shadow: 0px 10px 5px -1px rgb(177, 17, 22);
+  -moz-box-shadow: 0px 10px 5px -1px rgb(177, 17, 22);
+}
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-3 h4,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-7 h4 {
+  margin-bottom: 8px;
+}
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-4 h4,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-8 h4 {
+  margin-top: 50px;
+}
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-1 h4,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-5 h4 {
+  margin-top: 25px;
+}
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-2 h4,
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-6 h4 {
+  margin-top: 25px;
+}
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-pre,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-next {
   width: 50px;
@@ -263,6 +297,7 @@ img {
 }
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track {
   width: 100%;
+  padding: 27px;
 }
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson + .lesson {
   margin-right: 20px;
@@ -270,15 +305,22 @@ img {
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
-  width: 18rem;
+  width: 100%;
   height: 28rem;
   background-color: #fff;
-  border: solid 0.001px #d2d1d1;
   border-radius: 20px;
   padding: 42px 44px 38px 34px;
   gap: 40px;
+}
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson .title {
+  font-size: 1.25rem;
+}
+.grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson h4 {
+  text-align: start;
+  color: #ed1c24;
+  font-size: 2rem;
 }
 .grid__container .site__content .main__system {
   width: 100%;
@@ -554,7 +596,7 @@ img {
   .grid__container .site__content .lessons .lessons__container h2 {
     left: 12px;
     padding: 0 40% 0 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -573,5 +615,16 @@ img {
   }
   .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap .time {
     font-size: 0.75rem;
+  }
+  .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson {
+    padding: 21px 16px 17px 25px;
+    height: 19rem;
+    gap: 0;
+  }
+  .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson .title {
+    font-size: 1rem;
+  }
+  .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson h4 {
+    font-size: 1.15rem;
   }
 }/*# sourceMappingURL=program.css.map */
