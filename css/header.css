@@ -49,7 +49,8 @@ li {
 .wrap--header .header--logo a img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .wrap--header .header--listNav {
   transition: all 0.6s;

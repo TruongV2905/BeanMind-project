@@ -15,14 +15,17 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     .hero__content {
       width: 100%;
       height: 100%;
       p {
-        width: 100%;
+        width: fit-content;
         height: 100%;
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 10px;
+        text-align: justify;
+        margin-right: 14px;
       }
     }
     h2 {
@@ -42,10 +45,6 @@
     .hero__content {
       width: 100%;
       height: 100%;
-      p {
-        width: 100%;
-        height: 100%;
-      }
     }
     h2 {
       width: 100%;
