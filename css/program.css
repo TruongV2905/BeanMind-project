@@ -160,6 +160,7 @@ img {
 .grid__container .site__content .duration {
   background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18890-1.png);
   padding: 55px 0 145px;
+  width: 100%;
 }
 .grid__container .site__content .duration .dur__container h2 {
   text-align: center;
@@ -540,7 +541,7 @@ img {
     padding: 20% 0 145px;
   }
   .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item {
-    width: 25rem;
+    width: 24rem;
   }
   .grid__container .site__content .lessons .lessons__container .lessons__wrap {
     width: 100%;
@@ -606,21 +607,50 @@ img {
   }
 }
 @media only screen and (max-width: 400px) {
+  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item {
+    width: 250px;
+    height: 310px;
+  }
+  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap {
+    width: 240px;
+    height: 300px;
+  }
+  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap img {
+    left: 80px;
+  }
+  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap .icon img {
+    top: -35px;
+    left: 101px;
+  }
+  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap h3 {
+    font-size: 1rem;
+  }
+  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap p {
+    font-size: 0.8rem;
+  }
   .grid__container .site__content .duration {
-    padding: 27% 0 145px;
+    padding: 50% 0 145px;
   }
   .grid__container .site__content .duration .dur__container h2 {
     font-size: 1.5rem;
     margin: 13% 0 30px 0;
   }
   .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item {
-    width: 19rem;
+    width: 10rem;
+    height: 10rem;
+    padding: 20px;
+  }
+  .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .number {
+    font-size: 50px;
+  }
+  .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap {
+    margin-left: 10px;
   }
   .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap h4 {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap .time {
-    font-size: 0.75rem;
+    font-size: 0.5rem;
   }
   .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson {
     padding: 21px 16px 17px 25px;

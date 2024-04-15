@@ -193,6 +193,7 @@ img {
     .duration {
       background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18890-1.png);
       padding: 55px 0 145px;
+      width: 100%;
       .dur__container {
         h2 {
           text-align: center;
@@ -760,7 +761,7 @@ img {
         .dur__container {
           .dur__item__wrap {
             .dur__item {
-              width: 25rem;
+              width: 24rem;
             }
           }
         }
@@ -891,8 +892,38 @@ img {
       //       }
       //     }
       //   }
+
+      .advantage {
+        .ad__container {
+          .ad__wrap {
+            .ad__item {
+              width: 250px;
+              height: 310px;
+              .ad__item__wrap {
+                width: 240px;
+                height: 300px;
+                img{
+                  left: 80px;
+                }
+                .icon{
+                  img{
+                    top: -35px;
+                    left: 101px;
+                  }
+                }
+                h3{
+                  font-size: 1rem;
+                }
+                p{
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+      }
       .duration {
-        padding: 27% 0 145px;
+        padding: 50% 0 145px;
         .dur__container {
           h2 {
             font-size: 1.5rem;
@@ -900,13 +931,19 @@ img {
           }
           .dur__item__wrap {
             .dur__item {
-              width: 19rem;
+              width: 10rem;
+              height: 10rem;
+              padding: 20px;
+              .number{
+                font-size: 50px;
+              }
               .text__wrap {
+                margin-left: 10px;
                 h4 {
-                  font-size: 1rem;
+                  font-size: 0.75rem;
                 }
                 .time {
-                  font-size: 0.75rem;
+                  font-size: 0.5rem;
                 }
               }
             }
