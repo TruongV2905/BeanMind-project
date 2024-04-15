@@ -251,6 +251,69 @@ main .teachingProcess-section .teachingProcess-container .box__icon .item::befor
   position: absolute;
   border-radius: 50%;
 }
+main .route-section {
+  padding: 50px 0 0;
+}
+main .route-section .route-container .route__content {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 30px;
+  text-align: center;
+}
+main .route-section .route-container .route__content h1 {
+  font-size: 40px;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+main .route-section .route-container .wrap__dess {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .route-section .route-container .wrap__dess .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(33.3333333333% - 56px);
+  padding: 32px 38px 50px;
+  margin: 0 28px;
+}
+main .route-section .route-container .wrap__dess .item .box__img,
+main .route-section .route-container .wrap__dess .item p {
+  margin-bottom: 30px;
+}
+main .route-section .route-container .wrap__dess .item p {
+  height: 160px;
+  text-align: center;
+  font-size: 14px;
+  max-width: 272px;
+  margin-bottom: 10px;
+  line-height: 26px;
+  font-weight: 300;
+}
+main .route-section .route-container .wrap__dess .item .box__btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-radius: 30px;
+  gap: 10px;
+  padding: 5px 5px 5px 30px;
+  background: red;
+  color: #fff;
+  cursor: pointer;
+}
+main .route-section .route-container .wrap__dess .item .box__btn .button__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  size: 10px;
+  background-color: #fff;
+  color: var(--mainRed);
+  border-radius: 50%;
+}
 
 @media only screen and (max-width: 1023px) {
   main .container {
@@ -283,6 +346,28 @@ main .teachingProcess-section .teachingProcess-container .box__icon .item::befor
   }
   main .teachingProcess-section .teachingProcess-container .box__content p {
     font-size: 13px;
+  }
+  main .route-section .route-container .wrap__dess {
+    justify-content: center;
+  }
+  main .route-section .route-container .wrap__dess .item {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  main .route-section .route-container .wrap__dess .item .box__img {
+    max-width: 400px;
+    min-width: 200px;
+  }
+  main .route-section .route-container .wrap__dess .item .box__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  main .route-section .route-container .wrap__dess .item .box__content p {
+    max-width: 400px;
+    max-height: 100px;
   }
 }
 @media only screen and (max-width: 767px) {
