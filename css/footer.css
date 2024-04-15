@@ -56,7 +56,6 @@
   text-transform: uppercase;
 }
 .footer__last .footer__information .contactWith {
-  width: -moz-fit-content;
   width: fit-content;
 }
 .footer__last .footer__information .contactWith .des {
@@ -92,7 +91,6 @@
   .footer__last .footer__information .quickLinks,
   .footer__last .footer__information .studyProgram,
   .footer__last .footer__information .contactWith {
-    width: -moz-fit-content;
     width: fit-content;
   }
 }

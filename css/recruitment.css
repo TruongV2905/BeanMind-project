@@ -10,7 +10,6 @@
 .banner {
   display: flex;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .banner .box__img {
@@ -18,8 +17,7 @@
   height: 100%;
 }
 .banner .box__img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -35,7 +33,6 @@
   bottom: 0;
   left: 75%;
   position: absolute;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   background-color: transparent;
@@ -46,7 +43,6 @@
 }
 .banner .banner__side .nav .box__content {
   background-color: transparent;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .banner .banner__side .nav .box__content p {
@@ -218,7 +214,6 @@
 }
 .job .jon-container .box__table {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .job .jon-container .box__table table {

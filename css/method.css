@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --mainRed: rgb(253, 0, 0);
+  --animiation: 0.5s ease;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.01em;
+  scroll-behavior: smooth;
+}
+body a {
+  color: black;
+  text-decoration: none;
+}
+body p {
+  line-height: 30px;
+}
+body img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+body h1 {
+  text-transform: uppercase;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main section {
+  width: 100%;
+  height: auto;
+}
+main .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+main .methodBanner-section {
+  display: flex;
+  height: fit-content;
+}
+main .methodBanner-section .box__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+main .methodBanner-section .box__img img {
+  object-fit: cover;
+  height: 100%;
+}
+main .methodBanner-section .banner__side {
+  position: relative;
+  display: flex;
+  background-color: #b11116;
+  flex: 0 0 auto;
+  width: 6%;
+}
+main .methodBanner-section .banner__side .nav {
+  flex: 1 0 auto;
+  bottom: 0;
+  left: 75%;
+  position: absolute;
+  height: fit-content;
+  display: flex;
+  background-color: transparent;
+  transform-origin: bottom left;
+  transform: rotateZ(-90deg);
+  width: 100%;
+  margin-bottom: 3px;
+}
+main .methodBanner-section .banner__side .nav .box__content {
+  background-color: transparent;
+  height: fit-content;
+}
+main .methodBanner-section .banner__side .nav .box__content p {
+  font-size: 15px;
+  color: #fff;
+  background-color: transparent;
+  white-space: nowrap;
+  margin-left: 13px;
+}
+main .methodBanner-section .banner__side .nav .icon {
+  margin: 10px 0px 0;
+  width: 100%;
+  flex: 1 0 auto;
+  height: 30px;
+  transform: translateY(-50%);
+  list-style: none;
+  background: transparent;
+  display: flex;
+  gap: 20px;
+}
+main .methodBanner-section .banner__side .nav .icon li {
+  flex: 0 0 auto;
+  transform: rotate(90deg);
+}
+main .methodStudy-section {
+  padding: 50px 0 0px;
+}
+main .methodStudy-section .methodStudy-container .box__content {
+  width: 100%;
+  margin-bottom: 55px;
+}
+main .methodStudy-section .methodStudy-container .box__content h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 1000;
+}
+main .methodStudy-section .methodStudy-container .wrap__dess {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .methodStudy-section .methodStudy-container .wrap__dess .item {
+  margin: 0 35px 25px;
+  width: calc(50% - 70px);
+  display: flex;
+  justify-content: space-between;
+}
+main .methodStudy-section .methodStudy-container .wrap__dess .item .box__img {
+  width: 134px;
+  height: 134px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .methodStudy-section .methodStudy-container .wrap__dess .item .content {
+  width: calc(100% - 134px);
+  padding-left: 20px;
+}
+main .methodStudy-section .methodStudy-container .wrap__dess .item .content p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  font-weight: 300;
+}
+main .methodVideo-section .box__img {
+  position: relative;
+  width: 100%;
+}
+main .methodVideo-section .box__img img {
+  height: 100%;
+  object-fit: cover;
+}
+main .methodVideo-section .box__img::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(180deg, #ffffff 13.62%, rgba(255, 255, 255, 0) 80%);
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+main .structure-section {
+  padding: 50px 0 0px;
+}
+main .structure-section .structure-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .structure-section .structure-container .box__content {
+  width: 50%;
+}
+main .structure-section .structure-container .box__content h1 {
+  font-size: 40px;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+main .structure-section .structure-container .box__content p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  font-weight: 300;
+}
+main .structure-section .structure-container .box__img {
+  width: 50%;
+}
+main .teachingProcess-section {
+  padding: 50px 0 0px;
+}
+main .teachingProcess-section .teachingProcess-container .box__content {
+  width: 100%;
+  height: fit-content;
+}
+main .teachingProcess-section .teachingProcess-container .box__content h1 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+main .teachingProcess-section .teachingProcess-container .box__content p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  font-weight: 300;
+}
+main .teachingProcess-section .teachingProcess-container .box__icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .teachingProcess-section .teachingProcess-container .box__icon .item {
+  position: relative;
+  width: 273.44px;
+  height: 273.44px;
+  border-radius: 50%;
+  border: 20px solid #ffffff;
+  position: relative;
+  margin: 0 -29px;
+  background: #ed1c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .teachingProcess-section .teachingProcess-container .box__icon .item h2 {
+  z-index: 3;
+  font-size: 55px;
+  color: var(--mainRed);
+}
+main .teachingProcess-section .teachingProcess-container .box__icon .item h4 {
+  z-index: 3;
+  font-size: 24px;
+}
+main .teachingProcess-section .teachingProcess-container .box__icon .item::before {
+  inset: 3px;
+  background: white;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1023px) {
+  main .container {
+    max-width: 960px;
+  }
+  main .methodBanner-section .banner__side {
+    display: none;
+  }
+  main .methodStudy-section .methodStudy-container .wrap__dess .item {
+    width: calc(50% - 40px);
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px 25px;
+  }
+  main .methodStudy-section .methodStudy-container .wrap__dess .item .content {
+    padding: 0;
+    width: 100%;
+  }
+  main .methodStudy-section .methodStudy-container .wrap__dess .item .content p {
+    text-align: center;
+  }
+  main .structure-section .structure-container .box__content h1 {
+    font-size: 35px;
+  }
+  main .structure-section .structure-container .box__content p {
+    font-size: 13px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__content h1 {
+    font-size: 35px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__content p {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  main .methodBanner-section .banner__side {
+    display: none;
+  }
+  main .methodStudy-section .methodStudy-container .wrap__dess .item {
+    width: 100%;
+    margin: 0;
+  }
+  main .methodStudy-section .methodStudy-container .wrap__dess .item .content {
+    padding: 0;
+    width: 100%;
+  }
+  main .methodStudy-section .methodStudy-container .wrap__dess .item .content p {
+    text-align: center;
+  }
+  main .structure-section .structure-container {
+    flex-direction: column;
+  }
+  main .structure-section .structure-container .box__content {
+    width: 100%;
+  }
+  main .structure-section .structure-container .box__content h1 {
+    font-size: 30px;
+  }
+  main .structure-section .structure-container .box__content p {
+    font-size: 13px;
+  }
+  main .structure-section .structure-container .box__img {
+    height: fit-content;
+    width: 100%;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__content h1 {
+    font-size: 30px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__content p {
+    font-size: 13px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__icon .item {
+    width: 168px;
+    height: 168px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__icon .item h2 {
+    font-size: 30px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__icon .item h4 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  main .teachingProcess-section .teachingProcess-container .box__icon .item {
+    width: 130px;
+    height: 130px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__icon .item h2 {
+    font-size: 20px;
+  }
+  main .teachingProcess-section .teachingProcess-container .box__icon .item h4 {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=method.css.map */
