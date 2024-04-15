@@ -1,0 +1,51 @@
+@media only screen and (max-width: 992px) {
+  .banner .banner__side {
+    display: none;
+  }
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .hero {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .hero .hero__content {
+    width: 100%;
+    height: 100%;
+  }
+  .hero .hero__content p {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: justify;
+    margin-right: 14px;
+  }
+  .hero h2 {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .hero .hero__content {
+    width: 100%;
+    height: 100%;
+  }
+  .hero h2 {
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=responsiveRecruitment.css.map */

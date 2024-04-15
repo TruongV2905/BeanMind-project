@@ -11,7 +11,7 @@
   <body>
     <header id="header-placeholder"></header>
     <main>
-      <section class="contactBanner-section">
+      <section data-aos="zoom-in" class="contactBanner-section">
         <div class="box__img">
           <img
             src="https://mathnasium.edu.vn/wp-content/uploads/2023/03/Math_s-Website_Lien-he_1920x625px-01-1-scaled.jpg"
@@ -60,10 +60,10 @@
       </section>
       <section class="centralOffice-section">
         <div class="centralOffice-container">
-          <div class="box__content">
+          <div data-aos="zoom-in" class="box__content">
             <h1>Văn phòng trung tâm</h1>
           </div>
-          <div class="wrap__dess">
+          <div data-aos="fade-up" class="wrap__dess">
             <div class="item">
               <div class="box__img">
                 <img src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/Vector-3.svg" alt="" />
@@ -103,11 +103,11 @@
         </div>
       </section>
       <section class="contact-section">
-        <div class="contact-container">
+        <div data-aos="zoom-in" class="contact-container">
           <div class="box__content">
             <h1>Liên hệ mathnasium</h1>
           </div>
-          <div class="wrap__dess">
+          <div data-aos="zoom-out" class="wrap__dess">
             <div class="box__input">
               <div class="box__enter">
                 <div class="item">
@@ -116,12 +116,7 @@
                 </div>
                 <div class="item">
                   <label for="contact-phone">Số điện thoại</label>
-                  <input
-                    type="text"
-                    id="contact-phone"
-                    placeholder="Nhập số điện thoại"
-                    pattern="/(84|0[3|5|7|8|9])+([0-9]{8})\b/g"
-                  />
+                  <input type="text" id="contact-phone" placeholder="Nhập số điện thoại" />
                 </div>
                 <div class="item">
                   <label for="contact-email">Email</label>
@@ -148,6 +143,69 @@
                 src="https://mathnasium.edu.vn/wp-content/uploads/2022/11/1630457551-1.png"
                 alt=""
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-aos="zoom-in" class="location-section">
+        <div class="location-container">
+          <div class="wrap__dess">
+            <div class="wrap__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d227042.39348844363!2d106.714825!3d10.722415!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ff328f3e963%3A0xc193f57a43f34977!2sMathnasium%20Vi%E1%BB%87t%20Nam!5e1!3m2!1svi!2sus!4v1712777114401!5m2!1svi!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+              ></iframe>
+            </div>
+            <div class="wrap__desc">
+              <div class="box__content">
+                <h1>CÔNG TY TNHH APLUS MATH – VPTT MATHNASIUM VIỆT NAM</h1>
+              </div>
+              <div class="box__ress">
+                <div class="item">
+                  <h3>Địa chỉ</h3>
+                  <div class="content">
+                    <p>
+                      <a href="http://SH08 Garden Court 1, Phú Mỹ Hưng, Phường Tân Phong, Quận 7, TP.HCM">
+                        SH08 Garden Court 1, Phú Mỹ Hưng, Phường Tân Phong, Quận 7, TP.HCM
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <h3>Số điện thoại</h3>
+                  <div class="content">
+                    <p>
+                      <a href="tel:(028) 73008039"> (028) 73008039 </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <h3>Fax</h3>
+                  <div class="content">
+                    <p>
+                      <a href="tel:(028) 73008039"> (028) 73008039 </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="item">
+                  <h3>Email</h3>
+                  <div class="content">
+                    <p>
+                      <a href="mailto:marketing@mathnasium.edu.vn"> marketing@mathnasium.edu.vn </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="box__btn" id="contact-submit">
+                  Liên hệ
+                  <ion-icon class="button__icon" name="arrow-forward-outline"></ion-icon>
+                </div>
+              </div>
             </div>
           </div>
         </div>

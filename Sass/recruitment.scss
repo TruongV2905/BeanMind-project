@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  .box__img {
+    width: 94%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .banner__side {
+    position: relative;
+    display: flex;
+    background-color: #b11116;
+    flex: 0 0 auto;
+    width: 6%;
+    .nav {
+      flex: 1 0 auto;
+      bottom: 0;
+      left: 75%;
+      position: absolute;
+      height: fit-content;
+      display: flex;
+      background-color: transparent;
+      transform-origin: bottom left;
+      transform: rotateZ(-90deg);
+      width: 100%;
+      margin-bottom: 3px;
+      .box__content {
+        background-color: transparent;
+        height: fit-content;
+        p {
+          font-size: 15px;
+          color: #fff;
+          background-color: transparent;
+          white-space: nowrap;
+          margin-left: 13px;
+        }
+      }
+      .icon {
+        margin: 10px 0px 0;
+        width: 100%;
+        flex: 1 0 auto;
+        height: 30px;
+        transform: translateY(-50%);
+        list-style: none;
+        background: transparent;
+        display: flex;
+        gap: 20px;
+        li {
+          flex: 0 0 auto;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 200px 0 170px;
+  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/bg-tuyendung.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  .hero__content {
+    p {
+      width: 500px;
+      word-wrap: break-word;
+      margin-top: 10px;
+      margin-left: 90px;
+      font-size: 18px;
+      line-height: 24px;
+      position: relative;
+      &::before {
+        display: block;
+        content: "";
+        width: 5px;
+        height: 100%;
+        background: #ed1c24;
+        position: absolute;
+        left: -20px;
+        top: 9px;
+      }
+    }
+  }
+  h2 {
+    font-size: 40px;
+    width: 535px;
+    // word-break: break-all;
+    word-wrap: break-word;
+    line-height: 40px;
+    margin-left: 90px;
+    margin-bottom: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+}
+
+.benefit {
+  width: 100%;
+  padding: 140px 0 120px;
+  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18857-1.png);
+  .benefit__container {
+    max-width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    .benefit__content {
+      width: 50%;
+      height: 100%;
+      text-align: start;
+      h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        line-height: 1.3;
+        color: #fff;
+      }
+    }
+    .benefit__carousel {
+      width: 50%;
+      height: 100%;
+      .slick-list {
+        padding-left: 190px;
+        width: 100%;
+        overflow-x: visible;
+        .slick-track {
+          overflow-x: visible;
+          .benefit__carousel--item {
+            width: 100% !important;
+            width: 100%;
+            height: 130px;
+            margin-bottom: 5px;
+            color: #ffffff80;
+            h4 {
+              position: relative;
+              font-size: 20px;
+              margin-bottom: 5px;
+              text-transform: uppercase;
+            }
+            h4::after {
+              content: "";
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              left: -70px;
+              top: 30px;
+              border-radius: 50%;
+              background-color: #ffffff80;
+              z-index: 100;
+            }
+            h4::before {
+              content: "";
+              position: absolute;
+              width: 40px;
+              height: 40px;
+              left: -60px;
+              border-radius: 50%;
+              background-color: transparent;
+              border: 1px solid #ffffff80;
+              z-index: 100;
+              top: 40px;
+              transform: translate(-50%, -50%);
+            }
+            p {
+              font-size: 14px;
+              line-height: 1.5;
+            }
+          }
+          .slick-current {
+            color: #fff;
+          }
+          .slick-current h4::before {
+            border: 1px solid #fff;
+          }
+          .slick-current h4::after {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+.job {
+  width: 100%;
+  height: auto;
+  padding: 50px 0 100px;
+  .jon-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    max-width: 1200px;
+    .box__content {
+      width: 100%;
+      text-align: center;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    .box__table {
+      width: 100%;
+      height: fit-content;
+
+      table {
+        width: 100%;
+        thead {
+          text-align: center;
+          tr {
+            th {
+              background: #ed1c24;
+              color: #ffffff;
+              font-weight: 700;
+              padding-bottom: 17px;
+              padding-top: 17px;
+              font-size: 15px;
+            }
+            th:nth-child(1) {
+              border-radius: 10px 0 0 0;
+              width: 10%;
+            }
+            th:nth-child(2) {
+              width: 20%;
+            }
+            th:not(:last-child) {
+              border-right: 1px solid rgb(235 235 235 / 20%);
+            }
+          }
+        }
+        tbody {
+          tr {
+            text-align: center;
+            td {
+              position: relative;
+              color: #333333;
+              padding: 25px 20px;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 20px;
+              text-align: center;
+            }
+            td:nth-child(1) {
+              width: 10%;
+              font-weight: 700;
+              font-size: 25px;
+            }
+            td:nth-child(2) {
+              cursor: pointer;
+              text-align: start;
+              width: 20%;
+            }
+            td:nth-child(3) {
+              a {
+                color: red;
+                line-height: 45px;
+                min-width: 130px;
+                padding: 10px 30px;
+                border: 1px solid red;
+                border-radius: 30px;
+              }
+            }
+            td:nth-child(4) {
+              font-size: 20px;
+            }
+          }
+          tr:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  main {
+    .benefit {
+      .benefit__container {
+        max-width: 860px;
+        .benefit__content {
+          h2 {
+            font-size: 30px;
+          }
+        }
+        .benefit__carousel {
+          .slick-list {
+            padding-left: 90px;
+            .slick-track {
+              .benefit__carousel--item {
+                height: 140px;
+                h4 {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .job {
+      .jon-container {
+        max-width: 960px;
+        .box__content {
+          h2 {
+            font-size: 25px;
+          }
+        }
+        .box__table {
+          table {
+            thead {
+              display: none;
+            }
+            tbody {
+              tr {
+                display: flex;
+                flex-direction: column;
+                td {
+                  width: 100% !important;
+                  padding-left: 40% !important;
+                }
+                td:nth-child(2) {
+                  cursor: pointer;
+                  text-align: center;
+                }
+                td:nth-child(1):before {
+                  position: absolute;
+                  content: "STT";
+                  left: 40px;
+                }
+                td:nth-child(2):before {
+                  position: absolute;
+                  content: "Vị trí tuyển dụng";
+                  left: 40px;
+                  text-transform: uppercase;
+                }
+                td:nth-child(3):before {
+                  position: absolute;
+                  content: "Đăng tuyển";
+                  left: 40px;
+                  text-transform: uppercase;
+                }
+                td:nth-child(4):before {
+                  position: absolute;
+                  content: "nơi làm việc";
+                  left: 40px;
+                  text-transform: uppercase;
+                }
+                td:nth-child(5):before {
+                  position: absolute;
+                  content: "ngày hết hạn";
+                  left: 40px;
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .job {
+    }
+    .jon-container {
+    }
+    .box__content {
+    }
+    .box__table {
+    }
+  }
+}
+@media screen and (max-width: 790px) {
+  main {
+    .benefit {
+      padding: 30px 0 50px;
+      .benefit__container {
+        width: 100%;
+        flex-direction: column;
+        .benefit__content {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 50px;
+          h2 {
+            font-size: 25px;
+          }
+        }
+        .benefit__carousel {
+          width: 100%;
+          .slick-list {
+            width: 100%;
+            .slick-track {
+              width: 100%;
+              .benefit__carousel--item {
+                width: 100%;
+                height: 120px;
+                h4 {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .job {
+      .jon-container {
+        .box__content {
+          h2 {
+            font-size: 25px;
+          }
+        }
+        .box__table {
+          table {
+            tbody {
+              tr {
+                td {
+                  font-size: 11px !important;
+                  a {
+                    font-size: 11px;
+                  }
+                }
+                td:before {
+                  left: 5px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  main {
+    .benefit {
+      .benefit__container {
+        .benefit__carousel {
+          .slick-list {
+            .slick-track {
+              .benefit__carousel--item {
+                height: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,7 +15,8 @@
   }
   .introduce .introduce__item img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .introduce .introduce__item--2 {
     display: flex;
@@ -87,10 +88,12 @@
   }
   .result {
     position: relative;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .result .result__list {
     width: 100%;
+    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -131,7 +134,9 @@
 }
 @media (max-width: 767.98px) {
   .team--teacher {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .reason h1 {
@@ -142,6 +147,7 @@
   }
   .result .result__list {
     width: 100%;
+    height: -moz-fit-content;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -156,7 +162,8 @@
   }
   .introduce .introduce__item img {
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .introduce .introduce__item--img1 {
     width: 100%;
@@ -199,14 +206,17 @@
   .team__pic {
     height: 100%;
     flex-wrap: wrap;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .team__pic .team__pic--left {
     width: 100%;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .team__pic .team__pic--left img {
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .team__pic .team__pic--right {
     width: 100%;

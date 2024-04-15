@@ -8,7 +8,8 @@
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .grid__container .site__content .banner .banner__wrap img {
@@ -30,7 +31,8 @@ img {
 }
 .grid__container .site__content .overview .overview__wrap .box__img img {
   width: 100%;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 .grid__container .site__content .overview .overview__wrap .box__text {
   padding-top: 15%;
@@ -152,7 +154,8 @@ img {
   right: 5%;
   position: absolute;
   width: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .grid__container .site__content .duration {
   background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18890-1.png);
@@ -440,7 +443,8 @@ img {
     gap: 20px;
   }
   .grid__container .site__content .overview .overview__wrap .box__img img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__container .site__content .overview .overview__wrap .box__text h2 {
     font-size: 2rem;
@@ -472,7 +476,8 @@ img {
     gap: 0;
   }
   .grid__container .site__content .overview .overview__wrap .box__img img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__container .site__content .overview .overview__wrap .box__text {
     padding-top: 0;
@@ -578,7 +583,8 @@ img {
     gap: 0;
   }
   .grid__container .site__content .overview .overview__wrap .box__img img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .grid__container .site__content .overview .overview__wrap .box__text {
     padding-top: 0;

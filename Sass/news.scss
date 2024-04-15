@@ -50,6 +50,87 @@ body::-webkit-scrollbar-thumb {
       }
     }
   }
+  .newAndEvent-section {
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    .grid__container {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      gap: 20px;
+      .box__grid-main {
+        flex-grow: 1;
+      }
+      .box__grid {
+        position: relative;
+        width: calc(100% / 4);
+        height: fit-content;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        overflow: hidden;
+        background: transparent;
+        a {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .box__content {
+          text-overflow: ellipsis;
+          h3 {
+            color: black;
+            font-size: 1.15em;
+            text-overflow: ellipsis;
+          }
+          .box__date {
+            position: absolute;
+            padding: 10px 13px 20px;
+            background-color: #ed1c24;
+            top: 0;
+            color: #fff;
+            .date {
+              font-size: 35px;
+              font-weight: 700;
+            }
+            .month {
+              font-size: 10px;
+            }
+          }
+        }
+        .box__img {
+          height: 360px;
+          display: flex;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 14px;
+          img {
+            object-fit: none;
+            width: 712px;
+            height: 397px;
+          }
+        }
+        a:hover img {
+          transition: var(--animiation);
+          transform: rotate(-5deg) scale(1.2);
+        }
+      }
+    }
+  }
+  .news__home {
+    .box__container {
+      .item__wrap {
+        .box__img {
+          width: 100%;
+        }
+      }
+    }
+  }
   .newAndSale__section {
     width: 100%;
     // padding: 30px 80px;
@@ -105,69 +186,11 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 30px;
-
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
         .news__box {
-          width: calc((100% / 2) - 20px);
-          height: 50%;
-          display: flex;
-          flex-direction: row;
-          // justify-content: space-between;
-          gap: 20px;
-          // align-items: center;
-          .news__img {
-            width: 300px;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-
-            .date__box {
-              color: white;
-              position: absolute;
-              top: 0;
-              left: 0;
-              margin: 0;
-              background: #ed1c24;
-              padding: 10px 13px 20px;
-              border-radius: 10px 0px 0px 0px;
-              text-align: center;
-              line-height: 1;
-            }
-          }
-          .news__img:hover {
-            cursor: pointer;
-            img {
-              width: 100%;
-              overflow: hidden;
-              transform: scale(1.1);
-              transition: all 0.5s ease;
-            }
-          }
-          .text__box {
-            width: 50%;
-            height: fit-content;
-            text-align: justify;
-          }
-        }
-        .news__box:hover {
-          cursor: pointer;
-          .news__img {
-            // cursor: pointer;
-            img {
-              width: 100%;
-              overflow: hidden;
-              transform: scale(1.1);
-              transition: all 0.5s ease;
-            }
-          }
-        }
-
-        .news__img img {
-          width: 100%;
+          width: calc((100% / 2) - 10px);
           height: 100%;
           display: flex;
           align-items: center;
@@ -493,8 +516,8 @@ body::-webkit-scrollbar-thumb {
               padding: 0px 5px 11px 15px;
               .result__box {
                 .arrow__btn {
-                  right: 25px;
-                  // top: 140px;
+                  right: 5%;
+                  top: 70%;
                 }
               }
             }

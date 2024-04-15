@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("contact-email").value;
     const title = document.getElementById("contact-title").value;
     const mess = document.getElementById("contact-mess").value;
-
-    // Kiểm tra giá trị của các ô input
+    const regexPhoneNumber = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
     if (!name || !phone || !email || !title || !mess) {
       Swal.fire({
         icon: "error",
@@ -16,6 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       return;
     }
+    if (!regexPhoneNumber.exec(phone)) {
+      Swal.fire({
+        icon: "error",
+        text: "Vui lòng nhập đúng ô số điện thoại",
+      });
+      return;
+    }
+    // Kiểm tra giá trị của các ô input
 
     const data = {
       fullName: name,
