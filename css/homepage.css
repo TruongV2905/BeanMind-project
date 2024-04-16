@@ -30,10 +30,7 @@ body img {
 body h1,
 body h2 {
   font-family: headerfont;
-  text-transform: uppercase;
-  background: var(--gradient-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 
 * {
@@ -82,7 +79,7 @@ main .sliderShow-section .slick-dots li.slick-active .dot {
 }
 main .presentation-section {
   position: relative;
-  background: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18861.png") no-repeat;
+  background: url("/assets/img/patten-02.png") no-repeat;
   background-size: cover;
 }
 main .presentation-section .presentation-container {
