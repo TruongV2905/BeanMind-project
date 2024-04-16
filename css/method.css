@@ -314,6 +314,354 @@ main .route-section .route-container .wrap__dess .item .box__btn .button__icon {
   color: var(--mainRed);
   border-radius: 50%;
 }
+main .report-section {
+  padding: 35px 0 110px;
+  background: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18850-1-1.png") no-repeat;
+  background-size: cover;
+}
+main .report-section .report-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+main .report-section .report-container .wrap__side {
+  padding-left: 100px;
+  padding-right: 10px;
+  width: 60%;
+}
+main .report-section .report-container .wrap__side .box__content {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 30px;
+}
+main .report-section .report-container .wrap__side .box__content h1 {
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  text-align: start;
+}
+main .report-section .report-container .wrap__side .wrap__dess {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .report-section .report-container .wrap__side .wrap__dess .item {
+  width: calc(50% - 20px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 25px 24px 18px 36px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+main .report-section .report-container .wrap__side .wrap__dess .item .box__img {
+  width: 100%;
+}
+main .report-section .report-container .wrap__side .wrap__dess .item .content {
+  width: 100%;
+}
+main .report-section .report-container .wrap__side .wrap__dess .item .content p {
+  text-align: start;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 26px;
+  font-weight: 300;
+}
+main .schedule-section {
+  padding: 50px 0 140px;
+}
+main .schedule-section .schedule-container {
+  display: flex;
+  align-items: center;
+}
+main .schedule-section .schedule-container .schedule__side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  position: relative;
+}
+main .schedule-section .schedule-container .schedule__side .box__img {
+  width: 100%;
+}
+main .schedule-section .schedule-container .schedule__side .box__content {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  padding: 51px 82px 68px;
+}
+main .schedule-section .schedule-container .schedule__side .box__content h3 {
+  font-size: 27px;
+  margin-bottom: 40px;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .time-text {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #ed1c24;
+  line-height: 30px;
+  font-weight: 700;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .wrap__dess {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .wrap__dess .item + .item {
+  margin-left: 10px;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .wrap__dess .item {
+  width: calc(33.3333333333% - 20px);
+  padding: 10px;
+  background: #b11116;
+  border-radius: 5px;
+  color: #fff;
+  white-space: nowrap;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .wrap__dess .item h4 {
+  font-size: 14px;
+  align-items: center;
+  font-weight: 400;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .wrap__dess .item h4 b {
+  align-items: center;
+  display: block;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .wrap__dess .item:nth-child(1) {
+  background: #ed1c24;
+}
+main .schedule-section .schedule-container .schedule__side .box__content .wrap__dess .item:nth-child(2) {
+  background: #ce181e;
+}
+main .schedule-section .schedule-container .schedule__side .box__content p {
+  font-size: 13px;
+}
+main .schedule-section .schedule-container .img-side {
+  width: 40%;
+}
+main .main__system {
+  width: 100%;
+  background-color: #f1f4f4 !important;
+  padding: 50px 100px;
+}
+main .main__system .main__system__container {
+  padding-top: 45px;
+}
+main .main__system .main__system__container h1 {
+  margin-bottom: 20px;
+}
+main .main__system .main__system__container h1 {
+  text-align: center;
+}
+main .main__system .main__system__container .box__system {
+  display: flex;
+  background-color: #fff;
+  border-radius: 50px;
+  overflow: hidden;
+}
+main .main__system .main__system__container .box__system .info__nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 16px;
+  background-color: #fff;
+}
+main .main__system .main__system__container .box__system .info__nav .box__select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main .main__system .main__system__container .box__system .info__nav .box__select select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #686876;
+  border-radius: 60px;
+  color: #686876;
+  padding: 13px 50px 13px 47px;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all::-webkit-scrollbar {
+  width: 5px;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all::-webkit-scrollbar-thumb {
+  background: red;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 495px;
+  gap: 12px;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all .result__container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: solid 1px rgba(195, 195, 195, 0.6705882353);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 25px 77px 25px 27px;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all .result__container .result__box {
+  gap: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all .result__container .result__box .location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all .result__container .result__box .phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all .result__container .result__box .map__view {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: solid 1px red;
+  border-radius: 60px;
+  text-align: center;
+  justify-content: center;
+  width: 169px;
+  height: 35px;
+  color: red;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all .result__container .result__box .arrow__btn {
+  position: absolute;
+  display: flex;
+  border: solid 1px #686876;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  right: -60px;
+  top: 90px;
+  color: #686876;
+}
+main .main__system .main__system__container .box__system .info__nav .result__container__all .result__container:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
+  -webkit-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
+}
+
+.teachingSkill-section {
+  padding: 70px 0 100px;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel {
+  height: 500px;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-pre,
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-next {
+  position: absolute;
+  top: 210px;
+  border: none;
+  outline: none;
+  color: red;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 10000;
+  font-weight: 1000;
+  font-size: 1em;
+  box-shadow: 0px 10px 20px rgba(9, 47, 70, 0.1);
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-pre {
+  left: -5%;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-next {
+  right: -5%;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list {
+  overflow-y: visible;
+  height: 100%;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track {
+  height: 100%;
+  overflow-y: visible;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item + .item {
+  margin-left: 30px;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 3.20662px 40.0827px rgba(88, 88, 88, 0.3);
+  border-radius: 10px;
+  padding: 45px 26px 50px;
+  height: fit-content;
+  transform: translateY(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .content {
+  width: 100%;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .content h2 {
+  font-size: 20px;
+  height: 120px;
+  margin: 0;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .box__img {
+  width: 100%;
+  height: 180px;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc {
+  position: absolute;
+  display: none;
+  height: 10px;
+  transition: var(--animiation);
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc h1 {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 1000;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7411764706);
+  line-height: 1.5;
+  margin-bottom: 29px;
+  overflow: hidden;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .slick-current > .wrap__desc {
+  background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18854-1-1.png");
+  height: 430px;
+  left: 0;
+  top: 0;
+  transform: translateY(-15px);
+  display: block;
+  padding: 35px;
+  border-radius: 10px;
+  transition: var(--animiation);
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .slick-current > .content,
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .slick-current > .box__img {
+  opacity: 0;
+}
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .slick-current {
+  background: transparent;
+  box-shadow: none;
+}
 
 @media only screen and (max-width: 1023px) {
   main .container {
@@ -347,6 +695,9 @@ main .route-section .route-container .wrap__dess .item .box__btn .button__icon {
   main .teachingProcess-section .teachingProcess-container .box__content p {
     font-size: 13px;
   }
+  main .route-section {
+    margin-bottom: 50px;
+  }
   main .route-section .route-container .wrap__dess {
     justify-content: center;
   }
@@ -368,6 +719,39 @@ main .route-section .route-container .wrap__dess .item .box__btn .button__icon {
   main .route-section .route-container .wrap__dess .item .box__content p {
     max-width: 400px;
     max-height: 100px;
+  }
+  main .report-section .report-container .wrap__side {
+    width: 70%;
+  }
+  main .schedule-section {
+    padding: 50px 0 140px;
+  }
+  main .schedule-section .schedule-container {
+    flex-direction: column;
+  }
+  main .schedule-section .schedule-container .schedule__side {
+    width: 70%;
+  }
+  main .schedule-section .schedule-container .schedule__side .box__content {
+    width: 100%;
+    padding: 71px 43px 55px;
+  }
+  main .schedule-section .schedule-container .schedule__side .box__content h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  main .schedule-section .schedule-container .schedule__side .box__content .time-text {
+    font-size: 23px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  main .schedule-section .schedule-container .img-side {
+    width: 40%;
+  }
+  main .main__system .box__system {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -416,6 +800,61 @@ main .route-section .route-container .wrap__dess .item .box__btn .button__icon {
   }
   main .teachingProcess-section .teachingProcess-container .box__icon .item h4 {
     font-size: 20px;
+  }
+  main .report-section .report-container .wrap__side {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+  main .report-section .report-container .wrap__side .box__content h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+  main .report-section .report-container .wrap__side .wrap__dess {
+    gap: 10px;
+    justify-content: space-between;
+  }
+  main .report-section .report-container .wrap__side .wrap__dess .item {
+    width: calc(50% - 10px);
+    margin: 0;
+  }
+  main .schedule-section {
+    padding: 50px 0 140px;
+  }
+  main .schedule-section .schedule-container {
+    flex-direction: column;
+  }
+  main .schedule-section .schedule-container .schedule__side {
+    width: 100%;
+    overflow: hidden;
+  }
+  main .schedule-section .schedule-container .schedule__side .box__content {
+    padding: 91px 80px 55px;
+  }
+  main .schedule-section .schedule-container .schedule__side .box__content h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  main .schedule-section .schedule-container .schedule__side .box__content .time-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  main .schedule-section .schedule-container .img-side {
+    width: 40%;
+  }
+  main .main__system {
+    padding: 0;
+  }
+  main .main__system .box__system {
+    border-radius: 0 !important;
+  }
+  main .main__system .box__system .info__nav .box__select {
+    gap: 5px;
+  }
+  main .main__system .box__system .info__nav .box__select .box__city select,
+  main .main__system .box__system .info__nav .box__select .box__distr select {
+    padding: 10px 10px 13px 10px;
   }
 }
 @media only screen and (max-width: 400px) {
