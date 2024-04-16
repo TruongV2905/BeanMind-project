@@ -101,15 +101,15 @@ img {
               #ffffff 104.58%
             );
 
-            width: 330px;
-            height: 430px;
+            width: 270px;
+            height: 500px;
             border-radius: 22px;
             .ad__item__wrap {
               left: 5px;
               top: 5px;
               position: relative;
-              width: 340px;
-              height: 440px;
+              width: 260px;
+              height: 490px;
               background: #b11116;
               border-radius: 22px;
               padding: 50px 24px 24px;
@@ -120,6 +120,8 @@ img {
                 margin-bottom: 20px;
               }
               p {
+                padding-bottom: 1px;
+                line-height: 21px;
                 text-align: left;
                 color: #fff;
                 font-size: 1.15rem;
@@ -127,14 +129,32 @@ img {
               img {
                 position: absolute;
                 top: -40px;
-                left: 115px;
+                left: 85px;
               }
               .icon {
                 img {
                   top: -34px;
-                  left: 136px;
+                  left: 106px;
                   width: 45px;
                 }
+              }
+            }
+          }
+          .item-1{
+            .ad__item__wrap{
+              h3{
+                margin-bottom: 20px;
+              }
+              p{
+                font-size: 1rem;
+              }
+            }
+          }
+          .item-3{
+            .ad__item__wrap{
+              p{
+                // font-size: 1rem;
+                line-height: 25px;
               }
             }
           }
@@ -622,15 +642,18 @@ img {
               width: 350px;
               .ad__item__wrap {
                 height: 380px;
+                width: 340px;
 
                 h3 {
                 }
                 p {
                 }
                 img {
+                  left: 127px;
                 }
                 .icon {
                   img {
+                    left: 147px;
                   }
                 }
               }
@@ -899,10 +922,10 @@ img {
           .ad__wrap {
             .ad__item {
               width: 250px;
-              height: 310px;
+              height: fit-content;
               .ad__item__wrap {
                 width: 240px;
-                height: 300px;
+                height: 100%;
                 img{
                   left: 80px;
                 }
