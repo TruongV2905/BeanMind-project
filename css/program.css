@@ -78,16 +78,16 @@ img {
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item {
   background: rgb(2, 0, 36);
   background: linear-gradient(49.28deg, #ffffff 20.28%, #bbbbbb 33.45%, #bbbbbb 44.87%, #7c7c7c 58.92%, #ffffff 80.87%, #7c7c7c 93.17%, #ffffff 104.58%);
-  width: 310px;
-  height: 410px;
+  width: 330px;
+  height: 430px;
   border-radius: 22px;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap {
   left: 5px;
   top: 5px;
   position: relative;
-  width: 300px;
-  height: 400px;
+  width: 340px;
+  height: 440px;
   background: #b11116;
   border-radius: 22px;
   padding: 50px 24px 24px;
@@ -99,7 +99,7 @@ img {
   margin-bottom: 20px;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap p {
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-size: 1.15rem;
 }
@@ -502,10 +502,11 @@ img {
     gap: 40px;
   }
   .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item {
-    height: 360px;
+    height: 390px;
+    width: 350px;
   }
   .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap {
-    height: 350px;
+    height: 380px;
   }
   .grid__container .site__content .method .method__container {
     padding: 80px 30px 232px 60px;
