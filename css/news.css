@@ -70,7 +70,6 @@ body::-webkit-scrollbar-thumb {
 .news .newAndEvent-section .grid__container .box__grid {
   position: relative;
   width: 25%;
-  height: -moz-fit-content;
   height: fit-content;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
@@ -114,8 +113,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 14px;
 }
 .news .newAndEvent-section .grid__container .box__grid .box__img img {
-  -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
   width: 712px;
   height: 397px;
 }
@@ -204,8 +202,7 @@ body::-webkit-scrollbar-thumb {
 .news .newAndSale__section .newAndSale__container .list__news .news__box .news__img img {
   width: 110%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .news .newAndSale__section .newAndSale__container .list__news .news__box .news__img .date__box {
   position: absolute;

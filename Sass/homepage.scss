@@ -11,7 +11,7 @@ body::-webkit-scrollbar-thumb {
   background: red;
 }
 body {
-  font-family: Roboto, sans-serif;
+  font-family: gilroyMedium;
   letter-spacing: 0.01em;
   scroll-behavior: smooth;
   a {
@@ -24,8 +24,14 @@ body {
     object-fit: contain;
     max-width: 100%;
   }
-  h1 {
+  h1,
+  h2 {
+    font-family: headerfont;
+    // color: var(--primary-color);
     text-transform: uppercase;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 * {
@@ -513,7 +519,7 @@ main {
       border: none;
       outline: none;
       color: red;
-      background: #fff;
+      background: var(--gradient-color);
       width: 50px;
       height: 50px;
       border-radius: 50%;

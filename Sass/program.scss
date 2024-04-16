@@ -101,15 +101,15 @@ img {
               #ffffff 104.58%
             );
 
-            width: 310px;
-            height: 410px;
+            width: 330px;
+            height: 430px;
             border-radius: 22px;
             .ad__item__wrap {
               left: 5px;
               top: 5px;
               position: relative;
-              width: 300px;
-              height: 400px;
+              width: 340px;
+              height: 440px;
               background: #b11116;
               border-radius: 22px;
               padding: 50px 24px 24px;
@@ -120,7 +120,7 @@ img {
                 margin-bottom: 20px;
               }
               p {
-                text-align: center;
+                text-align: left;
                 color: #fff;
                 font-size: 1.15rem;
               }
@@ -618,9 +618,10 @@ img {
             gap: 40px;
 
             .ad__item {
-              height: 360px;
+              height: 390px;
+              width: 350px;
               .ad__item__wrap {
-                height: 350px;
+                height: 380px;
 
                 h3 {
                 }

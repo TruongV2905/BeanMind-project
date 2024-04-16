@@ -22,7 +22,6 @@ body {
 .banner {
   display: flex;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .banner .box__img {
@@ -30,8 +29,7 @@ body {
   height: 100%;
 }
 .banner .box__img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-width: 100%;
   height: 100%;
 }
@@ -47,7 +45,6 @@ body {
   bottom: 0;
   left: 75%;
   position: absolute;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   background-color: transparent;
@@ -58,7 +55,6 @@ body {
 }
 .banner .banner__side .nav .box__content {
   background-color: transparent;
-  height: -moz-fit-content;
   height: fit-content;
 }
 .banner .banner__side .nav .box__content p {
@@ -113,7 +109,6 @@ body {
   border: 1px solid #092f46;
   border-radius: 10px;
   font-size: 14px;
-  height: -moz-fit-content;
   height: fit-content;
   position: relative;
 }
@@ -442,7 +437,6 @@ body {
 }
 .result .result__list {
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -527,8 +521,7 @@ body {
 .team .team__pic--left img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .team .team__pic--right {
   background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18855-3.png);
@@ -582,8 +575,7 @@ body {
 
 .team--teacher {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 675px;
 }
 

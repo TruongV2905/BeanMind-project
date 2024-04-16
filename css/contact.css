@@ -25,8 +25,7 @@ body p {
   line-height: 30px;
 }
 body img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   max-width: 100%;
   height: auto;
 }
@@ -46,7 +45,6 @@ main section {
 }
 main .contactBanner-section {
   display: flex;
-  height: -moz-fit-content;
   height: fit-content;
 }
 main .contactBanner-section .box__img {
@@ -54,12 +52,10 @@ main .contactBanner-section .box__img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: -moz-fit-content;
   height: fit-content;
 }
 main .contactBanner-section .box__img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
 }
 main .contactBanner-section .banner__side {
@@ -74,7 +70,6 @@ main .contactBanner-section .banner__side .nav {
   bottom: 0;
   left: 75%;
   position: absolute;
-  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   background-color: transparent;
@@ -85,7 +80,6 @@ main .contactBanner-section .banner__side .nav {
 }
 main .contactBanner-section .banner__side .nav .box__content {
   background-color: transparent;
-  height: -moz-fit-content;
   height: fit-content;
 }
 main .contactBanner-section .banner__side .nav .box__content p {
@@ -369,8 +363,7 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
     height: 100%;
   }
   main .contact-section .contact-container .wrap__dess .box__img img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
   main .location-section .location-container {
@@ -410,8 +403,7 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
     height: 100%;
   }
   main .contact-section .contact-container .wrap__dess .box__img img {
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
   main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
@@ -433,7 +425,6 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
     max-width: 824px;
   }
   main .contact-section .contact-container .wrap__dess {
-    height: -moz-fit-content;
     height: fit-content;
     flex-direction: column;
   }
@@ -450,8 +441,7 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
   }
   main .contact-section .contact-container .wrap__dess .box__img img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     height: 100%;
   }
   main .location-section {
