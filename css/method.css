@@ -563,6 +563,13 @@ main .main__system .main__system__container .box__system .info__nav .result__con
 .teachingSkill-section {
   padding: 70px 0 100px;
 }
+.teachingSkill-section .teachingSkill-container .box__content {
+  text-align: center;
+}
+.teachingSkill-section .teachingSkill-container .box__content p {
+  font-size: 14px;
+  font-weight: 300;
+}
 .teachingSkill-section .teachingSkill-container .box__carousel {
   height: 500px;
 }
@@ -612,19 +619,20 @@ main .main__system .main__system__container .box__system .info__nav .result__con
   justify-content: center;
   flex-direction: column;
 }
-.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .content {
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__down .content {
   width: 100%;
 }
-.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .content h2 {
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__down .content h2 {
   font-size: 20px;
   height: 120px;
   margin: 0;
 }
-.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .box__img {
+.teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__down .box__img {
   width: 100%;
   height: 180px;
 }
 .teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc {
+  width: 100%;
   position: absolute;
   display: none;
   height: 10px;
@@ -645,6 +653,9 @@ main .main__system .main__system__container .box__system .info__nav .result__con
 }
 .teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .slick-current > .wrap__desc {
   background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18854-1-1.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 430px;
   left: 0;
   top: 0;
@@ -752,6 +763,9 @@ main .main__system .main__system__container .box__system .info__nav .result__con
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
+  }
+  main .teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc h1 {
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -867,5 +881,11 @@ main .main__system .main__system__container .box__system .info__nav .result__con
   }
   main .teachingProcess-section .teachingProcess-container .box__icon .item h4 {
     font-size: 14px;
+  }
+  main .teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc {
+    padding: 30px 15px;
+  }
+  main .teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc h1 {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=method.css.map */

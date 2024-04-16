@@ -596,6 +596,11 @@ main {
   padding: 70px 0 100px;
   .teachingSkill-container {
     .box__content {
+      text-align: center;
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
     }
     .box__carousel {
       height: 500px;
@@ -642,19 +647,22 @@ main {
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            .content {
-              width: 100%;
-              h2 {
-                font-size: 20px;
-                height: 120px;
-                margin: 0;
+            .wrap__down {
+              .content {
+                width: 100%;
+                h2 {
+                  font-size: 20px;
+                  height: 120px;
+                  margin: 0;
+                }
+              }
+              .box__img {
+                width: 100%;
+                height: 180px;
               }
             }
-            .box__img {
-              width: 100%;
-              height: 180px;
-            }
             .wrap__desc {
+              width: 100%;
               position: absolute;
               display: none;
               height: 10px;
@@ -676,6 +684,9 @@ main {
           }
           .slick-current > .wrap__desc {
             background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18854-1-1.png");
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
             height: 430px;
             left: 0;
             top: 0;
@@ -822,6 +833,25 @@ main {
         flex-direction: column !important;
         justify-content: center;
         align-items: center;
+      }
+    }
+    .teachingSkill-section {
+      .teachingSkill-container {
+        .box__content {
+        }
+        .box__carousel {
+          .slick-list {
+            .slick-track {
+              .item {
+                .wrap__desc {
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -978,6 +1008,26 @@ main {
             }
             h4 {
               font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .teachingSkill-section {
+      .teachingSkill-container {
+        .box__content {
+        }
+        .box__carousel {
+          .slick-list {
+            .slick-track {
+              .item {
+                .wrap__desc {
+                  padding: 30px 15px;
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
             }
           }
         }
