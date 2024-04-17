@@ -40,21 +40,26 @@
 .register--form--listInput {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px;
 }
+.register--form--listInput .style-custom {
+  width: calc(20% - 10px);
+}
 .register--form--listInput .style-custom select {
+  width: 100%;
   color: white;
   background-color: #f04950;
   padding: 10px;
   border-radius: 20px;
   outline: none;
   border: none;
-  width: 200px;
   border: 1px white solid;
 }
 .register--form--listInput input {
   background-color: #f04950;
-  width: 200px;
+  width: calc(20% - 10px);
   border: 1px white solid;
   padding: 10px;
   border-radius: 20px;
@@ -78,7 +83,7 @@
   cursor: pointer;
   margin-top: 20px;
   position: absolute;
-  right: 20px;
+  right: 70px;
   bottom: 7px;
   margin-bottom: 30px;
 }
@@ -121,12 +126,30 @@
   transform: translate(0);
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1023px) {
   .register--form--listInput {
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .register--form--listInput .style-custom + .style-custom {
+    margin-left: 30px;
+  }
+  .register--form--listInput .style-custom {
+    margin-top: 20px;
+    width: calc(33.3333333333% - 20px);
+  }
+  .register--form--listInput input + input {
+    margin-left: 30px;
+  }
+  .register--form--listInput input {
+    width: calc(33.3333333333% - 20px);
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
   .register--form {
     padding: 20px 10px 90px;
   }
@@ -137,15 +160,22 @@
   }
   .register--form--listInput {
     flex-wrap: wrap;
+    gap: 20px;
   }
   .register--form--listInput input,
   .register--form--listInput select {
+    margin: 0 !important;
     width: 100%;
   }
   .register--form--listInput .style-custom {
+    margin: 0 !important;
     width: 100%;
   }
   .register--form--listInput .style-custom select {
     width: 100%;
+  }
+  .register--form .button {
+    right: 10px;
+    bottom: 0px;
   }
 }/*# sourceMappingURL=register.css.map */

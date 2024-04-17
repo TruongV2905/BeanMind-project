@@ -38,23 +38,26 @@
     &--listInput {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
       gap: 10px;
-      // justify-content: center;
       .style-custom {
+        width: calc((100% / 5) - 10px);
         select {
+          width: 100%;
           color: white;
           background-color: #f04950;
           padding: 10px;
           border-radius: 20px;
           outline: none;
           border: none;
-          width: 200px;
           border: 1px white solid;
         }
       }
       input {
         background-color: #f04950;
-        width: 200px;
+        width: calc((100% / 5) - 10px);
+
         border: 1px white solid;
         padding: 10px;
         border-radius: 20px;
@@ -80,7 +83,7 @@
       cursor: pointer;
       margin-top: 20px;
       position: absolute;
-      right: 20px;
+      right: 70px;
       bottom: 7px;
       margin-bottom: 30px;
     }
@@ -131,16 +134,34 @@
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1023px) {
   .register {
     &--form {
       &--listInput {
         flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 0px;
+        .style-custom + .style-custom {
+          margin-left: 30px;
+        }
+        .style-custom {
+          margin-top: 20px;
+          width: calc((100% / 3) - 20px);
+        }
+        input + input {
+          margin-left: 30px;
+        }
+        input {
+          width: calc((100% / 3) - 20px);
+        }
       }
     }
   }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 767px) {
   .register {
     &--form {
       padding: 20px 10px 90px;
@@ -151,16 +172,23 @@
       }
       &--listInput {
         flex-wrap: wrap;
+        gap: 20px;
         input,
         select {
+          margin: 0 !important;
           width: 100%;
         }
         .style-custom {
+          margin: 0 !important;
           width: 100%;
           select {
             width: 100%;
           }
         }
+      }
+      .button {
+        right: 10px;
+        bottom: 0px;
       }
     }
   }
