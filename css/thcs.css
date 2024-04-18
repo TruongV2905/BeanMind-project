@@ -123,11 +123,12 @@ img {
   line-height: 24px;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .item-2 .ad__item__wrap p {
-  line-height: 27px;
+  font-size: 1rem;
+  line-height: 23px;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .item-3 .ad__item__wrap p {
-  font-size: 1.15rem;
-  line-height: 27px;
+  font-size: 0.9rem;
+  line-height: 18px;
 }
 .grid__container .site__content .method {
   margin-bottom: -120px;
