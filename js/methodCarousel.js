@@ -1,7 +1,9 @@
 $(".box__carousel").slick({
   dots: false,
-  prevArrow: '<button type="button" class="slick-pre"><</button>',
-  nextArrow: '<button type="button" class="slick-next">></button>',
+  // prevArrow: '<button type="button" class="slick-pre"><</button>',
+  // nextArrow: '<button type="button" class="slick-next">></button>',
+  prevArrow: false,
+  nextArrow: false,
   infinite: true,
   cssEase: "ease",
   autoplay: false,
@@ -12,23 +14,14 @@ $(".box__carousel").slick({
   // adaptiveHeight: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 900,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: "40px",
-        slidesToShow: 1,
+        slidesToShow: 2,
       },
     },
     {
-      breakpoint: 480,
-      breakpoint: 1023,
+      breakpoint: 767,
       settings: {
-        arrows: false,
-        arrows: true,
-        centerMode: true,
-        centerPadding: "40px",
-        centerPadding: "20px",
         slidesToShow: 1,
       },
     },

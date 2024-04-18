@@ -27,11 +27,11 @@ body {
   h1,
   h2 {
     font-family: headerfont;
-    // color: var(--primary-color);
-    text-transform: uppercase;
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
+    // text-transform: uppercase;
+    // background: var(--gradient-color);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 }
 * {
@@ -87,7 +87,7 @@ main {
   }
   .presentation-section {
     position: relative;
-    background: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18861.png") no-repeat;
+    background: url("/assets/img/patten-02.png") no-repeat;
     background-size: cover;
     .presentation-container {
       position: relative;
