@@ -583,19 +583,11 @@ main {
   main {
     .reason-section {
       .reason-container {
-        .reason__content {
-        }
         .reason__list {
           flex-wrap: wrap;
           justify-content: center;
           .reason__item {
             width: calc((100% / 3) - 30px);
-            .box__img {
-            }
-            .content {
-              h3 {
-              }
-            }
           }
         }
       }
