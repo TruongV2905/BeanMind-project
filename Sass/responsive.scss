@@ -108,7 +108,7 @@ $color_1: rgb(35, 31, 32);
   }
   .team {
     .team__pic {
-      height: 100%;
+      height: fit-content;
     }
     h2 {
       width: 100%;
@@ -236,7 +236,7 @@ $color_1: rgb(35, 31, 32);
     }
   }
   .question-section {
-    margin-top: 140px;
+    margin-top: 15px;
     .question-list {
       padding: 20px 10px;
     }
@@ -264,7 +264,7 @@ $color_1: rgb(35, 31, 32);
     }
   }
   .question-section {
-    margin-top: 140px;
+    // margin-top: 140px;
   }
   .result {
     .result__statistic {
