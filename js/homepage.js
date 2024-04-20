@@ -1,4 +1,4 @@
-$(".sliderShow-section").slick({
+$(".sliderShow-carousel").slick({
   dots: true,
   infinite: true,
   speed: 100,
@@ -14,8 +14,8 @@ $(".sliderShow-section").slick({
 });
 $(".thinkAbout__category").slick({
   dots: false,
-  prevArrow: '<button type="button" class="slick-pre"><</button>',
-  nextArrow: '<button type="button" class="slick-next">></button>',
+  prevArrow: '<button type="button" class="slick-pre"><ion-icon name="arrow-back-outline"></ion-icon></button>',
+  nextArrow: '<button type="button" class="slick-next"><ion-icon name="arrow-forward-outline"></ion-icon></button>',
   infinite: true,
   speed: 500,
   cssEase: "ease",
