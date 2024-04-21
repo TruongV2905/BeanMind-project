@@ -78,16 +78,16 @@ img {
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item {
   background: rgb(2, 0, 36);
   background: linear-gradient(49.28deg, #ffffff 20.28%, #bbbbbb 33.45%, #bbbbbb 44.87%, #7c7c7c 58.92%, #ffffff 80.87%, #7c7c7c 93.17%, #ffffff 104.58%);
-  width: 270px;
-  height: 500px;
+  width: 310px;
+  height: 410px;
   border-radius: 22px;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap {
   left: 5px;
   top: 5px;
   position: relative;
-  width: 260px;
-  height: 490px;
+  width: 300px;
+  height: 400px;
   background: #b11116;
   border-radius: 22px;
   padding: 50px 24px 24px;
@@ -99,30 +99,19 @@ img {
   margin-bottom: 20px;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap p {
-  padding-bottom: 1px;
-  line-height: 21px;
-  text-align: left;
+  text-align: center;
   color: #fff;
   font-size: 1.15rem;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap img {
   position: absolute;
   top: -40px;
-  left: 85px;
+  left: 115px;
 }
 .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap .icon img {
   top: -34px;
-  left: 106px;
+  left: 136px;
   width: 45px;
-}
-.grid__container .site__content .advantage .ad__container .ad__wrap .item-1 .ad__item__wrap h3 {
-  margin-bottom: 20px;
-}
-.grid__container .site__content .advantage .ad__container .ad__wrap .item-1 .ad__item__wrap p {
-  font-size: 1rem;
-}
-.grid__container .site__content .advantage .ad__container .ad__wrap .item-3 .ad__item__wrap p {
-  line-height: 25px;
 }
 .grid__container .site__content .method {
   margin-bottom: -120px;
@@ -513,18 +502,10 @@ img {
     gap: 40px;
   }
   .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item {
-    height: 390px;
-    width: 350px;
+    height: 360px;
   }
   .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap {
-    height: 380px;
-    width: 340px;
-  }
-  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap img {
-    left: 127px;
-  }
-  .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap .icon img {
-    left: 147px;
+    height: 350px;
   }
   .grid__container .site__content .method .method__container {
     padding: 80px 30px 232px 60px;
@@ -622,11 +603,11 @@ img {
 @media only screen and (max-width: 400px) {
   .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item {
     width: 250px;
-    height: fit-content;
+    height: 310px;
   }
   .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap {
     width: 240px;
-    height: 100%;
+    height: 300px;
   }
   .grid__container .site__content .advantage .ad__container .ad__wrap .ad__item .ad__item__wrap img {
     left: 80px;
@@ -660,6 +641,23 @@ img {
     margin-left: 10px;
   }
   .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap h4 {
+    font-size: 0.75rem;
+  }
+  .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap .time {
+    font-size: 0.5rem;
+  }
+  .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson {
+    padding: 21px 16px 17px 25px;
+    height: 19rem;
+    gap: 0;
+  }
+  .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson .title {
+    font-size: 1rem;
+  }
+  .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson h4 {
+    font-size: 1.15rem;
+  }
+}/*# sourceMappingURL=program.css.map */ .text__wrap h4 {
     font-size: 0.75rem;
   }
   .grid__container .site__content .duration .dur__container .dur__item__wrap .dur__item .text__wrap .time {
