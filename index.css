@@ -5,16 +5,36 @@
     rgba(19, 145, 94, 1) 75%,
     rgba(22, 105, 98, 1) 100%
   );
-  --primary-color: #167f82;
-  --secondary-color: #6c757d; /* Secondary color */
-  --success-color: #28a745; /* Success color */
-  --info-color: #17a2b8; /* Info color */
-  --warning-color: #ffc107; /* Warning color */
-  --danger-color: #dc3545; /* Danger color */
-  --light-color: #f8f9fa; /* Light color */
-  --dark-color: #343a40; /* Dark color */
-  --background-color: #ffffff; /* Background color */
-  --text-color: #212529; /* Text color */
+  /* color and background 1 */
+  --background_1: #fffbef;
+  --colorText_1: #21937c;
+  /* color and background 2 */
+  --background_2: #21937c;
+  --colorText_2: #fffbef;
+  /* color and background 3 */
+  --background_3: #97e695;
+  --colorText_3: #003b43;
+  /* primary-color */
+  --primaryColor: #21937c;
+  /* animation */
+  --animiation: 0.5s ease;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #21937c;
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--background_1);
+}
+body {
+  scroll-behavior: smooth;
+  font-family: textfont;
+  h1 {
+    font-family: headerfont;
+  }
 }
 @font-face {
   font-family: textfont;

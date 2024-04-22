@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --mainRed: rgb(253, 0, 0);
+  --primaryColor: rgb(253, 0, 0);
   --animiation: 0.5s ease;
 }
 body::-webkit-scrollbar {
@@ -57,7 +57,7 @@ main {
     .banner__side {
       position: relative;
       display: flex;
-      background-color: #b11116;
+      background-color: var(--primaryColor);
       flex: 0 0 auto;
       width: 6%;
       .nav {
@@ -102,6 +102,7 @@ main {
     }
   }
   .centralOffice-section {
+    background-color: var(--background_1);
     padding: 155px 0 90px;
     .centralOffice-container {
       margin-left: auto;
@@ -111,8 +112,10 @@ main {
       max-width: 1200px;
       height: auto;
       text-align: center;
+      color: var(--colorText_1);
       .box__content {
         h1 {
+          color: var(--colorText_1);
           font-size: 40px;
           margin-bottom: 95px;
         }
@@ -150,6 +153,7 @@ main {
     }
   }
   .contact-section {
+    background-color: var(--background_1);
     padding: 0 0 288px;
     .contact-container {
       margin-left: auto;
@@ -161,19 +165,23 @@ main {
       text-align: center;
       .box__content {
         h1 {
+          color: var(--colorText_1);
           font-size: 40px;
           margin-bottom: 35px;
         }
       }
       .wrap__dess {
+        width: 100%;
+        height: auto;
         box-shadow: 0px 0px 40px rgba(103, 94, 94, 0.2);
         border-radius: 10px;
         display: flex;
-        align-items: start;
+        align-items: center;
         justify-content: space-between;
         .box__input {
           padding: 68px 58px 50px;
           width: 50%;
+          height: auto;
           display: flex;
           align-items: start;
           justify-content: start;
@@ -185,6 +193,7 @@ main {
             justify-content: space-between;
             flex-wrap: wrap;
             .item {
+              color: var(--colorText_1);
               width: 50%;
               display: flex;
               align-items: start;
@@ -197,19 +206,21 @@ main {
                 margin-bottom: 10px;
               }
               input {
+                background-color: var(--background_1);
                 width: 100%;
-                border: 1px solid #d0d0d0;
+                border: 1px solid var(--primaryColor);
                 height: 45px;
-                background: #ffffff;
                 padding: 0 30px;
                 border-radius: 100px;
               }
               textarea {
                 width: 460px !important;
                 height: 92px !important;
-                border: 1px solid #d0d0d0;
+                border: 1px solid var(--primaryColor) !important;
                 border-radius: 10px;
                 padding: 10px 15px;
+                outline: none;
+                background-color: var(--background_1);
               }
             }
           }
@@ -221,7 +232,7 @@ main {
             border-radius: 30px;
             gap: 10px;
             padding: 5px 5px 5px 30px;
-            background: red;
+            background: var(--primaryColor);
             color: #fff;
             cursor: pointer;
             .button__icon {
@@ -233,20 +244,28 @@ main {
               padding: 10px;
               size: 10px;
               background-color: #fff;
-              color: var(--mainRed);
+              color: var(--primaryColor);
               border-radius: 50%;
             }
           }
         }
         .box__img {
+          align-self: stretch;
+          height: auto;
           width: 50%;
+          img {
+            max-width: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
   }
   .location-section {
     position: relative;
-    background: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18867-2.png") no-repeat;
+    background: url("/assets/img/patten-02.png") no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
@@ -257,7 +276,6 @@ main {
     .location-container {
       position: absolute;
       margin-top: -180px;
-
       padding: 0 10px;
       margin-left: auto;
       margin-right: auto;
@@ -267,13 +285,14 @@ main {
 
       .wrap__dess {
         box-shadow: 10px 0px 25px rgba(3, 3, 3, 0.2);
-        background-color: #fff;
+        background-color: var(--background_1);
         width: 100%;
         display: flex;
         align-items: start;
         justify-content: space-between;
         overflow: hidden;
         border-radius: 10px;
+        color: var(--colorText_1);
         .wrap__map {
           width: 50%;
           .map {
@@ -313,9 +332,10 @@ main {
                   margin-bottom: 1.5em;
                   font-weight: 400;
                   a {
+                    color: var(--colorText_3);
                   }
                   a:hover {
-                    color: red;
+                    color: var(--colorText_1);
                     transition: var(--animiation);
                   }
                 }
@@ -330,7 +350,7 @@ main {
               border-radius: 30px;
               gap: 10px;
               padding: 5px 5px 5px 30px;
-              background: red;
+              background: var(--primaryColor);
               color: #fff;
               cursor: pointer;
               .button__icon {
@@ -342,7 +362,7 @@ main {
                 padding: 10px;
                 size: 10px;
                 background-color: #fff;
-                color: var(--mainRed);
+                color: var(--primaryColor);
                 border-radius: 50%;
               }
             }
@@ -375,13 +395,6 @@ main {
                   width: 335px !important;
                 }
               }
-            }
-          }
-          .box__img {
-            height: 100%;
-            img {
-              object-fit: cover;
-              height: 100%;
             }
           }
         }
@@ -427,13 +440,6 @@ main {
                   max-width: 100% !important;
                 }
               }
-            }
-          }
-          .box__img {
-            height: 100%;
-            img {
-              object-fit: cover;
-              height: 100%;
             }
           }
         }

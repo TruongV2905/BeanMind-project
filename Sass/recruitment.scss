@@ -1,117 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
 }
 
-.banner {
-  display: flex;
-  width: 100%;
-  height: fit-content;
-  .box__img {
-    width: 94%;
-    height: 100%;
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
+body {
+  a {
+    text-decoration: none;
   }
-  .banner__side {
-    position: relative;
-    display: flex;
-    background-color: #b11116;
-    flex: 0 0 auto;
-    width: 6%;
-    .nav {
-      flex: 1 0 auto;
-      bottom: 0;
-      left: 75%;
-      position: absolute;
-      height: fit-content;
-      display: flex;
-      background-color: transparent;
-      transform-origin: bottom left;
-      transform: rotateZ(-90deg);
-      width: 100%;
-      margin-bottom: 3px;
-      .box__content {
-        background-color: transparent;
-        height: fit-content;
-        p {
-          font-size: 15px;
-          color: #fff;
-          background-color: transparent;
-          white-space: nowrap;
-          margin-left: 13px;
-        }
-      }
-      .icon {
-        margin: 10px 0px 0;
-        width: 100%;
-        flex: 1 0 auto;
-        height: 30px;
-        transform: translateY(-50%);
-        list-style: none;
-        background: transparent;
-        display: flex;
-        gap: 20px;
-        li {
-          flex: 0 0 auto;
-          transform: rotate(90deg);
-        }
-      }
-    }
+  img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
   }
-}
-
-.hero {
-  padding: 200px 0 170px;
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/bg-tuyendung.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-
-  .hero__content {
-    p {
-      width: 500px;
-      word-wrap: break-word;
-      margin-top: 10px;
-      margin-left: 90px;
-      font-size: 18px;
-      line-height: 24px;
-      position: relative;
-      &::before {
-        display: block;
-        content: "";
-        width: 5px;
-        height: 100%;
-        background: #ed1c24;
-        position: absolute;
-        left: -20px;
-        top: 9px;
-      }
-    }
-  }
-  h2 {
+  h1 {
     font-size: 40px;
-    width: 535px;
-    // word-break: break-all;
-    word-wrap: break-word;
-    line-height: 40px;
-    margin-left: 90px;
-    margin-bottom: 0;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    line-height: 1.3;
+    font-weight: 1000;
+    font-family: headerfont;
+    /* text-transform: uppercase;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+}
+main {
+  section {
+    width: 100%;
+    height: auto;
+  }
+  .container {
+    max-width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+  .banner {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    .box__img {
+      width: 94%;
+      height: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .banner__side {
+      position: relative;
+      display: flex;
+      background-color: var(--primaryColor);
+      flex: 0 0 auto;
+      width: 6%;
+      .nav {
+        flex: 1 0 auto;
+        bottom: 0;
+        left: 75%;
+        position: absolute;
+        height: fit-content;
+        display: flex;
+        background-color: transparent;
+        transform-origin: bottom left;
+        transform: rotateZ(-90deg);
+        width: 100%;
+        margin-bottom: 3px;
+        .box__content {
+          background-color: transparent;
+          height: fit-content;
+          p {
+            font-size: 15px;
+            color: #fff;
+            background-color: transparent;
+            white-space: nowrap;
+            margin-left: 13px;
+          }
+        }
+        .icon {
+          margin: 10px 0px 0;
+          width: 100%;
+          flex: 1 0 auto;
+          height: 30px;
+          transform: translateY(-50%);
+          list-style: none;
+          background: transparent;
+          display: flex;
+          gap: 20px;
+          li {
+            flex: 0 0 auto;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+  }
+  .hero-section {
+    padding: 80px 0 110px;
+    background: var(--background_1);
+    background-size: cover;
+    color: var(--colorText_1) !important;
+    overflow: hidden;
+    .hero-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .box__img {
+        border-radius: 20px;
+        overflow: hidden;
+        width: calc(100% / 2);
+        height: 100%;
+      }
+      .box__content {
+        padding-right: 80px;
+        height: 100%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: auto;
+        h1 {
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
+        p {
+          position: relative;
+        }
+        p:before {
+          content: "";
+          position: absolute;
+          left: -30px;
+          top: 0;
+          height: 100px;
+          width: 5px;
+          background-color: var(--primaryColor);
+        }
+      }
+    }
   }
 }
 
 .benefit {
   width: 100%;
   padding: 140px 0 120px;
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18857-1.png);
+  color: var(--colorText_2);
+  background-image: url(/assets/img/patten-02.png);
   .benefit__container {
     max-width: 1200px;
     height: 100%;
@@ -124,12 +164,6 @@
       width: 50%;
       height: 100%;
       text-align: start;
-      h2 {
-        font-size: 40px;
-        text-transform: uppercase;
-        line-height: 1.3;
-        color: #fff;
-      }
     }
     .benefit__carousel {
       width: 50%;
@@ -141,11 +175,11 @@
         .slick-track {
           overflow-x: visible;
           .benefit__carousel--item {
+            color: var(--colorText_1);
             width: 100% !important;
             width: 100%;
             height: 130px;
             margin-bottom: 5px;
-            color: #ffffff80;
             h4 {
               position: relative;
               font-size: 20px;
@@ -160,7 +194,7 @@
               left: -70px;
               top: 30px;
               border-radius: 50%;
-              background-color: #ffffff80;
+              background-color: var(--colorText_1);
               z-index: 100;
             }
             h4::before {
@@ -171,7 +205,7 @@
               left: -60px;
               border-radius: 50%;
               background-color: transparent;
-              border: 1px solid #ffffff80;
+              border: 1px solid var(--colorText_1);
               z-index: 100;
               top: 40px;
               transform: translate(-50%, -50%);
@@ -182,13 +216,13 @@
             }
           }
           .slick-current {
-            color: #fff;
+            color: var(--colorText_2);
           }
           .slick-current h4::before {
-            border: 1px solid #fff;
+            border: 1px solid var(--colorText_2);
           }
           .slick-current h4::after {
-            background: #fff;
+            background: var(--colorText_2);
           }
         }
       }
@@ -196,6 +230,7 @@
   }
 }
 .job {
+  background-color: var(--background_1);
   width: 100%;
   height: auto;
   padding: 50px 0 100px;
@@ -207,9 +242,10 @@
     .box__content {
       width: 100%;
       text-align: center;
-      h2 {
-        font-size: 30px;
+      h1 {
+        font-size: 40px;
         margin-bottom: 30px;
+        color: var(--colorText_1);
       }
     }
     .box__table {
@@ -222,8 +258,8 @@
           text-align: center;
           tr {
             th {
-              background: #ed1c24;
-              color: #ffffff;
+              background: var(--primaryColor);
+              color: var(--colorText_2);
               font-weight: 700;
               padding-bottom: 17px;
               padding-top: 17px;
@@ -246,7 +282,7 @@
             text-align: center;
             td {
               position: relative;
-              color: #333333;
+              color: var(--colorText_1);
               padding: 25px 20px;
               font-size: 15px;
               font-weight: 400;
@@ -264,12 +300,13 @@
               width: 20%;
             }
             td:nth-child(3) {
+              padding: 0;
               a {
-                color: red;
+                color: var(--colorText_3);
                 line-height: 45px;
                 min-width: 130px;
                 padding: 10px 30px;
-                border: 1px solid red;
+                border: 1px solid var(--colorText_3);
                 border-radius: 30px;
               }
             }
@@ -287,6 +324,23 @@
 }
 @media screen and (max-width: 1023px) {
   main {
+    .container {
+      max-width: 960px;
+    }
+
+    .hero-section {
+      .hero-container {
+        flex-wrap: wrap;
+        .box__content {
+          width: 100%;
+          padding-right: 0;
+          margin-bottom: 50px;
+        }
+        .box__img {
+          width: 100%;
+        }
+      }
+    }
     .benefit {
       .benefit__container {
         max-width: 860px;
@@ -349,6 +403,7 @@
                 td:nth-child(3):before {
                   position: absolute;
                   content: "Đăng tuyển";
+                  top: 15px;
                   left: 40px;
                   text-transform: uppercase;
                 }
@@ -364,19 +419,15 @@
                   left: 40px;
                   text-transform: uppercase;
                 }
+                td:before {
+                  font-size: 14px;
+                  font-weight: 700;
+                }
               }
             }
           }
         }
       }
-    }
-    .job {
-    }
-    .jon-container {
-    }
-    .box__content {
-    }
-    .box__table {
     }
   }
 }
@@ -403,7 +454,7 @@
               width: 100%;
               .benefit__carousel--item {
                 width: 100%;
-                height: 120px;
+                height: 140px;
                 h4 {
                   font-size: 20px;
                 }

@@ -1,34 +1,67 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
 }
 
-.banner {
+body a {
+  text-decoration: none;
+}
+body img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+body h1 {
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 1000;
+  font-family: headerfont;
+  /* text-transform: uppercase;
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+body p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+main section {
+  width: 100%;
+  height: auto;
+}
+main .container {
+  max-width: 1200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+main .banner {
   display: flex;
   width: 100%;
   height: fit-content;
 }
-.banner .box__img {
+main .banner .box__img {
   width: 94%;
   height: 100%;
 }
-.banner .box__img img {
+main .banner .box__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.banner .banner__side {
+main .banner .banner__side {
   position: relative;
   display: flex;
-  background-color: #b11116;
+  background-color: var(--primaryColor);
   flex: 0 0 auto;
   width: 6%;
 }
-.banner .banner__side .nav {
+main .banner .banner__side .nav {
   flex: 1 0 auto;
   bottom: 0;
   left: 75%;
@@ -41,18 +74,18 @@
   width: 100%;
   margin-bottom: 3px;
 }
-.banner .banner__side .nav .box__content {
+main .banner .banner__side .nav .box__content {
   background-color: transparent;
   height: fit-content;
 }
-.banner .banner__side .nav .box__content p {
+main .banner .banner__side .nav .box__content p {
   font-size: 15px;
   color: #fff;
   background-color: transparent;
   white-space: nowrap;
   margin-left: 13px;
 }
-.banner .banner__side .nav .icon {
+main .banner .banner__side .nav .icon {
   margin: 10px 0px 0;
   width: 100%;
   flex: 1 0 auto;
@@ -63,52 +96,60 @@
   display: flex;
   gap: 20px;
 }
-.banner .banner__side .nav .icon li {
+main .banner .banner__side .nav .icon li {
   flex: 0 0 auto;
   transform: rotate(90deg);
 }
-
-.hero {
-  padding: 200px 0 170px;
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/bg-tuyendung.png);
+main .hero-section {
+  padding: 80px 0 110px;
+  background: var(--background_1);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
+  color: var(--colorText_1) !important;
+  overflow: hidden;
 }
-.hero .hero__content p {
-  width: 500px;
-  word-wrap: break-word;
-  margin-top: 10px;
-  margin-left: 90px;
-  font-size: 18px;
-  line-height: 24px;
+main .hero-section .hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .hero-section .hero-container .box__img {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+}
+main .hero-section .hero-container .box__content {
+  padding-right: 80px;
+  height: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: auto;
+}
+main .hero-section .hero-container .box__content h1 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+main .hero-section .hero-container .box__content p {
   position: relative;
 }
-.hero .hero__content p::before {
-  display: block;
+main .hero-section .hero-container .box__content p:before {
   content: "";
-  width: 5px;
-  height: 100%;
-  background: #ed1c24;
   position: absolute;
-  left: -20px;
-  top: 9px;
-}
-.hero h2 {
-  font-size: 40px;
-  width: 535px;
-  word-wrap: break-word;
-  line-height: 40px;
-  margin-left: 90px;
-  margin-bottom: 0;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  left: -30px;
+  top: 0;
+  height: 100px;
+  width: 5px;
+  background-color: var(--primaryColor);
 }
 
 .benefit {
   width: 100%;
   padding: 140px 0 120px;
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18857-1.png);
+  color: var(--colorText_2);
+  background-image: url(/assets/img/patten-02.png);
 }
 .benefit .benefit__container {
   max-width: 1200px;
@@ -124,12 +165,6 @@
   height: 100%;
   text-align: start;
 }
-.benefit .benefit__container .benefit__content h2 {
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 1.3;
-  color: #fff;
-}
 .benefit .benefit__container .benefit__carousel {
   width: 50%;
   height: 100%;
@@ -143,11 +178,11 @@
   overflow-x: visible;
 }
 .benefit .benefit__container .benefit__carousel .slick-list .slick-track .benefit__carousel--item {
+  color: var(--colorText_1);
   width: 100% !important;
   width: 100%;
   height: 130px;
   margin-bottom: 5px;
-  color: rgba(255, 255, 255, 0.5019607843);
 }
 .benefit .benefit__container .benefit__carousel .slick-list .slick-track .benefit__carousel--item h4 {
   position: relative;
@@ -163,7 +198,7 @@
   left: -70px;
   top: 30px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5019607843);
+  background-color: var(--colorText_1);
   z-index: 100;
 }
 .benefit .benefit__container .benefit__carousel .slick-list .slick-track .benefit__carousel--item h4::before {
@@ -174,7 +209,7 @@
   left: -60px;
   border-radius: 50%;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.5019607843);
+  border: 1px solid var(--colorText_1);
   z-index: 100;
   top: 40px;
   transform: translate(-50%, -50%);
@@ -184,16 +219,17 @@
   line-height: 1.5;
 }
 .benefit .benefit__container .benefit__carousel .slick-list .slick-track .slick-current {
-  color: #fff;
+  color: var(--colorText_2);
 }
 .benefit .benefit__container .benefit__carousel .slick-list .slick-track .slick-current h4::before {
-  border: 1px solid #fff;
+  border: 1px solid var(--colorText_2);
 }
 .benefit .benefit__container .benefit__carousel .slick-list .slick-track .slick-current h4::after {
-  background: #fff;
+  background: var(--colorText_2);
 }
 
 .job {
+  background-color: var(--background_1);
   width: 100%;
   height: auto;
   padding: 50px 0 100px;
@@ -208,9 +244,10 @@
   width: 100%;
   text-align: center;
 }
-.job .jon-container .box__content h2 {
-  font-size: 30px;
+.job .jon-container .box__content h1 {
+  font-size: 40px;
   margin-bottom: 30px;
+  color: var(--colorText_1);
 }
 .job .jon-container .box__table {
   width: 100%;
@@ -223,8 +260,8 @@
   text-align: center;
 }
 .job .jon-container .box__table table thead tr th {
-  background: #ed1c24;
-  color: #ffffff;
+  background: var(--primaryColor);
+  color: var(--colorText_2);
   font-weight: 700;
   padding-bottom: 17px;
   padding-top: 17px;
@@ -245,7 +282,7 @@
 }
 .job .jon-container .box__table table tbody tr td {
   position: relative;
-  color: #333333;
+  color: var(--colorText_1);
   padding: 25px 20px;
   font-size: 15px;
   font-weight: 400;
@@ -262,12 +299,15 @@
   text-align: start;
   width: 20%;
 }
+.job .jon-container .box__table table tbody tr td:nth-child(3) {
+  padding: 0;
+}
 .job .jon-container .box__table table tbody tr td:nth-child(3) a {
-  color: red;
+  color: var(--colorText_3);
   line-height: 45px;
   min-width: 130px;
   padding: 10px 30px;
-  border: 1px solid red;
+  border: 1px solid var(--colorText_3);
   border-radius: 30px;
 }
 .job .jon-container .box__table table tbody tr td:nth-child(4) {
@@ -278,6 +318,20 @@
 }
 
 @media screen and (max-width: 1023px) {
+  main .container {
+    max-width: 960px;
+  }
+  main .hero-section .hero-container {
+    flex-wrap: wrap;
+  }
+  main .hero-section .hero-container .box__content {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+  main .hero-section .hero-container .box__img {
+    width: 100%;
+  }
   main .benefit .benefit__container {
     max-width: 860px;
   }
@@ -328,6 +382,7 @@
   main .job .jon-container .box__table table tbody tr td:nth-child(3):before {
     position: absolute;
     content: "Đăng tuyển";
+    top: 15px;
     left: 40px;
     text-transform: uppercase;
   }
@@ -342,6 +397,10 @@
     content: "ngày hết hạn";
     left: 40px;
     text-transform: uppercase;
+  }
+  main .job .jon-container .box__table table tbody tr td:before {
+    font-size: 14px;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 790px) {
@@ -371,7 +430,7 @@
   }
   main .benefit .benefit__container .benefit__carousel .slick-list .slick-track .benefit__carousel--item {
     width: 100%;
-    height: 120px;
+    height: 140px;
   }
   main .benefit .benefit__container .benefit__carousel .slick-list .slick-track .benefit__carousel--item h4 {
     font-size: 20px;

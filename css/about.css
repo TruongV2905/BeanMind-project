@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: red;
-}
-
 body {
   scroll-behavior: smooth;
 }
@@ -67,7 +59,7 @@ main .aboutBanner-section .box__img img {
 main .aboutBanner-section .banner__side {
   position: relative;
   display: flex;
-  background-color: #b11116;
+  background-color: var(--primaryColor);
   flex: 0 0 auto;
   width: 6%;
 }
@@ -111,8 +103,8 @@ main .aboutBanner-section .banner__side .nav .icon li {
   transform: rotate(90deg);
 }
 main .introduce-section {
-  background: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18865.png") no-repeat center;
-  background-size: cover;
+  background: var(--background_1);
+  color: var(--colorText_1);
   overflow: hidden;
   padding: 50px 0 110px;
 }
@@ -140,7 +132,7 @@ main .introduce-section .introduce-container .wrap__dess .item {
 }
 main .introduce-section .introduce-container .wrap__dess .item .box__content {
   height: auto;
-  border: 1px solid #092f46;
+  border: 3px solid var(--primaryColor);
   border-radius: 10px;
   max-width: 528px;
   height: fit-content;
@@ -150,9 +142,9 @@ main .introduce-section .introduce-container .wrap__dess .item .box__content {
 main .introduce-section .introduce-container .wrap__dess .item .counter {
   position: absolute;
   top: -45px;
-  background: white;
+  background: var(--background_1);
   font-size: 80px;
-  color: #ed1c24;
+  color: var(--primaryColor);
   padding: 0 15px 0 10px;
   left: 35px;
 }
@@ -174,13 +166,13 @@ main .introduce-section .introduce-container .wrap__dess .item:nth-child(1) .box
   z-index: -1;
   right: -50px;
   bottom: -59px;
-  background: #ffdd00;
+  background: var(--background_2);
   transform: rotate(-180deg);
 }
 main .introduce-section .introduce-container .wrap__dess .item:nth-child(2) .box__img:before {
   position: absolute;
   content: "";
-  background: #b11116;
+  background: var(--background_3);
   border-radius: 60px;
   width: 118px;
   height: 117px;
@@ -192,7 +184,7 @@ main .introduce-section .introduce-container .wrap__dess .item:nth-child(3) .box
   position: absolute;
   content: "";
   border-radius: 90px 90px 0 0;
-  background: #ffdd00;
+  background: var(--background_2);
   z-index: 2;
   bottom: -55px;
   left: -46px;
@@ -207,7 +199,7 @@ main .introduce-section .introduce-container .wrap__dess .item:nth-child(3) .box
   height: 117px;
   right: -60px;
   top: -60px;
-  background: #ed1c24;
+  background: var(--background_3);
   z-index: 1;
 }
 main .value-section {
@@ -216,7 +208,7 @@ main .value-section {
   justify-content: space-between;
 }
 main .value-section .box__img {
-  background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18637-1.png");
+  background: var(--background_2);
   width: 50%;
   height: auto;
   position: relative;
@@ -261,9 +253,9 @@ main .value-section .box__img .main__img {
 main .value-section .box__content {
   width: 50%;
   height: auto;
-  background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18867-1-1.png");
+  background: var(--background_3);
   padding: 85px 88px 95px 75px;
-  color: #fff;
+  color: var(--colorText_3);
 }
 main .value-section .box__content h1 {
   margin-bottom: 30px;
@@ -272,6 +264,8 @@ main .value-section .box__content .content-first {
   margin-bottom: 20px;
 }
 main .reason-section {
+  background-color: var(--background_1);
+  color: var(--colorText_1);
   padding: 50px 0 110px;
   overflow: hidden;
 }
@@ -322,7 +316,7 @@ main .reason-section .reason-container .reason__list .reason__item .box__img::af
 }
 main .reason-section .reason-container .reason__list .reason__item .content {
   width: 100%;
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
   padding: 50px 24px 24px;
   bottom: 0;
@@ -333,12 +327,16 @@ main .reason-section .reason-container .reason__list .reason__item .content {
   color: #fff;
 }
 main .reason-section .reason-container .reason__list .reason__item .content h3 {
+  color: var(--colorText_2);
   margin-bottom: 20px;
+}
+main .reason-section .reason-container .reason__list .reason__item .content p {
+  color: var(--colorText_2);
 }
 main .reason-section .reason-container .reason__list .reason__item .content::before {
   content: "";
   position: absolute;
-  background: #b11116;
+  background: var(--background_2);
   width: 97.5%;
   height: 97.5%;
   z-index: -1;
@@ -355,7 +353,7 @@ main .reason-section .reason-container .box__btn {
   border-radius: 30px;
   gap: 10px;
   padding: 5px 5px 5px 30px;
-  background: red;
+  background: var(--primaryColor);
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
@@ -369,11 +367,13 @@ main .reason-section .reason-container .box__btn .button__icon {
   padding: 10px;
   size: 10px;
   background-color: #fff;
-  color: red;
+  color: var(--primaryColor);
   border-radius: 50%;
 }
 main .result-section {
-  padding: 0 0 110px;
+  background: var(--background_1);
+  color: var(--colorText_1);
+  padding: 50px 0 110px;
 }
 main .result-section .result-container .result__content {
   width: 100%;
@@ -406,7 +406,7 @@ main .result-section .result-container .result__list .result__item .box__img {
 main .result-section .result-container .result__list .result__item .box__img h3 {
   position: absolute;
   font-size: 50px;
-  color: red;
+  color: var(--colorText_1);
 }
 main .result-section .result-container .result__list .result__item .box__content {
   max-width: 280px;
@@ -420,19 +420,23 @@ main .result-section .result-container .result__list .result__item .box__content
   font-weight: 700;
 }
 main .team-section {
-  padding: 0 0 110px;
+  background-color: var(--background_2);
+  padding: 50px 0 110px;
 }
 main .team-section .team-container .team__content {
   text-align: center;
   margin-bottom: 30px;
 }
 main .team-section .team-container .team__content h1 {
+  color: var(--colorText_2);
   margin-bottom: 20px;
 }
 main .team-section .team-container .team__content p {
+  color: var(--colorText_2);
   font-size: 20px;
 }
 main .contact__section {
+  background-color: var(--background_2);
   padding: 0 0 110px;
   display: flex;
   justify-content: center;
@@ -452,7 +456,7 @@ main .contact__section .contact__pic--right {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18855-3.png");
+  background: var(--background_1);
   padding: 55px 64px 60px;
 }
 main .contact__section .contact__pic--right .box__logo {
@@ -464,7 +468,7 @@ main .contact__section .contact__pic--right .box__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: #fff;
+  color: var(--colorText_1);
 }
 main .contact__section .contact__pic--right .box__content .team__pic--desc {
   display: flex;
@@ -482,7 +486,7 @@ main .contact__section .contact__pic--right .box__btn {
   font-size: 14px;
   gap: 10px;
   padding: 5px 5px 5px 30px;
-  background: red;
+  background: var(--primaryColor);
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
@@ -496,13 +500,15 @@ main .contact__section .contact__pic--right .box__btn .button__icon {
   padding: 10px;
   size: 10px;
   background-color: #fff;
-  color: red;
+  color: var(--primaryColor);
   border-radius: 50%;
 }
 main .question-section {
-  padding: 0 0 110px;
+  background: var(--background_1);
+  padding: 50px 0 110px;
 }
 main .question-section .question-container h1 {
+  color: var(--colorText_1);
   text-align: center;
   margin-bottom: 30px;
 }
@@ -521,7 +527,7 @@ main .question-section .question-container .question-list .question {
   margin: 10px 0;
 }
 main .question-section .question-container .question-list .question * {
-  color: #ed1b24;
+  color: var(--colorText_1);
   font-weight: 700;
   font-size: 20px;
 }
@@ -536,7 +542,7 @@ main .question-section .question-container .question-list .question__content {
   gap: 10px;
 }
 main .question-section .question-container .question-list .question__content p {
-  color: #000;
+  color: var(--colorText_3);
   font-size: 15px;
   font-weight: 400;
   display: none;

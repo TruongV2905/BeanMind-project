@@ -19,7 +19,7 @@
   &--form {
     h1 {
       margin-bottom: 40px;
-      color: white;
+      color: var(--colorText_2);
     }
     position: absolute;
     bottom: 100px;
@@ -30,11 +30,11 @@
     padding: 50px;
     padding-bottom: 110px;
     padding-right: 70px;
-    border-radius: 12px;
+    border-radius: 15px;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18797.png");
+    backdrop-filter: blur(30px);
     &--listInput {
       display: flex;
       align-items: center;
@@ -46,29 +46,28 @@
         select {
           width: 100%;
           color: white;
-          background-color: #f04950;
+          background-color: transparent;
           padding: 10px;
           border-radius: 20px;
           outline: none;
           border: none;
           border: 1px white solid;
           option {
-            background-color: #fff;
             color: #121212;
           }
         }
       }
       input {
-        background-color: #f04950;
+        background-color: transparent;
         width: calc((100% / 5) - 10px);
 
         border: 1px white solid;
         padding: 10px;
         border-radius: 20px;
         outline: none;
-        color: white;
+        color: var(--colorText_2);
         &::placeholder {
-          color: white;
+          color: var(--colorText_2);
           opacity: 1;
         }
       }

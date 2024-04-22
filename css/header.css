@@ -7,7 +7,7 @@
 }
 
 a {
-  color: black;
+  color: var(--colorText_1);
 }
 
 li {
@@ -98,7 +98,7 @@ li {
   transition: all 0.4s;
 }
 .wrap--header .header--listNav--ul .li--dropdown--content li:hover {
-  background-color: black;
+  background-color: var(--primaryColor);
 }
 .wrap--header .header--listNav--ul .li--dropdown--content li:hover > * {
   color: white;
@@ -126,7 +126,7 @@ li {
   justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: var(--primaryColor);
 }
 @keyframes shake {
   0% {
@@ -170,7 +170,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #a80810;
+    background-color: var(--primaryColor);
     overflow: hidden;
     height: 0;
     z-index: 10;

@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 a {
-  color: black;
+  color: var(--colorText_1);
 }
 li {
   cursor: pointer;
@@ -92,7 +92,7 @@ li {
               padding: 20px;
               transition: all 0.4s;
               &:hover {
-                background-color: black;
+                background-color: var(--primaryColor);
                 > * {
                   color: white;
                 }
@@ -126,7 +126,7 @@ li {
           justify-content: center;
           height: 100%;
           width: 100%;
-          background-color: red;
+          background-color: var(--primaryColor);
         }
       }
     }
@@ -179,7 +179,7 @@ li {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #a80810;
+        background-color: var(--primaryColor);
         overflow: hidden;
         height: 0;
         z-index: 10;

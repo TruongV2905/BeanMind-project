@@ -6,6 +6,7 @@
   text-decoration: none;
 }
 .footer__last {
+  background-color: var(--background_1);
   display: flex;
   justify-content: center;
   .footer__information {
@@ -35,7 +36,7 @@
     }
     a:hover,
     a:hover strong {
-      color: red;
+      color: var(--primaryColor);
     }
     li {
       margin-bottom: 10px;

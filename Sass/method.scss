@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --mainRed: rgb(253, 0, 0);
+  --primaryColor: rgb(253, 0, 0);
   --animiation: 0.5s ease;
 }
 body::-webkit-scrollbar {
@@ -15,7 +15,6 @@ body {
   letter-spacing: 0.01em;
   scroll-behavior: smooth;
   a {
-    color: black;
     text-decoration: none;
   }
   p {
@@ -63,7 +62,7 @@ main {
     .banner__side {
       position: relative;
       display: flex;
-      background-color: #b11116;
+      background-color: var(--primaryColor);
       flex: 0 0 auto;
       width: 6%;
       .nav {
@@ -109,11 +108,13 @@ main {
   }
   .methodStudy-section {
     padding: 50px 0 0px;
+    background-color: var(--background_1);
     .methodStudy-container {
       .box__content {
         width: 100%;
         margin-bottom: 55px;
         h1 {
+          color: var(--colorText_1);
           text-align: center;
           font-size: 40px;
           font-weight: 1000;
@@ -132,8 +133,8 @@ main {
           display: flex;
           justify-content: space-between;
           .box__img {
-            width: 134px;
-            height: 134px;
+            width: 180px;
+            height: 180px;
             padding: 30px;
             display: flex;
             align-items: center;
@@ -141,9 +142,10 @@ main {
           }
 
           .content {
-            width: calc(100% - 134px);
+            width: calc(100% - 180px);
             padding-left: 20px;
             p {
+              color: var(--colorText_1);
               font-size: 16px;
               margin-bottom: 5px;
               line-height: 26px;
@@ -159,8 +161,7 @@ main {
       position: relative;
       width: 100%;
       img {
-        height: 100%;
-        object-fit: cover;
+        width: 100%;
       }
     }
     .box__img::before {
@@ -173,6 +174,7 @@ main {
     }
   }
   .structure-section {
+    background-color: var(--background_1);
     padding: 50px 0 0px;
     .structure-container {
       display: flex;
@@ -181,11 +183,13 @@ main {
       .box__content {
         width: 50%;
         h1 {
+          color: var(--colorText_1);
           font-size: 40px;
           font-weight: 1000;
           margin-bottom: 30px;
         }
         p {
+          color: var(--colorText_1);
           font-size: 16px;
           margin-bottom: 5px;
           line-height: 26px;
@@ -198,18 +202,21 @@ main {
     }
   }
   .teachingProcess-section {
+    background-color: var(--background_1);
     padding: 50px 0 0px;
     .teachingProcess-container {
       .box__content {
         width: 100%;
         height: fit-content;
         h1 {
+          color: var(--colorText_1);
           text-align: center;
           font-size: 40px;
           font-weight: 1000;
           margin-bottom: 30px;
         }
         p {
+          color: var(--colorText_1);
           text-align: center;
           font-size: 16px;
           margin-bottom: 5px;
@@ -227,10 +234,10 @@ main {
           width: 273.44px;
           height: 273.44px;
           border-radius: 50%;
-          border: 20px solid #ffffff;
+          border: 20px solid var(--background_1);
           position: relative;
           margin: 0 -29px;
-          background: #ed1c24;
+          background: var(--primaryColor);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -238,16 +245,17 @@ main {
           h2 {
             z-index: 3;
             font-size: 55px;
-            color: var(--mainRed);
+            color: var(--primaryColor);
           }
           h4 {
+            color: var(--colorText_3);
             z-index: 3;
             font-size: 24px;
           }
         }
         .item::before {
           inset: 3px;
-          background: white;
+          background: var(--background_1);
           content: "";
           position: absolute;
           border-radius: 50%;
@@ -256,7 +264,9 @@ main {
     }
   }
   .route-section {
+    background-color: var(--background_1);
     padding: 50px 0 0;
+    color: var(--colorText_1);
     .route-container {
       .route__content {
         width: 100%;
@@ -264,6 +274,7 @@ main {
         margin-bottom: 30px;
         text-align: center;
         h1 {
+          color: var(--colorText_1);
           font-size: 40px;
           font-weight: 1000;
           margin-bottom: 30px;
@@ -301,7 +312,7 @@ main {
             border-radius: 30px;
             gap: 10px;
             padding: 5px 5px 5px 30px;
-            background: red;
+            background: var(--primaryColor);
             color: #fff;
             cursor: pointer;
             .button__icon {
@@ -312,7 +323,7 @@ main {
               height: 35px;
               size: 10px;
               background-color: #fff;
-              color: var(--mainRed);
+              color: var(--primaryColor);
               border-radius: 50%;
             }
           }
@@ -453,93 +464,95 @@ main {
       }
     }
   }
-  .main__system {
-    width: 100%;
-    background-color: #f1f4f4 !important;
-    padding: 50px 100px;
-    .main__system__container {
-      padding-top: 45px;
-      h1 {
-        margin-bottom: 20px;
+  .mainSystem-section {
+    padding: 50px 0 110px;
+    background: var(--background_2);
+    .mainSystem-container {
+      .mainSystem_content {
+        h1 {
+          text-align: center;
+          margin-bottom: 50px;
+          color: var(--colorText_2);
+        }
       }
-      // :not(h1){
-      //   display: flex;
-      //   flex-direction: row;
-      // }
-      h1 {
-        text-align: center;
-      }
-
       .box__system {
+        width: 100%;
+        height: auto;
         display: flex;
-        background-color: #fff;
-        border-radius: 50px;
+        background-color: var(--background_1);
+        border-radius: 20px;
         overflow: hidden;
-        // h1{
-        //   text-align: center;
-        // }
-        // :not(h1){
-        //   flex-direction: row;
-        // }
+        h1 {
+          text-align: center;
+        }
+        :not(h1) {
+          flex-direction: row;
+        }
         .info__nav {
+          width: 50%;
+          height: auto;
           display: flex;
           flex-wrap: wrap;
           flex-direction: column;
           gap: 20px;
           padding-top: 16px;
-          background-color: #fff;
-          // border: solid 1px red;
-
+          background-color: var(--background_1);
           .box__select {
+            padding: 0 10px;
+            width: 100%;
+            height: auto;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
-
-            select {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: solid 1px #686876;
-              border-radius: 60px;
-              color: #686876;
-              padding: 13px 50px 13px 47px;
+            .box__city,
+            .box__distr {
+              width: 50%;
+              height: auto;
+              select {
+                width: 100%;
+                height: auto;
+                background-color: var(--background_1);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid var(--primaryColor);
+                border-radius: 60px;
+                color: var(--colorText_1);
+                padding: 13px 10px;
+                text-align: center;
+              }
             }
           }
-          .result__container__all::-webkit-scrollbar {
-            width: 5px;
-          }
-
-          .result__container__all::-webkit-scrollbar-thumb {
-            background: red;
-          }
           .result__container__all {
+            width: 100%;
+            height: 460px;
+            background-color: var(--background_1);
+            padding: 20px;
             display: flex;
             flex-direction: column;
             overflow-y: scroll;
-            height: 495px;
-
             gap: 12px;
-
             .result__container {
+              width: 100%;
+              height: auto;
               display: flex;
               flex-direction: column;
-              // font-size: 10px;
               border-radius: 10px;
-              border: solid 1px #c3c3c3ab;
+              border: solid 1px var(--primaryColor);
               height: 100%;
-              width: 100%;
               position: relative;
-              padding: 25px 77px 25px 27px;
-              // align-self: flex-start;
-
+              padding: 5px 75px 11px 27px;
+              color: var(--colorText_3);
               .result__box {
-                gap: 25px;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
                 position: relative;
-                // width: 100%;
+                gap: 10px;
+                width: 100%;
+                height: auto;
                 // height: 25%;
                 // text-align: justify;
 
@@ -557,18 +570,18 @@ main {
                   display: flex;
                   align-items: center;
                   gap: 10px;
-                  border: solid 1px red;
+                  border: solid 1px var(--primaryColor);
                   border-radius: 60px;
                   text-align: center;
                   justify-content: center;
                   width: 169px;
                   height: 35px;
-                  color: red;
+                  color: var(--primaryColor);
                 }
                 .arrow__btn {
                   position: absolute;
                   display: flex;
-                  border: solid 1px #686876;
+                  border: solid 1px var(--primaryColor);
                   width: 40px;
                   height: 40px;
                   border-radius: 50%;
@@ -576,7 +589,7 @@ main {
                   justify-content: center;
                   right: -60px;
                   top: 90px;
-                  color: #686876;
+                  color: var(--primaryColor);
                 }
               }
             }
@@ -588,44 +601,41 @@ main {
             }
           }
         }
+        .result__container__all::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        .result__container__all::-webkit-scrollbar-thumb {
+          background: #21937c;
+        }
+        .map {
+          width: 50%;
+          height: auto;
+          background-color: var(--background_1);
+        }
       }
     }
   }
 }
 .teachingSkill-section {
+  background-color: var(--background_3);
   padding: 70px 0 100px;
   .teachingSkill-container {
     .box__content {
       text-align: center;
+      h1 {
+        font-size: 40px;
+        color: var(--colorText_3);
+      }
       p {
+        color: var(--colorText_3);
         font-size: 14px;
         font-weight: 300;
       }
     }
     .box__carousel {
       height: 500px;
-      .slick-pre,
-      .slick-next {
-        position: absolute;
-        top: 210px;
-        border: none;
-        outline: none;
-        color: red;
-        background: #fff;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        z-index: 10000;
-        font-weight: 1000;
-        font-size: 1em;
-        box-shadow: 0px 10px 20px rgba(9, 47, 70, 0.1);
-      }
-      .slick-pre {
-        left: -5%;
-      }
-      .slick-next {
-        right: -5%;
-      }
+
       .slick-list {
         overflow-y: visible;
         height: 100%;
@@ -637,7 +647,7 @@ main {
           }
           .item {
             position: relative;
-            background: #ffffff;
+            background: var(--background_1);
             box-shadow: 0px 3.20662px 40.0827px rgba(88, 88, 88, 0.3);
             border-radius: 10px;
             padding: 45px 26px 50px;
@@ -651,6 +661,7 @@ main {
               .content {
                 width: 100%;
                 h2 {
+                  color: var(--colorText_1);
                   font-size: 20px;
                   height: 120px;
                   margin: 0;
@@ -669,13 +680,13 @@ main {
               transition: var(--animiation);
               h1 {
                 font-size: 25px;
-                color: #ffffff;
+                color: var(--colorText_2);
                 margin-bottom: 20px;
                 font-weight: 1000;
               }
               p {
                 font-size: 13px;
-                color: #ffffffbd;
+                color: var(--colorText_2);
                 line-height: 1.5;
                 margin-bottom: 29px;
                 overflow: hidden;
@@ -683,7 +694,7 @@ main {
             }
           }
           .slick-current > .wrap__desc {
-            background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18854-1-1.png");
+            background: url("/assets/img/patten-02.png");
             background-position: right;
             background-size: cover;
             background-repeat: no-repeat;

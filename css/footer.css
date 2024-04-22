@@ -7,6 +7,7 @@
 }
 
 .footer__last {
+  background-color: var(--background_1);
   display: flex;
   justify-content: center;
 }
@@ -38,7 +39,7 @@
 }
 .footer__last .footer__information a:hover,
 .footer__last .footer__information a:hover strong {
-  color: red;
+  color: var(--primaryColor);
 }
 .footer__last .footer__information li {
   margin-bottom: 10px;

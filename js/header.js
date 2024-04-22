@@ -21,13 +21,12 @@ function loadHeaderAndSetup() {
         btnExit.addEventListener("click", closeNav);
         window.addEventListener("scroll", function () {
           let scrollPosition = 100;
-          if (
-            window.scrollY > scrollPosition ||
-            document.documentElement.scrollTop > scrollPosition
-          ) {
-            header.style.background = "white";
+          if (window.scrollY > scrollPosition || document.documentElement.scrollTop > scrollPosition) {
+            header.style.background = "var(--background_1)";
+            header.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
           } else {
             header.style.background = "transparent";
+            header.style.boxShadow = "none";
           }
         });
       }

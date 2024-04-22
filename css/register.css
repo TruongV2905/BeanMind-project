@@ -27,15 +27,15 @@
   padding: 50px;
   padding-bottom: 110px;
   padding-right: 70px;
-  border-radius: 12px;
+  border-radius: 15px;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18797.png");
+  backdrop-filter: blur(30px);
 }
 .register--form h1 {
   margin-bottom: 40px;
-  color: white;
+  color: var(--colorText_2);
 }
 .register--form--listInput {
   display: flex;
@@ -50,7 +50,7 @@
 .register--form--listInput .style-custom select {
   width: 100%;
   color: white;
-  background-color: #f04950;
+  background-color: transparent;
   padding: 10px;
   border-radius: 20px;
   outline: none;
@@ -58,20 +58,19 @@
   border: 1px white solid;
 }
 .register--form--listInput .style-custom select option {
-  background-color: #fff;
   color: #121212;
 }
 .register--form--listInput input {
-  background-color: #f04950;
+  background-color: transparent;
   width: calc(20% - 10px);
   border: 1px white solid;
   padding: 10px;
   border-radius: 20px;
   outline: none;
-  color: white;
+  color: var(--colorText_2);
 }
 .register--form--listInput input::placeholder {
-  color: white;
+  color: var(--colorText_2);
   opacity: 1;
 }
 .register--form .button {
