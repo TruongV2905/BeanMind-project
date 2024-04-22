@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
+  color: var(--primaryColor);
+}
+
+h2 {
+  font-family: headerfont;
 }
 
 img {
@@ -16,7 +21,7 @@ img {
 }
 .grid__container .site__content .overview {
   padding: 95px 85px 0 85px;
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18890-1.png);
+  background-color: #fffbef;
 }
 .grid__container .site__content .overview .overview__wrap {
   margin-left: auto;
@@ -29,21 +34,24 @@ img {
   gap: 20px;
 }
 .grid__container .site__content .overview .overview__wrap .box__img img {
+  border-radius: 10px;
   width: 100%;
   object-fit: scale-down;
 }
 .grid__container .site__content .overview .overview__wrap .box__text {
-  padding-top: 15%;
+  padding-top: 0;
 }
 .grid__container .site__content .overview .overview__wrap .box__text h2 {
   font-size: 3rem;
+  font-family: headerfont;
+  color: var(--primaryColor);
 }
 .grid__container .site__content .overview .overview__wrap .box__text .content {
   font-size: 1.5rem;
   text-align: justify;
 }
 .grid__container .site__content .advantage {
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18907-1-1.png);
+  background-color: #fffbef;
   padding: 90px 0 40px;
 }
 .grid__container .site__content .advantage .ad__container {
@@ -88,7 +96,7 @@ img {
   position: relative;
   width: 260px;
   height: 490px;
-  background: #b11116;
+  background: #21937c;
   border-radius: 22px;
   padding: 50px 24px 24px;
 }
@@ -135,7 +143,7 @@ img {
   overflow: hidden;
 }
 .grid__container .site__content .method .method__container {
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18906.png);
+  background-image: url(/assets/img/patten-02.png);
   margin-bottom: 15%;
   padding: 80px 30px 390px 60px;
 }
@@ -166,7 +174,7 @@ img {
   object-fit: cover;
 }
 .grid__container .site__content .duration {
-  background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18890-1.png);
+  background-color: #fffbef;
   padding: 55px 0 145px;
   width: 100%;
 }
@@ -210,10 +218,10 @@ img {
   font-size: 1.15rem;
 }
 .grid__container .site__content .duration .dur__container .dur__item__wrap .item-1 {
-  background-color: rgb(177, 17, 22);
+  background-color: #003a42;
 }
 .grid__container .site__content .duration .dur__container .dur__item__wrap .item-2 {
-  background-color: rgb(237, 28, 36);
+  background-color: #167f82;
 }
 .grid__container .site__content .lessons {
   background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2023/02/Cach-thuc-hoc-tap_1196x650.jpg);
@@ -245,17 +253,17 @@ img {
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-4,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-6,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-8 {
-  box-shadow: 0px 10px 5px -1px rgb(237, 28, 36);
-  -webkit-box-shadow: 0px 10px 5px -1px rgb(237, 28, 36);
-  -moz-box-shadow: 0px 10px 5px -1px rgb(237, 28, 36);
+  box-shadow: 0px 18px 11px -1px rgba(0, 58, 66, 0.66);
+  -webkit-box-shadow: 0px 18px 11px -1px rgba(0, 58, 66, 0.66);
+  -moz-box-shadow: 0px 18px 11px -1px rgba(0, 58, 66, 0.66);
 }
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-1,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-3,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-5,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-7 {
-  box-shadow: 0px 10px 5px -1px rgb(177, 17, 22);
-  -webkit-box-shadow: 0px 10px 5px -1px rgb(177, 17, 22);
-  -moz-box-shadow: 0px 10px 5px -1px rgb(177, 17, 22);
+  box-shadow: 0px 18px 11px -1px rgba(33, 147, 124, 0.66);
+  -webkit-box-shadow: 0px 18px 11px -1px rgba(33, 147, 124, 0.66);
+  -moz-box-shadow: 0px 18px 11px -1px rgba(33, 147, 124, 0.66);
 }
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-3 h4,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .lesson-7 h4 {
@@ -299,10 +307,10 @@ img {
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-pre:hover,
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-next:hover {
   cursor: pointer;
-  background-color: #b11116;
-  box-shadow: 1px 0px 28px -2px rgba(177, 17, 22, 0.75);
-  -webkit-box-shadow: 1px 0px 28px -2px rgba(177, 17, 22, 0.75);
-  -moz-box-shadow: 1px 0px 28px -2px rgba(177, 17, 22, 0.75);
+  background-color: #167F82;
+  box-shadow: 1px 0px 28px -2px rgba(22, 127, 130, 0.66);
+  -webkit-box-shadow: 1px 0px 28px -2px rgba(22, 127, 130, 0.66);
+  -moz-box-shadow: 1px 0px 28px -2px rgba(22, 127, 130, 0.66);
 }
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list {
   width: 100%;
@@ -331,7 +339,7 @@ img {
 }
 .grid__container .site__content .lessons .lessons__container .lessons__wrap .slick-list .slick-track .lesson h4 {
   text-align: start;
-  color: #ed1c24;
+  color: var(--primaryColor);
   font-size: 2rem;
 }
 .grid__container .site__content .main__system {

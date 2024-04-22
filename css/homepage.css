@@ -128,7 +128,6 @@ main .presentation-section {
   color: var(--colorText_1) !important;
 }
 main .presentation-section .wrap__dess {
-  margin-bottom: 110px;
   width: 100%;
   height: auto;
   display: flex;
@@ -208,20 +207,19 @@ main .presentation-section .warp__first {
 }
 main .presentation-section .warp__first .box_video {
   width: 100%;
-  height: auto;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main .presentation-section .warp__first .box_video video {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 main .presentation-section .warp__last {
   width: 100%;
   height: auto;
   background-color: transparent;
-  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
