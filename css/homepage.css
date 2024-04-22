@@ -207,14 +207,19 @@ main .presentation-section .warp__first {
 }
 main .presentation-section .warp__first .box_video {
   width: 100%;
-  height: 400px;
+  height: 300px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 5px solid var(--background_1);
+  margin: 10px 0;
 }
 main .presentation-section .warp__first .box_video video {
   width: 100%;
   height: 100%;
+  border: none;
+  outline: none;
 }
 main .presentation-section .warp__last {
   width: 100%;
