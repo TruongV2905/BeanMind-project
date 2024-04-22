@@ -41,6 +41,7 @@ img {
           img {
             width: 100%;
             object-fit: scale-down;
+            border-radius: 10px;
           }
         }
         .box__text {
@@ -111,7 +112,7 @@ img {
               position: relative;
               width: 260px;
               height: 520px;
-              background: #b11116;
+              background: #21937c;
               border-radius: 22px;
               padding: 50px 24px 24px;
               h3 {
