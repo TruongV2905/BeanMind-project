@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
+  color: var(--primaryColor);
+}
+h2{
+  font-family: headerfont;
 }
 img {
   max-width: 100%;
@@ -186,8 +190,7 @@ img {
       margin-right: -50vw;
       overflow: hidden;
       .method__container {
-        background-image: url(https://mathnasium.edu.vn/wp-content/uploads/2022/11/Frame-18906.png);
-        margin-bottom: 15%;
+        background-image: url(/assets/img/patten-02.png);        margin-bottom: 15%;
         padding: 80px 30px 390px 60px;
         // margin-bottom: 280px;
         // background-color: red;
@@ -271,10 +274,10 @@ img {
             }
           }
           .item-1 {
-            background-color: rgb(177 17 22);
+            background-color: #003A42;
           }
           .item-2 {
-            background-color: rgb(237 28 36);
+            background-color: #167F82;
           }
         }
       }
