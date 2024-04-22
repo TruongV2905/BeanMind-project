@@ -205,7 +205,14 @@ main .presentation-section .warp__first {
   align-items: center;
   justify-content: center;
 }
-main .presentation-section .warp__first .box_video {
+main .video-section {
+  background-color: var(--background_1);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .video-section .box_video {
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -213,87 +220,12 @@ main .presentation-section .warp__first .box_video {
   align-items: center;
   justify-content: center;
   border-bottom: 5px solid var(--background_1);
-  margin: 10px 0;
 }
-main .presentation-section .warp__first .box_video video {
+main .video-section .box_video video {
   width: 100%;
   height: 100%;
   border: none;
   outline: none;
-}
-main .presentation-section .warp__last {
-  width: 100%;
-  height: auto;
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-}
-main .presentation-section .warp__last .box__img {
-  height: 100%;
-  position: relative;
-  width: 50%;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-}
-main .presentation-section .warp__last .box__img .move__img-up {
-  animation: moveup ease-in 2s infinite alternate 1s;
-}
-main .presentation-section .warp__last .box__img .move__img-down {
-  animation: movedown ease-in 2s infinite alternate 1s;
-}
-main .presentation-section .warp__last .box__img .left__img {
-  position: absolute;
-  left: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 30%;
-  height: 100%;
-}
-main .presentation-section .warp__last .box__img .right__img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 30%;
-  height: 100%;
-  z-index: 2;
-}
-main .presentation-section .warp__last .box__img .main__img {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .presentation-section .warp__last .box__content {
-  width: 50%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-}
-main .presentation-section .warp__last .box__content .content {
-  padding: 75px 60px 65px 65px;
-  /* max-width: 445px; */
-  position: relative;
-  border: 2px solid var(--colorText_1);
-  border-radius: 15px;
-}
-main .presentation-section .warp__last .box__content .content .boxContent_img {
-  position: absolute;
-  overflow: initial;
-  visibility: initial;
-  width: 100px;
-  height: 100px;
-  background: var(--background_1);
-  top: -33px;
-  left: -45px;
-  transform: rotate(45deg);
 }
 main .studyProcess-section {
   background: var(--background_2);
