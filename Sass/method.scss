@@ -263,68 +263,40 @@ main {
       }
     }
   }
-  .route-section {
-    background-color: var(--background_1);
-    padding: 50px 0 0;
-    color: var(--colorText_1);
-    .route-container {
-      .route__content {
-        width: 100%;
-        height: fit-content;
-        margin-bottom: 30px;
+  .studyProcess-section {
+    background: var(--background_2);
+    color: var(--colorText_2);
+    background-size: cover;
+    padding: 50px 0 110px;
+    .studyProcess-container {
+      text-align: center;
+      .processBox__content {
         text-align: center;
-        h1 {
-          color: var(--colorText_1);
-          font-size: 40px;
-          font-weight: 1000;
-          margin-bottom: 30px;
-        }
+        width: 100%;
+        margin-bottom: 50px;
       }
       .wrap__dess {
         display: flex;
         align-items: start;
         justify-content: space-between;
-        flex-wrap: wrap;
+        gap: 30px;
         .item {
+          width: calc((100% / 4) - 30px);
           display: flex;
-          flex-direction: column;
           align-items: center;
-          width: calc((100% / 3) - 56px);
-          padding: 32px 38px 50px;
-          margin: 0 28px;
-          .box__img,
-          p {
-            margin-bottom: 30px;
-          }
-          p {
-            height: 160px;
-            text-align: center;
-            font-size: 14px;
-            max-width: 272px;
-            margin-bottom: 10px;
-            line-height: 26px;
-            font-weight: 300;
-          }
-          .box__btn {
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          .box__content {
             display: flex;
-            align-items: center;
-            justify-content: end;
-            border-radius: 30px;
-            gap: 10px;
-            padding: 5px 5px 5px 30px;
-            background: var(--primaryColor);
-            color: #fff;
-            cursor: pointer;
-            .button__icon {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 35px;
-              height: 35px;
-              size: 10px;
-              background-color: #fff;
-              color: var(--primaryColor);
-              border-radius: 50%;
+            flex-direction: column;
+            gap: 20px;
+            h3 {
+              font-size: 16px;
+              color: var(--colorText_2);
+            }
+            p {
+              font-size: 14px;
             }
           }
         }
@@ -773,33 +745,12 @@ main {
         }
       }
     }
-    .route-section {
-      margin-bottom: 50px;
-      .route-container {
-        .route__content {
-          h1 {
-          }
-        }
+    .studyProcess-section {
+      .studyProcess-container {
         .wrap__dess {
-          justify-content: center;
+          flex-wrap: wrap;
           .item {
-            justify-content: center;
-            width: 100%;
-            padding: 0;
-            margin: 0;
-            .box__img {
-              max-width: 400px;
-              min-width: 200px;
-            }
-            .box__content {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              p {
-                max-width: 400px;
-                max-height: 100px;
-              }
-            }
+            width: calc((100% / 2) - 30px);
           }
         }
       }
@@ -984,6 +935,20 @@ main {
         }
         .img-side {
           width: 40%;
+        }
+      }
+    }
+    .studyProcess-section {
+      .studyProcess-container {
+        padding: 0;
+        .wrap__dess {
+          flex-wrap: wrap;
+          .item {
+            width: 100%;
+            .box__content {
+              max-width: 270px;
+            }
+          }
         }
       }
     }

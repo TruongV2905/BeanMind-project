@@ -92,7 +92,7 @@ li {
               padding: 20px;
               transition: all 0.4s;
               &:hover {
-                background-color: var(--primaryColor);
+                background-color: var(--colorText_1);
                 > * {
                   color: white;
                 }
@@ -114,7 +114,7 @@ li {
           justify-content: center;
           height: 100%;
           width: 100%;
-          background-color: #231f20;
+          background-color: var(--background_3);
         }
         &__phone {
           i {
@@ -179,7 +179,7 @@ li {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--primaryColor);
+        background-color: var(--colorText_1);
         overflow: hidden;
         height: 0;
         z-index: 10;
@@ -188,9 +188,12 @@ li {
           flex-direction: column;
           li {
             padding: 30px;
-            color: white;
+
             width: 100%;
             border-bottom: 1px solid white;
+            a {
+              color: var(--colorText_2);
+            }
           }
         }
         &--contact {

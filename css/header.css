@@ -98,7 +98,7 @@ li {
   transition: all 0.4s;
 }
 .wrap--header .header--listNav--ul .li--dropdown--content li:hover {
-  background-color: var(--primaryColor);
+  background-color: var(--colorText_1);
 }
 .wrap--header .header--listNav--ul .li--dropdown--content li:hover > * {
   color: white;
@@ -117,7 +117,7 @@ li {
   justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: #231f20;
+  background-color: var(--background_3);
 }
 .wrap--header .header--listNav--contact__phone {
   color: white;
@@ -170,7 +170,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--primaryColor);
+    background-color: var(--colorText_1);
     overflow: hidden;
     height: 0;
     z-index: 10;
@@ -181,9 +181,11 @@ li {
   }
   .wrap--header .header--listNav--ul li {
     padding: 30px;
-    color: white;
     width: 100%;
     border-bottom: 1px solid white;
+  }
+  .wrap--header .header--listNav--ul li a {
+    color: var(--colorText_2);
   }
   .wrap--header .header--listNav--contact {
     display: none;

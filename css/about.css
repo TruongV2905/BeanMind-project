@@ -211,44 +211,15 @@ main .value-section .box__img {
   background: var(--background_2);
   width: 50%;
   height: auto;
-  position: relative;
-  width: 50%;
   display: flex;
   align-items: stretch;
   justify-content: center;
 }
-main .value-section .box__img .move__img-up {
-  animation: moveup ease-in 2s infinite alternate 1s;
-}
-main .value-section .box__img .move__img-down {
-  animation: movedown ease-in 2s infinite alternate 1s;
-}
-main .value-section .box__img .left__img {
-  position: absolute;
-  left: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  width: 30%;
-  height: 100%;
-}
-main .value-section .box__img .right__img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 30%;
-  height: 100%;
-  z-index: 2;
-}
-main .value-section .box__img .main__img {
-  position: relative;
+main .value-section .box__img img {
+  max-width: none;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  object-fit: cover;
 }
 main .value-section .box__content {
   width: 50%;
@@ -295,24 +266,15 @@ main .reason-section .reason-container .reason__list .reason__item {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 main .reason-section .reason-container .reason__list .reason__item .box__img {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  z-index: 10;
-}
-main .reason-section .reason-container .reason__list .reason__item .box__img::after {
-  content: "";
   position: absolute;
-  background-image: url("/icon/image__reason-item.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 160px;
-  height: 120px;
-  z-index: -1;
-  top: -10px;
-  left: calc(50% - 45px);
+  left: 0;
+  top: -80px;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
 }
 main .reason-section .reason-container .reason__list .reason__item .content {
   width: 100%;
@@ -642,7 +604,6 @@ main .question-section .question-container .question-list .question.active p {
   }
   main .value-section .box__img {
     width: 100%;
-    min-height: 600px;
   }
   main .value-section .box__content {
     width: 100%;

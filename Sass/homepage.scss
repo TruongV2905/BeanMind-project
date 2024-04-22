@@ -206,67 +206,81 @@ main {
       color: black;
       width: 100%;
       height: auto;
-      background-color: transparent;
       display: flex;
-      align-items: end;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      height: fit-content;
-      border-bottom: 5px solid var(--primaryColor);
-      overflow: hidden;
-      border-top-right-radius: 24px;
-      border-top-left-radius: 24px;
-      box-shadow: 0px -59px 23px rgb(237 28 36 / 4%), 0px -33px 20px rgb(237 28 36 / 2%),
-        0px -15px 15px rgb(237 28 36 / 1%), 0px -4px 8px rgb(237 28 36 / 1%), 0px 0px 0px rgb(237 28 36 / 1%);
-      .item {
-        width: calc(100% / 5);
+      align-items: center;
+      justify-content: center;
+      .box_video {
+        width: 100%;
+        height: auto;
         display: flex;
         align-items: center;
-        justify-content: end;
-        flex-direction: column;
-        background-color: transparent;
-        padding: 30px 0px;
-        .box__icon {
+        justify-content: center;
+        video {
           width: 100%;
-          height: 70px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          img {
-            filter: brightness(0);
-          }
-        }
-        .box__count {
-          width: 100%;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          h3,
-          .counter {
-            width: 100%;
-            padding: 0 11%;
-            height: 50px;
-          }
-          .counter {
-            color: var(--primaryColor);
-            font-size: 1.5em;
-            font-weight: 700;
-          }
+          height: auto;
         }
       }
-      .item:hover {
-        transition: var(--animiation);
-        background-color: var(--primaryColor);
-      }
-      .item:hover .box__count .counter,
-      .item:hover .box__count h3 {
-        color: #fff;
-      }
-      .item:hover img {
-        filter: brightness(10000);
-      }
+      // background-color: transparent;
+      // display: flex;
+      // align-items: end;
+      // justify-content: space-between;
+      // flex-wrap: wrap;
+      // height: fit-content;
+      // border-bottom: 5px solid var(--primaryColor);
+      // overflow: hidden;
+      // border-top-right-radius: 24px;
+      // border-top-left-radius: 24px;
+      // box-shadow: 0px -59px 23px rgb(237 28 36 / 4%), 0px -33px 20px rgb(237 28 36 / 2%),
+      //   0px -15px 15px rgb(237 28 36 / 1%), 0px -4px 8px rgb(237 28 36 / 1%), 0px 0px 0px rgb(237 28 36 / 1%);
+      // .item {
+      //   width: calc(100% / 5);
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: end;
+      //   flex-direction: column;
+      //   background-color: transparent;
+      //   padding: 30px 0px;
+      //   .box__icon {
+      //     width: 100%;
+      //     height: 70px;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+      //     img {
+      //       filter: brightness(0);
+      //     }
+      //   }
+      //   .box__count {
+      //     width: 100%;
+      //     text-align: center;
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: center;
+      //     flex-direction: column;
+      //     h3,
+      //     .counter {
+      //       width: 100%;
+      //       padding: 0 11%;
+      //       height: 50px;
+      //     }
+      //     .counter {
+      //       color: var(--primaryColor);
+      //       font-size: 1.5em;
+      //       font-weight: 700;
+      //     }
+      //   }
+      // }
+      // .item:hover {
+      //   transition: var(--animiation);
+      //   background-color: var(--primaryColor);
+      // }
+      // .item:hover .box__count .counter,
+      // .item:hover .box__count h3 {
+      //   color: #fff;
+      // }
+      // .item:hover img {
+      //   filter: brightness(10000);
+      // }
     }
     .warp__last {
       width: 100%;
@@ -331,14 +345,17 @@ main {
           position: relative;
           border: 2px solid var(--colorText_1);
           border-radius: 15px;
-        }
-        .content:before {
-          position: absolute;
-          content: url("https://mathnasium.edu.vn/wp-content/themes/canhcam/images/quote-2.png");
-          overflow: initial;
-          visibility: initial;
-          top: -36px;
-          left: -10px;
+          .boxContent_img {
+            position: absolute;
+            overflow: initial;
+            visibility: initial;
+            width: 100px;
+            height: 100px;
+            background: var(--background_1);
+            top: -33px;
+            left: -45px;
+            transform: rotate(45deg);
+          }
         }
       }
     }
@@ -474,6 +491,7 @@ main {
     }
     .slick-pre,
     .slick-next {
+      cursor: pointer;
       position: absolute;
       top: 350px;
       border: none;

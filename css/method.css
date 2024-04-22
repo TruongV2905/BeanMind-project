@@ -259,71 +259,45 @@ main .teachingProcess-section .teachingProcess-container .box__icon .item::befor
   position: absolute;
   border-radius: 50%;
 }
-main .route-section {
-  background-color: var(--background_1);
-  padding: 50px 0 0;
-  color: var(--colorText_1);
+main .studyProcess-section {
+  background: var(--background_2);
+  color: var(--colorText_2);
+  background-size: cover;
+  padding: 50px 0 110px;
 }
-main .route-section .route-container .route__content {
-  width: 100%;
-  height: fit-content;
-  margin-bottom: 30px;
+main .studyProcess-section .studyProcess-container {
   text-align: center;
 }
-main .route-section .route-container .route__content h1 {
-  color: var(--colorText_1);
-  font-size: 40px;
-  font-weight: 1000;
-  margin-bottom: 30px;
+main .studyProcess-section .studyProcess-container .processBox__content {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
-main .route-section .route-container .wrap__dess {
+main .studyProcess-section .studyProcess-container .wrap__dess {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 30px;
 }
-main .route-section .route-container .wrap__dess .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(33.3333333333% - 56px);
-  padding: 32px 38px 50px;
-  margin: 0 28px;
-}
-main .route-section .route-container .wrap__dess .item .box__img,
-main .route-section .route-container .wrap__dess .item p {
-  margin-bottom: 30px;
-}
-main .route-section .route-container .wrap__dess .item p {
-  height: 160px;
-  text-align: center;
-  font-size: 14px;
-  max-width: 272px;
-  margin-bottom: 10px;
-  line-height: 26px;
-  font-weight: 300;
-}
-main .route-section .route-container .wrap__dess .item .box__btn {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  border-radius: 30px;
-  gap: 10px;
-  padding: 5px 5px 5px 30px;
-  background: var(--primaryColor);
-  color: #fff;
-  cursor: pointer;
-}
-main .route-section .route-container .wrap__dess .item .box__btn .button__icon {
+main .studyProcess-section .studyProcess-container .wrap__dess .item {
+  width: calc(25% - 30px);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
-  size: 10px;
-  background-color: #fff;
-  color: var(--primaryColor);
-  border-radius: 50%;
+  flex-direction: column;
+  text-align: center;
+}
+main .studyProcess-section .studyProcess-container .wrap__dess .item .box__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .studyProcess-section .studyProcess-container .wrap__dess .item .box__content h3 {
+  font-size: 16px;
+  color: var(--colorText_2);
+}
+main .studyProcess-section .studyProcess-container .wrap__dess .item .box__content p {
+  font-size: 14px;
 }
 main .report-section {
   padding: 35px 0 110px;
@@ -733,30 +707,11 @@ main .mainSystem-section .mainSystem-container .box__system .map {
   main .teachingProcess-section .teachingProcess-container .box__content p {
     font-size: 13px;
   }
-  main .route-section {
-    margin-bottom: 50px;
+  main .studyProcess-section .studyProcess-container .wrap__dess {
+    flex-wrap: wrap;
   }
-  main .route-section .route-container .wrap__dess {
-    justify-content: center;
-  }
-  main .route-section .route-container .wrap__dess .item {
-    justify-content: center;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-  main .route-section .route-container .wrap__dess .item .box__img {
-    max-width: 400px;
-    min-width: 200px;
-  }
-  main .route-section .route-container .wrap__dess .item .box__content {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  main .route-section .route-container .wrap__dess .item .box__content p {
-    max-width: 400px;
-    max-height: 100px;
+  main .studyProcess-section .studyProcess-container .wrap__dess .item {
+    width: calc(50% - 30px);
   }
   main .report-section .report-container .wrap__side {
     width: 70%;
@@ -883,6 +838,18 @@ main .mainSystem-section .mainSystem-container .box__system .map {
   }
   main .schedule-section .schedule-container .img-side {
     width: 40%;
+  }
+  main .studyProcess-section .studyProcess-container {
+    padding: 0;
+  }
+  main .studyProcess-section .studyProcess-container .wrap__dess {
+    flex-wrap: wrap;
+  }
+  main .studyProcess-section .studyProcess-container .wrap__dess .item {
+    width: 100%;
+  }
+  main .studyProcess-section .studyProcess-container .wrap__dess .item .box__content {
+    max-width: 270px;
   }
   main .main__system {
     padding: 0;
