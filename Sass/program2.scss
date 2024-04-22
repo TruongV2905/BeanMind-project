@@ -43,13 +43,13 @@ img {
         gap: 20px;
         .box__img {
           img {
+            border-radius: 10px;
             width: 100%;
             object-fit: scale-down;
-            border-radius: 10px;
           }
         }
         .box__text {
-          padding-top: 15%;
+          padding-top: 0;
           h2 {
             font-size: 3rem;
           }
@@ -107,14 +107,14 @@ img {
             );
 
             width: 270px;
-            height: 530px;
+            height: 500px;
             border-radius: 22px;
             .ad__item__wrap {
               left: 5px;
               top: 5px;
               position: relative;
               width: 260px;
-              height: 520px;
+              height: 490px;
               background: #21937c;
               border-radius: 22px;
               padding: 50px 24px 24px;
@@ -122,7 +122,7 @@ img {
                 text-align: center;
                 color: #fff;
                 font-size: 2rem;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
               }
               p {
                 padding-bottom: 1px;
@@ -148,28 +148,18 @@ img {
           .item-1 {
             .ad__item__wrap {
               h3 {
-                // display: none;
-                margin-bottom: 0px;
+                margin-bottom: 20px;
               }
-              p {
-                font-size: 0.9rem;
-                line-height: 24px;
-              }
-            }
-          }
-          .item-2 {
-            .ad__item__wrap {
               p {
                 font-size: 1rem;
-                line-height: 23px;
               }
             }
           }
           .item-3 {
             .ad__item__wrap {
               p {
-                font-size: 0.9rem;
-                line-height: 18px;
+                // font-size: 1rem;
+                line-height: 25px;
               }
             }
           }
@@ -902,36 +892,6 @@ img {
 @media only screen and (max-width: 400px) {
   .grid__container {
     .site__content {
-      //   .overview {
-      //     padding: 20px 20px 0 20px;
-      //     .overview__wrap {
-      //       display: flex;
-      //       flex-wrap: wrap;
-      //       padding-right: 10px;
-      //       padding-left: 10px;
-      //       gap: 0;
-
-      //       .box__img {
-      //         img {
-      //           object-fit: cover;
-      //         }
-      //       }
-
-      //       .box__text {
-      //         padding-top: 0;
-      //         h2 {
-      //           font-size: 1.25rem;
-      //         }
-      //         .content {
-      //           height: 200px;
-      //           overflow: scroll;
-      //           text-overflow: ellipsis;
-      //           font-size: 0.8rem;
-      //         }
-      //       }
-      //     }
-      //   }
-
       .advantage {
         .ad__container {
           .ad__wrap {
