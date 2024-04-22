@@ -39,12 +39,13 @@ img {
         gap: 20px;
         .box__img {
           img {
+            border-radius: 10px;
             width: 100%;
             object-fit: scale-down;
           }
         }
         .box__text {
-          padding-top: 15%;
+          padding-top: 0;
           h2 {
             font-size: 3rem;
           }
@@ -110,7 +111,7 @@ img {
               position: relative;
               width: 260px;
               height: 490px;
-              background: #b11116;
+              background: #21937c;
               border-radius: 22px;
               padding: 50px 24px 24px;
               h3 {
