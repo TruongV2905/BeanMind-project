@@ -316,200 +316,125 @@ main .newAndSale__section .newAndSale__container .list__news .news__box .text__b
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-main .mainSystem-section {
+main .location-section {
+  width: 100%;
+  height: auto;
+  background: url("/assets/img/patten-02.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
   padding: 50px 0 110px;
-  background: var(--background_2);
 }
-main .mainSystem-section .mainSystem-container .mainSystem_content h1 {
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--colorText_2);
-}
-main .mainSystem-section .mainSystem-container .box__system {
-  width: 100%;
-  height: auto;
-  display: flex;
-  background-color: var(--background_1);
-  border-radius: 20px;
-  overflow: hidden;
-}
-main .mainSystem-section .mainSystem-container .box__system h1 {
-  text-align: center;
-}
-main .mainSystem-section .mainSystem-container .box__system :not(h1) {
-  flex-direction: row;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav {
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 16px;
-  background-color: var(--background_1);
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select {
+main .location-section .location-container {
   padding: 0 10px;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
   height: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__city,
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__distr {
-  width: 50%;
-  height: auto;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__city select,
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__distr select {
-  width: 100%;
-  height: auto;
-  background-color: var(--background_1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--primaryColor);
-  border-radius: 60px;
-  color: var(--colorText_1);
-  padding: 13px 10px;
   text-align: center;
 }
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all {
-  width: 100%;
-  height: 460px;
+main .location-section .location-container .wrap__dess {
+  box-shadow: 10px 0px 25px rgba(3, 3, 3, 0.2);
   background-color: var(--background_1);
-  padding: 20px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 10px;
+  color: var(--colorText_1);
 }
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container {
+main .location-section .location-container .wrap__dess .wrap__map {
+  width: 50%;
+  height: 100%;
+}
+main .location-section .location-container .wrap__dess .wrap__map .map {
+  width: 100%;
+}
+main .location-section .location-container .wrap__dess .wrap__desc {
+  padding: 77px 18px 55px 101px;
+  width: 50%;
+  height: 100%;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__content {
+  width: 100%;
+  height: auto;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  border: solid 1px var(--primaryColor);
-  height: 100%;
-  position: relative;
-  padding: 5px 75px 11px 27px;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item h3 {
+  text-align: start;
+  width: 25%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content {
+  max-width: 234px;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p {
+  text-align: justify;
+  font-size: 14px;
+  color: #231f20;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p a {
   color: var(--colorText_3);
 }
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  position: relative;
-  gap: 10px;
-  width: 100%;
-  height: auto;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .location {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .phone {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .map__view {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: solid 1px var(--primaryColor);
-  border-radius: 60px;
-  text-align: center;
-  justify-content: center;
-  width: 169px;
-  height: 35px;
-  color: var(--primaryColor);
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .arrow__btn {
-  position: absolute;
-  display: flex;
-  border: solid 1px var(--primaryColor);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  right: -60px;
-  top: 90px;
-  color: var(--primaryColor);
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
-}
-main .mainSystem-section .mainSystem-container .box__system .result__container__all::-webkit-scrollbar {
-  width: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .result__container__all::-webkit-scrollbar-thumb {
-  background: #21937c;
-}
-main .mainSystem-section .mainSystem-container .box__system .map {
-  width: 50%;
-  height: auto;
-  background-color: var(--background_1);
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p a:hover {
+  color: var(--colorText_1);
+  transition: var(--animiation);
 }
 
 @media only screen and (max-width: 1023px) {
   main .container {
     max-width: 960px;
   }
-  main .newAndSale__section .newAndSale__container .box__heading {
-    width: 100%;
-    height: auto;
-    color: var(--colorText_1);
-  }
-  main .newAndSale__section .newAndSale__container .box__heading .list__option__scroll {
-    justify-content: start;
-    overflow-x: scroll;
-  }
-  main .newAndSale__section .newAndSale__container .box__heading .list__option__scroll .list__option {
-    width: 690px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  main .newAndSale__section .newAndSale__container .box__heading .list__option__scroll::-webkit-scrollbar {
-    height: 10px;
-  }
-  main .newAndSale__section .newAndSale__container .box__heading .list__option__scroll::-webkit-scrollbar-thumb {
-    background: #21937c;
-  }
-  main .newAndSale__section .newAndSale__container .list__news {
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-  }
-  main .newAndSale__section .newAndSale__container .list__news .news__box {
-    width: 100%;
-  }
-  main .newAndSale__section .newAndSale__container .list__news .news__box .text__box {
-    height: 100%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-  }
-  main .newAndSale__section .newAndSale__container .list__news .news__box .text__box h3 {
-    font-size: 1.5em;
-  }
-  main .newAndSale__section .newAndSale__container .list__news .news__box .text__box p {
-    font-size: 1.25em;
-  }
   main .newAndEvent-section .newAnhEvent-container {
     max-width: 824px;
+  }
+  main .location-section .location-container {
+    max-width: 824px;
+  }
+  main .location-section .location-container .wrap__dess {
+    flex-wrap: wrap;
+  }
+  main .location-section .location-container .wrap__dess .wrap__map {
+    width: 100%;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc {
+    width: 100%;
+    padding: 30px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item + .item {
+    border-top: 1px solid #bbbbbb;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item h3 {
+    margin-bottom: 10px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p {
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -521,28 +446,6 @@ main .mainSystem-section .mainSystem-container .box__system .map {
   }
   main .container {
     max-width: 824px;
-  }
-  main .newAndSale__section .newAndSale__container {
-    padding: 0 20px;
-  }
-  main .newAndSale__section .newAndSale__container .box__heading .heading__h2 {
-    font-size: 30px;
-  }
-  main .newAndSale__section .newAndSale__container .list__news {
-    flex-wrap: wrap;
-  }
-  main .newAndSale__section .newAndSale__container .list__news .news__box {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  main .newAndSale__section .newAndSale__container .list__news .news__box .news__img {
-    width: 100%;
-  }
-  main .newAndSale__section .newAndSale__container .list__news .news__box .text__box {
-    width: 100%;
-  }
-  main .newAndSale__section .newAndSale__container {
-    width: 95%;
   }
   main .newAndEvent-section .newAnhEvent-container .grid__container {
     justify-content: center;
@@ -559,26 +462,5 @@ main .mainSystem-section .mainSystem-container .box__system .map {
     max-width: none;
     width: 100%;
     height: 200px;
-  }
-  main .mainSystem-section {
-    padding: 50px 0 110px;
-    background: var(--background_2);
-  }
-  main .mainSystem-section .mainSystem-container .mainSystem_content h1 {
-    text-align: center;
-    margin-bottom: 50px;
-    color: var(--colorText_2);
-  }
-  main .mainSystem-section .mainSystem-container .box__system {
-    flex-wrap: wrap;
-    height: fit-content;
-  }
-  main .mainSystem-section .mainSystem-container .box__system .info__nav {
-    width: 100%;
-  }
-  main .mainSystem-section .mainSystem-container .box__system .map {
-    width: 100%;
-    height: 100%;
-    background-color: var(--background_1);
   }
 }/*# sourceMappingURL=news.css.map */

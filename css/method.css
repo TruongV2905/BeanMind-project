@@ -181,7 +181,9 @@ main .structure-section .structure-container {
   justify-content: space-between;
 }
 main .structure-section .structure-container .box__content {
+  margin-right: 30px;
   width: 50%;
+  height: 100%;
 }
 main .structure-section .structure-container .box__content h1 {
   color: var(--colorText_1);
@@ -197,11 +199,19 @@ main .structure-section .structure-container .box__content p {
   font-weight: 300;
 }
 main .structure-section .structure-container .box__img {
+  align-self: stretch;
   width: 50%;
+  height: auto;
+  border-radius: 15px;
+  overflow: hidden;
+}
+main .structure-section .structure-container .box__img img {
+  height: 100%;
+  object-fit: cover;
 }
 main .teachingProcess-section {
   background-color: var(--background_1);
-  padding: 50px 0 0px;
+  padding: 50px 0 110px;
 }
 main .teachingProcess-section .teachingProcess-container .box__content {
   width: 100%;
@@ -299,64 +309,6 @@ main .studyProcess-section .studyProcess-container .wrap__dess .item .box__conte
 main .studyProcess-section .studyProcess-container .wrap__dess .item .box__content p {
   font-size: 14px;
 }
-main .report-section {
-  padding: 35px 0 110px;
-  background: url("https://mathnasium.edu.vn/wp-content/uploads/2022/11/Group-18850-1-1.png") no-repeat;
-  background-size: cover;
-}
-main .report-section .report-container {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-main .report-section .report-container .wrap__side {
-  padding-left: 100px;
-  padding-right: 10px;
-  width: 60%;
-}
-main .report-section .report-container .wrap__side .box__content {
-  width: 100%;
-  height: fit-content;
-  margin-bottom: 30px;
-}
-main .report-section .report-container .wrap__side .box__content h1 {
-  font-size: 40px;
-  line-height: 52px;
-  color: #fff;
-  text-align: start;
-}
-main .report-section .report-container .wrap__side .wrap__dess {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-}
-main .report-section .report-container .wrap__side .wrap__dess .item {
-  width: calc(50% - 20px);
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  padding: 25px 24px 18px 36px;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-}
-main .report-section .report-container .wrap__side .wrap__dess .item .box__img {
-  width: 100%;
-}
-main .report-section .report-container .wrap__side .wrap__dess .item .content {
-  width: 100%;
-}
-main .report-section .report-container .wrap__side .wrap__dess .item .content p {
-  text-align: start;
-  font-size: 14px;
-  margin-bottom: 10px;
-  line-height: 26px;
-  font-weight: 300;
-}
 main .schedule-section {
   padding: 50px 0 140px;
 }
@@ -430,150 +382,91 @@ main .schedule-section .schedule-container .schedule__side .box__content p {
 main .schedule-section .schedule-container .img-side {
   width: 40%;
 }
-main .mainSystem-section {
+main .location-section {
+  width: 100%;
+  height: auto;
+  background: url("/assets/img/patten-02.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: auto;
   padding: 50px 0 110px;
-  background: var(--background_2);
 }
-main .mainSystem-section .mainSystem-container .mainSystem_content h1 {
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--colorText_2);
-}
-main .mainSystem-section .mainSystem-container .box__system {
-  width: 100%;
-  height: auto;
-  display: flex;
-  background-color: var(--background_1);
-  border-radius: 20px;
-  overflow: hidden;
-}
-main .mainSystem-section .mainSystem-container .box__system h1 {
-  text-align: center;
-}
-main .mainSystem-section .mainSystem-container .box__system :not(h1) {
-  flex-direction: row;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav {
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 20px;
-  padding-top: 16px;
-  background-color: var(--background_1);
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select {
+main .location-section .location-container {
   padding: 0 10px;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
   height: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__city,
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__distr {
-  width: 50%;
-  height: auto;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__city select,
-main .mainSystem-section .mainSystem-container .box__system .info__nav .box__select .box__distr select {
-  width: 100%;
-  height: auto;
-  background-color: var(--background_1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--primaryColor);
-  border-radius: 60px;
-  color: var(--colorText_1);
-  padding: 13px 10px;
   text-align: center;
 }
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all {
-  width: 100%;
-  height: 460px;
+main .location-section .location-container .wrap__dess {
+  box-shadow: 10px 0px 25px rgba(3, 3, 3, 0.2);
   background-color: var(--background_1);
-  padding: 20px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 10px;
+  color: var(--colorText_1);
 }
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container {
+main .location-section .location-container .wrap__dess .wrap__map {
+  width: 50%;
+  height: 100%;
+}
+main .location-section .location-container .wrap__dess .wrap__map .map {
+  width: 100%;
+}
+main .location-section .location-container .wrap__dess .wrap__desc {
+  padding: 77px 18px 55px 101px;
+  width: 50%;
+  height: 100%;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__content {
+  width: 100%;
+  height: auto;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  border: solid 1px var(--primaryColor);
-  height: 100%;
-  position: relative;
-  padding: 5px 75px 11px 27px;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item h3 {
+  text-align: start;
+  width: 25%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content {
+  max-width: 234px;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p {
+  text-align: justify;
+  font-size: 14px;
+  color: #231f20;
+  margin-bottom: 1.5em;
+  font-weight: 400;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p a {
   color: var(--colorText_3);
 }
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  position: relative;
-  gap: 10px;
-  width: 100%;
-  height: auto;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .location {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .phone {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .map__view {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: solid 1px var(--primaryColor);
-  border-radius: 60px;
-  text-align: center;
-  justify-content: center;
-  width: 169px;
-  height: 35px;
-  color: var(--primaryColor);
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container .result__box .arrow__btn {
-  position: absolute;
-  display: flex;
-  border: solid 1px var(--primaryColor);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  right: -60px;
-  top: 90px;
-  color: var(--primaryColor);
-}
-main .mainSystem-section .mainSystem-container .box__system .info__nav .result__container__all .result__container:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: 0px 0px 20px -1px rgba(0, 0, 0, 0.63);
-}
-main .mainSystem-section .mainSystem-container .box__system .result__container__all::-webkit-scrollbar {
-  width: 10px;
-}
-main .mainSystem-section .mainSystem-container .box__system .result__container__all::-webkit-scrollbar-thumb {
-  background: #21937c;
-}
-main .mainSystem-section .mainSystem-container .box__system .map {
-  width: 50%;
-  height: auto;
-  background-color: var(--background_1);
+main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p a:hover {
+  color: var(--colorText_1);
+  transition: var(--animiation);
 }
 
 .teachingSkill-section {
@@ -713,9 +606,6 @@ main .mainSystem-section .mainSystem-container .box__system .map {
   main .studyProcess-section .studyProcess-container .wrap__dess .item {
     width: calc(50% - 30px);
   }
-  main .report-section .report-container .wrap__side {
-    width: 70%;
-  }
   main .schedule-section {
     padding: 50px 0 140px;
   }
@@ -741,13 +631,34 @@ main .mainSystem-section .mainSystem-container .box__system .map {
   main .schedule-section .schedule-container .img-side {
     width: 40%;
   }
-  main .main__system .box__system {
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-  }
   main .teachingSkill-section .teachingSkill-container .box__carousel .slick-list .slick-track .item .wrap__desc h1 {
     font-size: 20px;
+  }
+  main .location-section .location-container {
+    max-width: 824px;
+  }
+  main .location-section .location-container .wrap__dess {
+    flex-wrap: wrap;
+  }
+  main .location-section .location-container .wrap__dess .wrap__map {
+    width: 100%;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc {
+    width: 100%;
+    padding: 30px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item + .item {
+    border-top: 1px solid #bbbbbb;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item h3 {
+    margin-bottom: 10px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p {
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -769,6 +680,7 @@ main .mainSystem-section .mainSystem-container .box__system .map {
     flex-direction: column;
   }
   main .structure-section .structure-container .box__content {
+    margin: 0;
     width: 100%;
   }
   main .structure-section .structure-container .box__content h1 {
@@ -796,23 +708,6 @@ main .mainSystem-section .mainSystem-container .box__system .map {
   }
   main .teachingProcess-section .teachingProcess-container .box__icon .item h4 {
     font-size: 20px;
-  }
-  main .report-section .report-container .wrap__side {
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
-  }
-  main .report-section .report-container .wrap__side .box__content h1 {
-    font-size: 26px;
-    line-height: 1.3;
-  }
-  main .report-section .report-container .wrap__side .wrap__dess {
-    gap: 10px;
-    justify-content: space-between;
-  }
-  main .report-section .report-container .wrap__side .wrap__dess .item {
-    width: calc(50% - 10px);
-    margin: 0;
   }
   main .schedule-section {
     padding: 50px 0 140px;

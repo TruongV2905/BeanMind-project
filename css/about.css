@@ -81,14 +81,15 @@ main .aboutBanner-section .banner__side .nav .box__content {
   height: fit-content;
 }
 main .aboutBanner-section .banner__side .nav .box__content p {
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   background-color: transparent;
   white-space: nowrap;
-  margin-left: 13px;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
 main .aboutBanner-section .banner__side .nav .icon {
-  margin: 10px 0px 0;
+  margin-top: 20px;
   width: 100%;
   flex: 1 0 auto;
   height: 30px;
@@ -108,12 +109,6 @@ main .introduce-section {
   overflow: hidden;
   padding: 50px 0 110px;
 }
-main .introduce-section .introduce-container .introduce__content {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin-bottom: 80px;
-}
 main .introduce-section .introduce-container .wrap__dess {
   width: 100%;
   height: auto;
@@ -128,9 +123,23 @@ main .introduce-section .introduce-container .wrap__dess .item {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  align-items: end;
+  align-items: stretch;
 }
 main .introduce-section .introduce-container .wrap__dess .item .box__content {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+main .introduce-section .introduce-container .wrap__dess .item .box__content .introduce__content {
+  text-align: start;
+  width: 100%;
+  height: auto;
+  margin-bottom: 45px;
+}
+main .introduce-section .introduce-container .wrap__dess .item .box__content .content {
   height: auto;
   border: 3px solid var(--primaryColor);
   border-radius: 10px;
@@ -139,7 +148,7 @@ main .introduce-section .introduce-container .wrap__dess .item .box__content {
   padding: 45px;
   position: relative;
 }
-main .introduce-section .introduce-container .wrap__dess .item .counter {
+main .introduce-section .introduce-container .wrap__dess .item .box__content .content .counter {
   position: absolute;
   top: -45px;
   background: var(--background_1);
@@ -153,6 +162,12 @@ main .introduce-section .introduce-container .wrap__dess .item .box__img {
   width: 50%;
   height: auto;
   z-index: 5;
+}
+main .introduce-section .introduce-container .wrap__dess .item .box__img img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 main .introduce-section .introduce-container .wrap__dess .item + .item {
   margin-top: 180px;
@@ -386,6 +401,8 @@ main .team-section {
   padding: 50px 0 110px;
 }
 main .team-section .team-container .team__content {
+  width: 100%;
+  height: auto;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -396,6 +413,12 @@ main .team-section .team-container .team__content h1 {
 main .team-section .team-container .team__content p {
   color: var(--colorText_2);
   font-size: 20px;
+}
+main .team-section .team-container .wrap--team {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  overflow: hidden;
 }
 main .contact__section {
   background-color: var(--background_2);
@@ -527,7 +550,7 @@ main .question-section .question-container .question-list .question.active p {
   main .container {
     max-width: 960px;
   }
-  main .contactBanner-section .banner__side {
+  main .aboutBanner-section .banner__side {
     display: none;
   }
   main .introduce-section .introduce-container .wrap__dess .item {
@@ -536,6 +559,10 @@ main .question-section .question-container .question-list .question.active p {
   }
   main .introduce-section .introduce-container .wrap__dess .item .box__content {
     width: 100%;
+  }
+  main .introduce-section .introduce-container .wrap__dess .item .box__content .content {
+    width: 100%;
+    max-width: none;
   }
   main .introduce-section .introduce-container .wrap__dess .item .box__img {
     display: flex;

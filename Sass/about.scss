@@ -76,15 +76,16 @@ main {
           background-color: transparent;
           height: fit-content;
           p {
-            font-size: 15px;
+            font-size: 20px;
             color: #fff;
             background-color: transparent;
             white-space: nowrap;
-            margin-left: 13px;
+            margin-left: 20px;
+            text-transform: uppercase;
           }
         }
         .icon {
-          margin: 10px 0px 0;
+          margin-top: 20px;
           width: 100%;
           flex: 1 0 auto;
           height: 30px;
@@ -107,12 +108,6 @@ main {
     overflow: hidden;
     padding: 50px 0 110px;
     .introduce-container {
-      .introduce__content {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 80px;
-      }
       .wrap__dess {
         width: 100%;
         height: auto;
@@ -126,24 +121,38 @@ main {
           display: flex;
           justify-content: space-between;
           gap: 30px;
-          align-items: end;
+          align-items: stretch;
           .box__content {
+            width: 50%;
             height: auto;
-            border: 3px solid var(--primaryColor);
-            border-radius: 10px;
-            max-width: 528px;
-            height: fit-content;
-            padding: 45px;
-            position: relative;
-          }
-          .counter {
-            position: absolute;
-            top: -45px;
-            background: var(--background_1);
-            font-size: 80px;
-            color: var(--primaryColor);
-            padding: 0 15px 0 10px;
-            left: 35px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            .introduce__content {
+              text-align: start;
+              width: 100%;
+              height: auto;
+              margin-bottom: 45px;
+            }
+            .content {
+              height: auto;
+              border: 3px solid var(--primaryColor);
+              border-radius: 10px;
+              max-width: 528px;
+              height: fit-content;
+              padding: 45px;
+              position: relative;
+              .counter {
+                position: absolute;
+                top: -45px;
+                background: var(--background_1);
+                font-size: 80px;
+                color: var(--primaryColor);
+                padding: 0 15px 0 10px;
+                left: 35px;
+              }
+            }
           }
 
           .box__img {
@@ -151,6 +160,12 @@ main {
             width: 50%;
             height: auto;
             z-index: 5;
+            img {
+              border-radius: 20px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
           }
         }
         .item + .item {
@@ -407,6 +422,8 @@ main {
     padding: 50px 0 110px;
     .team-container {
       .team__content {
+        width: 100%;
+        height: auto;
         text-align: center;
         margin-bottom: 30px;
         h1 {
@@ -417,6 +434,12 @@ main {
           color: var(--colorText_2);
           font-size: 20px;
         }
+      }
+      .wrap--team {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        overflow: hidden;
       }
     }
   }
@@ -567,7 +590,7 @@ main {
     .container {
       max-width: 960px;
     }
-    .contactBanner-section {
+    .aboutBanner-section {
       .banner__side {
         display: none;
       }
@@ -580,6 +603,10 @@ main {
             flex-wrap: wrap;
             .box__content {
               width: 100%;
+              .content {
+                width: 100%;
+                max-width: none;
+              }
             }
             .box__img {
               display: flex;
