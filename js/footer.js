@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.getElementById("email").value;
     const level = document.getElementById("level").value;
     const location = document.getElementById("location").value;
-
+    const regexPhoneNumber = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
     // Kiểm tra giá trị của các ô input
     if (!parentName || !phoneNumber || !email || !level || !location) {
       Swal.fire({
@@ -17,7 +17,29 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       return;
     }
-
+    if (level == "disabled" || location == "disabled") {
+      console.log("hi");
+      Swal.fire({
+        icon: "error",
+        text: "Vui lòng nhập tất cả các ô ",
+      });
+      return;
+    }
+    if (level == "disabled" && location == "disabled") {
+      console.log("hi");
+      Swal.fire({
+        icon: "error",
+        text: "Vui lòng nhập tất cả các ô ",
+      });
+      return;
+    }
+    if (!regexPhoneNumber.exec(phoneNumber)) {
+      Swal.fire({
+        icon: "error",
+        text: "Vui lòng nhập đúng ô số điện thoại",
+      });
+      return;
+    }
     const data = {
       parent_name: parentName,
       phone_number: phoneNumber,
