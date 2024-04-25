@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --animiation: 0.5s ease;
 }
@@ -66,15 +65,16 @@ main {
           background-color: transparent;
           height: fit-content;
           p {
-            font-size: 15px;
+            font-size: 20px;
             color: #fff;
             background-color: transparent;
             white-space: nowrap;
-            margin-left: 13px;
+            margin-left: 20px;
+            text-transform: uppercase;
           }
         }
         .icon {
-          margin: 10px 0px 0;
+          margin-top: 20px;
           width: 100%;
           flex: 1 0 auto;
           height: 30px;
@@ -413,6 +413,11 @@ main {
     .container {
       max-width: 960px;
     }
+    .aboutBanner-section {
+      .banner__side {
+        display: none;
+      }
+    }
     .newAndEvent-section {
       .newAnhEvent-container {
         max-width: 824px;
@@ -470,6 +475,7 @@ main {
     .container {
       max-width: 824px;
     }
+
     .newAndEvent-section {
       .newAnhEvent-container {
         .grid__container {

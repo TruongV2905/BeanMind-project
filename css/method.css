@@ -88,14 +88,15 @@ main .methodBanner-section .banner__side .nav .box__content {
   height: fit-content;
 }
 main .methodBanner-section .banner__side .nav .box__content p {
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   background-color: transparent;
   white-space: nowrap;
-  margin-left: 13px;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
 main .methodBanner-section .banner__side .nav .icon {
-  margin: 10px 0px 0;
+  margin-top: 20px;
   width: 100%;
   flex: 1 0 auto;
   height: 30px;
