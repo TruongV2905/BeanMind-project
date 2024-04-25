@@ -91,9 +91,11 @@ li {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .wrap--header .header--listNav--ul .li--dropdown--content a {
+  flex-grow: 1;
   color: black;
 }
 .wrap--header .header--listNav--ul .li--dropdown--content li {
+  display: flex;
   padding: 20px;
   transition: all 0.4s;
 }
