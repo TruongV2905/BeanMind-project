@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function loadHeaderAndSetup() {
   const headerPlaceholder = document.getElementById("header-placeholder");
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "header.html", true);
+  xhr.open("GET", "header.html", false);
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       headerPlaceholder.innerHTML = xhr.responseText;
@@ -38,7 +38,7 @@ function loadHeaderAndSetup() {
 function loadFooter() {
   const footerPlaceholder = document.getElementById("footer-placeholder");
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "footer.html", true);
+  xhr.open("GET", "footer.html", false);
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       footerPlaceholder.innerHTML = xhr.responseText;
