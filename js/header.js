@@ -132,8 +132,12 @@ function closeNav() {
   btnPhone.style.opacity = "1";
 }
 document.addEventListener("DOMContentLoaded", function () {
-  var phoneIcon = document.getElementById("fa-solid");
+  let phoneIcon = document.getElementById("phone");
   phoneIcon.addEventListener("click", function () {
     window.location.href = "tel:+0968070478";
   });
 });
+
+function call() {
+  window.location.href = "tel:+0968070478";
+}
