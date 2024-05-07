@@ -21,7 +21,10 @@ function loadHeaderAndSetup() {
         btnExit.addEventListener("click", closeNav);
         window.addEventListener("scroll", function () {
           let scrollPosition = 100;
-          if (window.scrollY > scrollPosition || document.documentElement.scrollTop > scrollPosition) {
+          if (
+            window.scrollY > scrollPosition ||
+            document.documentElement.scrollTop > scrollPosition
+          ) {
             header.style.background = "var(--background_1)";
             header.style.boxShadow = "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px";
           } else {
@@ -128,3 +131,9 @@ function closeNav() {
   btnSearch.style.opacity = "1";
   btnPhone.style.opacity = "1";
 }
+document.addEventListener("DOMContentLoaded", function () {
+  var phoneIcon = document.getElementById("fa-solid");
+  phoneIcon.addEventListener("click", function () {
+    window.location.href = "tel:+0968070478";
+  });
+});

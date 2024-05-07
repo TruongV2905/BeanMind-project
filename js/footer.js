@@ -83,3 +83,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let registerLink = document.getElementById("registerLink");
+  registerLink.addEventListener("click", function () {
+    let footerPlaceholder = document.getElementById("footer-placeholder");
+    footerPlaceholder.scrollIntoView({ behavior: "smooth" });
+  });
+});
