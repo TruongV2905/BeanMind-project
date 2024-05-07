@@ -226,7 +226,7 @@ main {
     }
   }
   .value-section {
-    background-color: #fff;
+    background-color: var(--background_1);
     display: flex;
     justify-content: space-between;
     .box__img {
@@ -262,6 +262,9 @@ main {
     color: var(--colorText_1);
     padding: 50px 0 110px;
     overflow: hidden;
+    h3 {
+      text-transform: uppercase;
+    }
     .reason-container {
       display: flex;
       flex-direction: column;

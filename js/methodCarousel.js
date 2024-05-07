@@ -7,7 +7,7 @@ $(".box__carousel").slick({
   infinite: true,
   cssEase: "ease",
   autoplay: false,
-  centerPadding: "20px",
+  centerPadding: "0px",
   centerMode: true,
   slidesToShow: 3,
   zIndex: 1,

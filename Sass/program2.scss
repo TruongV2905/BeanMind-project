@@ -508,13 +508,14 @@ main {
           padding-bottom: 30px;
           width: 100%;
           display: flex;
+          flex-wrap: wrap;
           height: fit-content;
           color: var(--colorText_2);
           h1 {
-            width: 30%;
+            width: 100%;
           }
           .method__content {
-            width: 70%;
+            width: 100%;
             height: auto;
           }
         }

@@ -218,7 +218,7 @@ main .introduce-section .introduce-container .wrap__dess .item:nth-child(3) .box
   z-index: 1;
 }
 main .value-section {
-  background-color: #fff;
+  background-color: var(--background_1);
   display: flex;
   justify-content: space-between;
 }
@@ -254,6 +254,9 @@ main .reason-section {
   color: var(--colorText_1);
   padding: 50px 0 110px;
   overflow: hidden;
+}
+main .reason-section h3 {
+  text-transform: uppercase;
 }
 main .reason-section .reason-container {
   display: flex;

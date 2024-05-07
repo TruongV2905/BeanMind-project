@@ -593,6 +593,7 @@ main .system-section .system-container .box__content-right .box__items .item .co
     justify-content: center;
   }
   main .presentation-section .presentation-container .wrap__dess .box__content {
+    margin-top: 30px;
     padding: 0;
     width: 100%;
   }

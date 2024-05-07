@@ -262,22 +262,19 @@ main .contact-section .contact-container .wrap__dess .box__img img {
   object-fit: cover;
 }
 main .location-section {
-  position: relative;
+  width: 100%;
+  height: auto;
   background: url("/assets/img/patten-02.png") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 500px;
-  padding-bottom: 120px;
-  display: flex;
-  align-items: start;
-  justify-content: center;
+  height: auto;
+  padding: 50px 0 110px;
 }
 main .location-section .location-container {
-  position: absolute;
-  margin-top: -180px;
   padding: 0 10px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -200px;
   max-width: 1200px;
   height: auto;
   text-align: center;
@@ -286,8 +283,9 @@ main .location-section .location-container .wrap__dess {
   box-shadow: 10px 0px 25px rgba(3, 3, 3, 0.2);
   background-color: var(--background_1);
   width: 100%;
+  height: 100%;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   overflow: hidden;
   border-radius: 10px;
@@ -295,26 +293,37 @@ main .location-section .location-container .wrap__dess {
 }
 main .location-section .location-container .wrap__dess .wrap__map {
   width: 50%;
+  height: 100%;
 }
 main .location-section .location-container .wrap__dess .wrap__map .map {
   width: 100%;
 }
 main .location-section .location-container .wrap__dess .wrap__desc {
-  padding: 61px 25px 40px 76px;
+  padding: 77px 18px 55px 101px;
   width: 50%;
+  height: 100%;
+}
+main .location-section .location-container .wrap__dess .wrap__desc .box__content {
+  width: 100%;
+  height: auto;
 }
 main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
-  font-size: 30px;
+  width: 100%;
+  font-size: 40px;
   margin-bottom: 20px;
   text-align: start;
 }
 main .location-section .location-container .wrap__dess .wrap__desc .box__ress {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  align-items: start;
 }
 main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item {
   width: 100%;
   display: flex;
+  align-items: center;
 }
 main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item h3 {
   text-align: start;
@@ -340,8 +349,7 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .i
   color: var(--colorText_1);
   transition: var(--animiation);
 }
-main .location-section .location-container .wrap__dess .wrap__desc .box__ress .box__btn {
-  width: 150px;
+main .location-section .location-container .box__btn {
   margin-top: 35px;
   display: flex;
   align-items: center;
@@ -353,7 +361,7 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
   color: #fff;
   cursor: pointer;
 }
-main .location-section .location-container .wrap__dess .wrap__desc .box__ress .box__btn .button__icon {
+main .location-section .location-container .box__btn .button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,9 +390,6 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
   }
   main .contact-section .contact-container .wrap__dess .box__input .box__enter .item textarea {
     width: 335px !important;
-  }
-  main .location-section .location-container {
-    max-width: 960px;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -416,8 +421,32 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
   main .contact-section .contact-container .wrap__dess .box__input .box__enter .item textarea {
     max-width: 100% !important;
   }
+  main .location-section .location-container {
+    max-width: 824px;
+    margin-top: 0;
+  }
+  main .location-section .location-container .wrap__dess {
+    flex-wrap: wrap;
+  }
+  main .location-section .location-container .wrap__dess .wrap__map {
+    width: 100%;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc {
+    width: 100%;
+    padding: 30px;
+  }
   main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
+    margin-bottom: 30px;
     font-size: 25px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item + .item {
+    border-top: 1px solid #bbbbbb;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item h3 {
+    margin-bottom: 10px;
+  }
+  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p {
+    margin-bottom: 10px;
   }
 }
 @media only screen and (max-width: 790px) {
@@ -453,34 +482,5 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .b
     width: 100%;
     object-fit: cover;
     height: 100%;
-  }
-  main .location-section {
-    height: 825px;
-  }
-  main .location-section .location-container {
-    max-width: 824px;
-  }
-  main .location-section .location-container .wrap__dess {
-    flex-wrap: wrap;
-  }
-  main .location-section .location-container .wrap__dess .wrap__map {
-    width: 100%;
-  }
-  main .location-section .location-container .wrap__dess .wrap__desc {
-    width: 100%;
-    padding: 30px;
-  }
-  main .location-section .location-container .wrap__dess .wrap__desc .box__content h1 {
-    margin-bottom: 30px;
-    font-size: 25px;
-  }
-  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item + .item {
-    border-top: 1px solid #bbbbbb;
-  }
-  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item h3 {
-    margin-bottom: 10px;
-  }
-  main .location-section .location-container .wrap__dess .wrap__desc .box__ress .item .content p {
-    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=contact.css.map */

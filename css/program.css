@@ -462,14 +462,15 @@ main .location-section .location-container .wrap__dess .wrap__desc .box__ress .i
     padding-bottom: 30px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     height: fit-content;
     color: var(--colorText_2);
   }
   main .method-section .method__container .method__heading h1 {
-    width: 30%;
+    width: 100%;
   }
   main .method-section .method__container .method__heading .method__content {
-    width: 70%;
+    width: 100%;
     height: auto;
   }
   main .method-section .method__container .method__img {
